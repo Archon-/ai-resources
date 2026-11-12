@@ -62,7 +62,7 @@ A symlink of `skills/` or of a group such as `skills/ecc/` would put the group n
 
 Both links are the same folder. Edit `SKILL.md` in the repo and both clients read that edit. The client opens `~/.claude/skills/openconnector/SKILL.md` and follows the link to `skills/other/openconnector/SKILL.md`.
 
-Default clients are Claude Code and Codex. Cursor already reads those two directories, so it sees the skill without a third link. `./scripts/install.sh --skill <name> --clients cursor` also links `~/.cursor/skills/<name>`, which usually lists the skill a second time in Cursor.
+With no harness flag, the installer links every harness it finds on the machine. Claude Code, Codex, and Cursor are the usual three. `./scripts/install.sh --skill <name> --cursor` links only Cursor. Cursor's own global directory is `~/.cursor/skills/<name>`. Cursor also reads `~/.claude/skills` and `~/.agents/skills`, so the same skill can appear more than once. `doctor` reports that.
 
 `./scripts/sync.sh` makes the client directories match `enabled-skills.txt` when that file lists names. A name removed while other names remain, or a skill folder removed while its name is still listed, loses its symlink. With no names in the file, sync returns before it plans removals, and the links already present stay. Sync removes a symlink only when its target resolves within this repo's `skills/` directory. A link that resolves outside that directory stays in place.
 
@@ -72,7 +72,7 @@ Default targets, checked against current docs:
 
 - Claude Code personal skills: `~/.claude/skills/<name>/SKILL.md` ([Claude Code skills](https://code.claude.com/docs/en/skills)).
 - Codex personal skills: `~/.agents/skills` ([Codex customization](https://learn.chatgpt.com/docs/customization/overview)). `~/.codex/skills` is the older Codex path and is not used.
-- Cursor reads `~/.agents/skills`, `~/.cursor/skills`, and, for compatibility, `~/.claude/skills` ([Cursor skills](https://cursor.com/docs/skills)). The installer does not also fill `~/.cursor/skills`.
+- Cursor's global skills are `~/.cursor/skills/<name>/SKILL.md` ([Cursor skills](https://cursor.com/docs/skills)). The installer fills that directory when Cursor is installed. Cursor also reads `~/.agents/skills`, `~/.claude/skills`, and `~/.codex/skills`.
 
 Project skills stay in that project's `.claude/skills` or `.agents/skills`. This hub does not copy itself into application repos.
 

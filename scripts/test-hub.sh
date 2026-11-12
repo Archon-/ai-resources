@@ -10,7 +10,17 @@ trap cleanup EXIT
 
 export AI_RESOURCES_HOME="$TMP/home"
 export AI_RESOURCES_STATE_DIR="$TMP/state"
-mkdir -p "$AI_RESOURCES_HOME"
+mkdir -p "$AI_RESOURCES_HOME" "$TMP/bin"
+# Only binaries linked here are visible. A harness binary in /usr/bin must not count.
+# python3 may be a pyenv shim. Point at the real interpreter so the shim's bash is not required.
+ln -s "$(python3 -c 'import sys; print(sys.executable)')" "$TMP/bin/python3"
+for cmd in find grep wc tr ln rm mkdir cp readlink cksum awk env rmdir; do
+  ln -s "$(command -v "$cmd")" "$TMP/bin/$cmd"
+done
+export PATH="$TMP/bin"
+mkdir -p "$AI_RESOURCES_HOME/.claude" "$AI_RESOURCES_HOME/.codex"
+printf '%s\n' '{}' > "$AI_RESOURCES_HOME/.claude/settings.json"
+printf '%s\n' '' > "$AI_RESOURCES_HOME/.codex/config.toml"
 
 fail() { echo "FAIL: $*" >&2; exit 1; }
 
@@ -32,7 +42,7 @@ fi
 run install --skill alpha >/dev/null
 [ -L "$AI_RESOURCES_HOME/.claude/skills/alpha" ] || fail "claude alpha missing"
 [ ! -e "$AI_RESOURCES_HOME/.agents/skills/beta" ] || fail "unselected beta was linked"
-[ ! -e "$AI_RESOURCES_HOME/.cursor/skills/alpha" ] || fail "cursor linked by default"
+[ ! -e "$AI_RESOURCES_HOME/.cursor/skills/alpha" ] || fail "cursor linked without Cursor installed"
 grep -q '^alpha$' "$FIX/enabled-skills.txt" || fail "alpha not saved"
 
 # one skill from a source that bulk install skips
@@ -48,7 +58,7 @@ after=$(find "$AI_RESOURCES_HOME" -type l | wc -l | tr -d ' ')
 # owned symlink pointed at another skill in this repo is relinked
 ln -sfn "$FIX/skills/oomol/beta" "$AI_RESOURCES_HOME/.claude/skills/alpha"
 out=$(run install --clients claude)
-echo "$out" | grep -q "relink claude alpha" || fail "owned mismatch was not relinked"
+echo "$out" | grep -E -q "relink[[:space:]]+claude-code[[:space:]]+alpha" || fail "owned mismatch was not relinked"
 alpha_real=$(python3 -c 'import os,sys; print(os.path.realpath(sys.argv[1]))' "$FIX/skills/fixture/alpha")
 [ "$(readlink "$AI_RESOURCES_HOME/.claude/skills/alpha")" = "$alpha_real" ] || fail "relink target"
 
@@ -78,7 +88,7 @@ ln -s "$skills_real/../../outside" "$AI_RESOURCES_HOME/.claude/skills/escape"
 ln -s "$skills_real/fixture/../fixture/alpha" "$AI_RESOURCES_HOME/.claude/skills/nested"
 ln -s loop "$AI_RESOURCES_HOME/.claude/skills/loop"
 rm -rf "$FIX/skills/fixture/alpha"
-run sync --dry-run | grep -q "unlink  claude alpha" || fail "dry-run did not plan unlink"
+run sync --dry-run | grep -E -q "unlink[[:space:]]+claude-code[[:space:]]+alpha" || fail "dry-run did not plan unlink"
 [ -L "$AI_RESOURCES_HOME/.claude/skills/alpha" ] || fail "dry-run unlinked"
 [ -L "$AI_RESOURCES_HOME/.claude/skills/escape" ] || fail "dry-run unlinked escaped symlink"
 if run sync >/dev/null; then
@@ -102,6 +112,7 @@ run sync --clients claude >/dev/null || true
 [ ! -e "$AI_RESOURCES_HOME/.claude/skills/gone" ] || fail "broken link survived sync"
 
 run uninstall >/dev/null
+[ ! -e "$AI_RESOURCES_STATE_DIR/manifest.json" ] || fail "full uninstall recreated the manifest"
 find "$AI_RESOURCES_HOME" -type l > "$TMP/links"
 fix_skills=$(python3 -c 'import os,sys; print(os.path.realpath(sys.argv[1]))' "$FIX/skills")
 root_skills=$(python3 -c 'import os,sys; print(os.path.realpath(sys.argv[1]))' "$ROOT/skills")
@@ -167,7 +178,7 @@ wanted = {name for name, meta in origins.items() if meta.get("source") not in {"
 linked = set()
 for line in out.splitlines():
     parts = line.split()
-    if len(parts) >= 3 and parts[0] in ("link", "ok") and parts[1] == "claude":
+    if len(parts) >= 3 and parts[0] in ("link", "ok") and parts[1] == "claude-code":
         linked.add(parts[2])
 missing = wanted - linked
 extra = linked - wanted
@@ -176,8 +187,64 @@ if missing or extra:
 print("bulk skip links", len(linked))
 PY
 one=$(python3 "$HUB" --repo "$ROOT" install --dry-run --skill oo-github --clients claude)
-echo "$one" | grep -qx "link claude oo-github" || fail "single oomol skill was not planned"
-echo "$one" | grep -qx "link claude design-system" && fail "single skill also planned design-system" || true
+echo "$one" | awk '{print $1, $2, $3}' | grep -qx "link claude-code oo-github" || fail "single oomol skill was not planned"
+echo "$one" | awk '{print $1, $2, $3}' | grep -qx "link claude-code design-system" && fail "single skill also planned design-system" || true
 [ "$(cksum "$ROOT/enabled-skills.txt")" = "$before" ] || fail "skill dry-run changed enabled-skills.txt"
+
+# An empty config directory is not an installed harness.
+mkdir -p "$AI_RESOURCES_HOME/.cursor"
+out=$(run install --dry-run --skill keepme)
+echo "$out" | awk '{print $1, $2, $3}' | grep -qx "link cursor keepme" && fail "empty .cursor counted as installed" || true
+rmdir "$AI_RESOURCES_HOME/.cursor"
+
+# A rules/ directory left by another installer is not the Augment app.
+mkdir -p "$AI_RESOURCES_HOME/.augment/rules"
+printf '%s\n' 'x' > "$AI_RESOURCES_HOME/.augment/rules/note.md"
+out=$(run install --dry-run --skill keepme)
+echo "$out" | awk '{print $1, $2, $3}' | grep -qx "link augment keepme" && fail "rules-only .augment counted as installed" || true
+rm -rf "$AI_RESOURCES_HOME/.augment"
+
+# --cursor is global ~/.cursor/skills, and it does not link the other harnesses.
+mkdir -p "$FIX/skills/fixture/gamma"
+printf '%s\n' '---' 'name: gamma' 'description: gamma skill' '---' > "$FIX/skills/fixture/gamma/SKILL.md"
+run install --skill gamma --cursor >/dev/null
+[ -L "$AI_RESOURCES_HOME/.cursor/skills/gamma" ] || fail "cursor global link missing"
+[ ! -e "$AI_RESOURCES_HOME/.claude/skills/gamma" ] || fail "--cursor also linked claude"
+[ ! -e "$AI_RESOURCES_HOME/.agents/skills/gamma" ] || fail "--cursor also linked codex"
+gamma_real=$(python3 -c 'import os,sys; print(os.path.realpath(sys.argv[1]))' "$FIX/skills/fixture/gamma")
+[ "$(readlink "$AI_RESOURCES_HOME/.cursor/skills/gamma")" = "$gamma_real" ] || fail "cursor link target"
+run uninstall --skill gamma >/dev/null
+[ -f "$AI_RESOURCES_STATE_DIR/manifest.json" ] || fail "filtered uninstall removed the manifest"
+python3 - "$AI_RESOURCES_STATE_DIR/manifest.json" << 'PY' || fail "filtered uninstall manifest"
+import json, sys
+names = {item["name"] for item in json.load(open(sys.argv[1]))["links"]}
+if "gamma" in names:
+    raise SystemExit("gamma still listed")
+if "alpha" not in names:
+    raise SystemExit("alpha missing")
+PY
+
+# Cline and Zed share Codex's directory. One symlink, named once.
+mkdir -p "$AI_RESOURCES_HOME/.cline"
+printf '%s\n' '{}' > "$AI_RESOURCES_HOME/.cline/config.json"
+out=$(run install --dry-run --skill gamma)
+echo "$out" | grep -q "also read by cline" || fail "shared directory was not reported"
+echo "$out" | awk '{print $1, $2, $3}' | grep -qx "link cline gamma" && fail "shared directory was linked twice" || true
+rm -rf "$AI_RESOURCES_HOME/.cline"
+
+esc=$(printf '\033')
+colored=$(env -u NO_COLOR AI_RESOURCES_COLOR=always python3 "$HUB" --repo "$FIX" doctor || true)
+case "$colored" in
+  *"$esc"*) ;;
+  *) fail "color not applied" ;;
+esac
+plain=$(env -u NO_COLOR -u AI_RESOURCES_COLOR python3 "$HUB" --repo "$FIX" doctor || true)
+case "$plain" in
+  *"$esc"*) fail "color leaked into a pipe" ;;
+esac
+muted=$(NO_COLOR=1 AI_RESOURCES_COLOR=always python3 "$HUB" --repo "$FIX" doctor || true)
+case "$muted" in
+  *"$esc"*) fail "NO_COLOR ignored" ;;
+esac
 
 echo "ok"
