@@ -1,16 +1,21 @@
-# Architecture
+# Proposed architecture
 
-Two systems, not one.
+This is a suggestion for how to configure the clients. It is not a system this repo deploys. Dokploy is not part of it.
 
 ```text
-this repo                         Dokploy
-skills + MCP templates            OpenConnector
+this repo                         OpenConnector
+skills + MCP templates            MCP gateway you run
         |                               |
+        | symlink, per skill            | MCP
+        v                               v
         +---- Claude / Codex / Cursor --+
-                      MCP
-                       |
-              GitHub, Gmail, Notion, ...
+                                        |
+                                        | MCP
+                                        v
+                              GitHub, Gmail, Notion, ...
 ```
+
+I suggest configuring it this way. Keep the skill files in this repo and link the ones you want into each client. Point those same clients at one OpenConnector server for GitHub, Gmail, Notion, Slack, and the other APIs. Host that server wherever you already run services. This repo does not install it, and it does not store the token.
 
 This repo is files in Git. OpenConnector is the integration gateway: OAuth, connections, action execution. A skill does not replace an MCP connection, and an MCP connection does not install `SKILL.md` files.
 
@@ -23,15 +28,45 @@ This repo is files in Git. OpenConnector is the integration gateway: OAuth, conn
 | `docs/sources.md` | URLs that were vendored, and what was left behind. |
 | `playbooks/openmontage/` | Notes that are not skills. Kept out of `skills/` so clients do not scan them. |
 | `upstream/<source>/` | License and bundle files that are not part of a skill. |
-| `mcp/dokploy/` | Dokploy MCP server source. Separate from OpenConnector. |
-| `mcp/templates/` | Client snippets. Placeholders only. |
+| `mcp/templates/` | Client snippets for the suggested OpenConnector setup. Placeholders only. |
 | `mcp/catalogs/` | MCP *client* configs found inside vendored repos. Not servers. |
 
 No `instructions/`, `rules/`, or `prompts/` tree. Those files belong in the project that needs them (`AGENTS.md`, `CLAUDE.md`, `.cursor/rules`). Adding empty directories here would imply a second copy of instructions the clients already load from the project.
 
-## Why symlinks, per skill
+## How the symlinks work
 
-Do not symlink `skills/` or a group such as `skills/ecc/`. Clients only discover a skill when `SKILL.md` is one level under their skills directory. `enabled-skills.txt` is the set that gets linked. `install.sh --skill <name>` links `skills/<group>/<name>` as `~/.claude/skills/<name>` and `~/.agents/skills/<name>`. `install.sh --skip-source oomol --skip-source ecc` is the bulk shortcut that still leaves those two catalogs out. The installer refuses to replace a real directory or a symlink that points outside this repo.
+One skill is one directory, and `SKILL.md` sits inside that directory. In this repo the directory is nested under a group:
+
+```text
+skills/ecc/accessibility/SKILL.md
+skills/other/openconnector/SKILL.md
+```
+
+Claude Code, Codex, and Cursor do not walk `skills/`. Each client looks in its own skills directory and treats every *immediate* child as one skill. That child has to contain `SKILL.md`:
+
+```text
+~/.claude/skills/<name>/SKILL.md
+~/.agents/skills/<name>/SKILL.md
+```
+
+`<name>` is the skill directory (`openconnector`, `accessibility`), not the group (`other`, `ecc`).
+
+A symlink of `skills/` or of a group such as `skills/ecc/` would put the group name where the client expects a skill. `SKILL.md` would be one directory too deep, so the skill would not load. The installer therefore never links a group. It links one skill directory, under the skill's own name.
+
+`enabled-skills.txt` is the list of those names. It starts with no names, so a plain `./scripts/install.sh` creates nothing. `./scripts/install.sh --skill openconnector` appends that name and creates one symlink per default client. The link is absolute, and it points at the directory in this repo. Nothing is copied:
+
+```text
+~/.claude/skills/openconnector -> <this-repo>/skills/other/openconnector
+~/.agents/skills/openconnector -> <this-repo>/skills/other/openconnector
+```
+
+Both links are the same folder. Edit `SKILL.md` in the repo and both clients read that edit. The client opens `~/.claude/skills/openconnector/SKILL.md` and follows the link to `skills/other/openconnector/SKILL.md`.
+
+Default clients are Claude Code and Codex. Cursor already reads those two directories, so it sees the skill without a third link. `./scripts/install.sh --skill <name> --clients cursor` also links `~/.cursor/skills/<name>`, which usually lists the skill a second time in Cursor.
+
+`./scripts/sync.sh` makes the client directories match `enabled-skills.txt`. A name removed from that file, or a folder removed from `skills/`, loses its symlink. Sync only removes a symlink whose target is inside this repo. A skill you installed some other way stays where it is.
+
+The installer will not replace a real directory at the destination, and it will not replace a symlink that points outside this repo. Move that copy aside, then re-run. `./scripts/install.sh --skip-source oomol --skip-source ecc` is the bulk shortcut that still leaves those two catalogs out.
 
 Default targets, checked against current docs:
 
@@ -50,4 +85,4 @@ Vendored copies, pinned by commit in `docs/sources.lock.json`. Not submodules: t
 - A server or database for skill files.
 - Automatic MCP login.
 - A second copy of each skill per client inside this repo.
-- Changes to the deployed Dokploy or OpenConnector instance.
+- A deployment of OpenConnector. The skill and the templates are here. The running server is not.

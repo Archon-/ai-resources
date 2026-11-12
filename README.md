@@ -1,6 +1,6 @@
 # AI resources
 
-One Git repo for agent skills and MCP templates. Claude Code, Codex, and Cursor read the same skill files through symlinks. [OpenConnector](https://github.com/oomol-lab/open-connector), on Dokploy, is the separate MCP gateway for GitHub, Gmail, Notion, Slack, and other APIs. This repo does not store those credentials and it does not run OpenConnector.
+One Git repo for agent skills and MCP templates. Claude Code, Codex, and Cursor read the same skill files through symlinks. I suggest pointing those clients at [OpenConnector](https://github.com/oomol-lab/open-connector) as the MCP gateway for GitHub, Gmail, Notion, Slack, and other APIs. This repo does not store those credentials and it does not run OpenConnector. That layout is a [proposed architecture](docs/architecture.md).
 
 ## What this replaces
 
@@ -26,7 +26,7 @@ cd ~/Projects/GitHub/ai-resources
 ./scripts/doctor.sh
 ```
 
-`install.sh` with no arguments links only the names in `enabled-skills.txt`. That file starts empty, so a plain install does not symlink the catalog. Skills are stored as `skills/<source>/<name>/`, and a one-skill source is `skills/other/<name>/`. Each `--skill` links that one folder into Claude Code and Codex. It does not link the source directory. Cursor reads those two client directories. The script does not replace a real folder or someone else's symlink, and it does not edit `CLAUDE.md`, `AGENTS.md`, or MCP settings.
+`install.sh` with no arguments links only the names in `enabled-skills.txt`. That file starts empty, so a plain install does not symlink the catalog. Skills are stored as `skills/<source>/<name>/`, and a one-skill source is `skills/other/<name>/`. Each `--skill` creates a symlink *named after the skill*, from `~/.claude/skills/<name>` and `~/.agents/skills/<name>` to that skill directory in this repo. It does not link `skills/` or the source directory. The client follows the link and reads the same `SKILL.md`. Cursor reads those two client directories. The script does not replace a real folder or someone else's symlink, and it does not edit `CLAUDE.md`, `AGENTS.md`, or MCP settings. How the link is shaped: [docs/architecture.md](docs/architecture.md).
 
 Link one OOMOL skill and one ECC skill without the rest of those catalogs:
 
@@ -83,7 +83,7 @@ Connect each client to the same server. Templates with placeholders, not real to
 - Symlinks are a macOS and Linux mechanism. Windows needs Developer Mode or a different link type. Not set up here.
 - Nothing here was executed inside Claude Code, Codex, or Cursor. The linker was tested in a temporary home directory.
 
-More: [docs/architecture.md](docs/architecture.md), [docs/sources.md](docs/sources.md), [docs/skills-index.md](docs/skills-index.md), [docs/pipelines.md](docs/pipelines.md).
+More: [proposed architecture](docs/architecture.md), [docs/sources.md](docs/sources.md), [docs/skills-index.md](docs/skills-index.md), [docs/pipelines.md](docs/pipelines.md).
 
 ## Pipelines
 
