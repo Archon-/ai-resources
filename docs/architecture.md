@@ -64,9 +64,9 @@ Both links are the same folder. Edit `SKILL.md` in the repo and both clients rea
 
 Default clients are Claude Code and Codex. Cursor already reads those two directories, so it sees the skill without a third link. `./scripts/install.sh --skill <name> --clients cursor` also links `~/.cursor/skills/<name>`, which usually lists the skill a second time in Cursor.
 
-`./scripts/sync.sh` makes the client directories match `enabled-skills.txt`. A name removed from that file, or a folder removed from `skills/`, loses its symlink. Sync only removes a symlink whose target is inside this repo. A skill you installed some other way stays where it is.
+`./scripts/sync.sh` makes the client directories match `enabled-skills.txt` when that file lists names. A name removed while other names remain, or a skill folder removed while its name is still listed, loses its symlink. With no names in the file, sync returns before it plans removals, and the links already present stay. Sync removes a symlink only when its target resolves within this repo's `skills/` directory. A link that resolves outside that directory stays in place.
 
-The installer will not replace a real directory at the destination, and it will not replace a symlink that points outside this repo. Move that copy aside, then re-run. `./scripts/install.sh --skip-source oomol --skip-source ecc` is the bulk shortcut that still leaves those two catalogs out.
+The installer will not replace a real directory at the destination, and it will not replace a symlink that resolves outside `skills/`. Move that copy aside, then re-run. `./scripts/install.sh --skip-source oomol --skip-source ecc` is the bulk shortcut that still leaves those two catalogs out.
 
 Default targets, checked against current docs:
 

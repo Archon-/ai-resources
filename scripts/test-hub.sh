@@ -45,6 +45,21 @@ run install >/dev/null
 after=$(find "$AI_RESOURCES_HOME" -type l | wc -l | tr -d ' ')
 [ "$before" = "$after" ] || fail "second install changed link count"
 
+# owned symlink pointed at another skill in this repo is relinked
+ln -sfn "$FIX/skills/oomol/beta" "$AI_RESOURCES_HOME/.claude/skills/alpha"
+out=$(run install --clients claude)
+echo "$out" | grep -q "relink claude alpha" || fail "owned mismatch was not relinked"
+alpha_real=$(python3 -c 'import os,sys; print(os.path.realpath(sys.argv[1]))' "$FIX/skills/fixture/alpha")
+[ "$(readlink "$AI_RESOURCES_HOME/.claude/skills/alpha")" = "$alpha_real" ] || fail "relink target"
+
+# empty enabled list returns before any removal
+cp "$FIX/enabled-skills.txt" "$TMP/enabled.bak"
+printf '%s\n' '# none' > "$FIX/enabled-skills.txt"
+out=$(run sync)
+echo "$out" | grep -q "Nothing to sync" || fail "empty sync planned removals"
+[ -L "$AI_RESOURCES_HOME/.claude/skills/alpha" ] || fail "empty sync removed alpha"
+cp "$TMP/enabled.bak" "$FIX/enabled-skills.txt"
+
 # unrelated skill and a real directory conflict
 mkdir -p "$AI_RESOURCES_HOME/.claude/skills/mine"
 ln -s /tmp "$AI_RESOURCES_HOME/.agents/skills/foreign"
@@ -57,13 +72,22 @@ fi
 [ -L "$AI_RESOURCES_HOME/.agents/skills/foreign" ] || fail "foreign symlink removed"
 
 # removal via sync
+skills_real=$(python3 -c 'import os,sys; print(os.path.realpath(sys.argv[1]))' "$FIX/skills")
+mkdir -p "$TMP/outside"
+ln -s "$skills_real/../../outside" "$AI_RESOURCES_HOME/.claude/skills/escape"
+ln -s "$skills_real/fixture/../fixture/alpha" "$AI_RESOURCES_HOME/.claude/skills/nested"
+ln -s loop "$AI_RESOURCES_HOME/.claude/skills/loop"
 rm -rf "$FIX/skills/fixture/alpha"
 run sync --dry-run | grep -q "unlink  claude alpha" || fail "dry-run did not plan unlink"
 [ -L "$AI_RESOURCES_HOME/.claude/skills/alpha" ] || fail "dry-run unlinked"
+[ -L "$AI_RESOURCES_HOME/.claude/skills/escape" ] || fail "dry-run unlinked escaped symlink"
 if run sync >/dev/null; then
   fail "sync should still report the beta conflict"
 fi
 [ ! -e "$AI_RESOURCES_HOME/.claude/skills/alpha" ] || fail "alpha link survived sync"
+[ ! -e "$AI_RESOURCES_HOME/.claude/skills/nested" ] || fail "in-skills link survived sync"
+[ -L "$AI_RESOURCES_HOME/.claude/skills/escape" ] || fail "sync removed escaped symlink"
+[ -L "$AI_RESOURCES_HOME/.claude/skills/loop" ] || fail "sync removed symlink loop"
 [ -d "$AI_RESOURCES_HOME/.claude/skills/mine" ] || fail "unrelated dir removed"
 
 # broken link
@@ -79,14 +103,26 @@ run sync --clients claude >/dev/null || true
 
 run uninstall >/dev/null
 find "$AI_RESOURCES_HOME" -type l > "$TMP/links"
+fix_skills=$(python3 -c 'import os,sys; print(os.path.realpath(sys.argv[1]))' "$FIX/skills")
+root_skills=$(python3 -c 'import os,sys; print(os.path.realpath(sys.argv[1]))' "$ROOT/skills")
 while read -r link; do
-  target=$(readlink "$link")
-  case "$target" in
-    "$FIX"/skills/*|"$ROOT"/skills/*) fail "uninstall left $link -> $target" ;;
+  [ -n "$link" ] || continue
+  resolved=$(python3 -c 'import os, sys
+try:
+    print(os.path.realpath(sys.argv[1]))
+except OSError:
+    print("")
+' "$link")
+  [ -n "$resolved" ] || continue
+  case "$resolved" in
+    "$fix_skills"|"$fix_skills"/*|"$root_skills"|"$root_skills"/*)
+      fail "uninstall left $link -> $resolved" ;;
   esac
 done < "$TMP/links"
 [ -d "$AI_RESOURCES_HOME/.claude/skills/mine" ] || fail "uninstall removed unrelated dir"
 [ -L "$AI_RESOURCES_HOME/.agents/skills/foreign" ] || fail "uninstall removed foreign symlink"
+[ -L "$AI_RESOURCES_HOME/.claude/skills/escape" ] || fail "uninstall removed escaped symlink"
+[ -L "$AI_RESOURCES_HOME/.claude/skills/loop" ] || fail "uninstall removed symlink loop"
 
 # skip-source drops oomol even after it was explicitly linked, and keeps the other skill
 mkdir -p "$FIX/skills/fixture/alpha"

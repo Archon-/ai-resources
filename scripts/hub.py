@@ -165,20 +165,18 @@ def readlink(path):
 
 
 def is_ours(path, repo):
+    """True when path is a symlink whose resolved target is within repo/skills."""
     if not path.is_symlink():
         return False
     raw = readlink(path)
     skills = (repo / "skills").resolve()
     target = raw if raw.is_absolute() else (path.parent / raw)
-    text = str(target)
-    prefix = str(skills)
-    if text == prefix or text.startswith(prefix + os.sep):
-        return True
     try:
-        target.resolve().relative_to(skills)
-        return True
-    except (ValueError, OSError):
+        resolved = target.resolve(strict=False)
+        resolved.relative_to(skills)
+    except (ValueError, OSError, RuntimeError):
         return False
+    return True
 
 
 def parse_clients(value):
@@ -195,7 +193,7 @@ def client_root(client):
     return home_dir() / CLIENTS[client]
 
 
-def plan_links(clients, skills):
+def plan_links(clients, skills, repo):
     """Return actions: link, relink, ok, conflict."""
     actions = []
     for client in clients:
@@ -293,7 +291,7 @@ def command_install(args):
         print("no skills selected. Add one with --skill <name>, or bulk-link with --skip-source.")
         print("saved list: {}".format(enabled_path(args.repo)))
         return 0
-    actions = plan_links(clients, skills)
+    actions = plan_links(clients, skills, args.repo)
     conflicts = apply_links(actions, args.dry_run)
     # A bulk skip replaces the set, so links for the skipped sources come back off.
     removals = plan_removals(args.repo, clients, skills) if args.skip_source else []
@@ -313,7 +311,7 @@ def command_sync(args):
         print("Add one with --skill, or bulk-link with --skip-source.")
         return 0
     skills, save = selection(args.repo, args)
-    actions = plan_links(clients, skills)
+    actions = plan_links(clients, skills, args.repo)
     removals = plan_removals(args.repo, clients, skills)
     conflicts = apply_links(actions, args.dry_run)
     apply_removals(removals, args.dry_run)
