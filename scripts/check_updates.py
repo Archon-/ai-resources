@@ -152,7 +152,7 @@ def build_report(rows):
     return "\n".join(lines)
 
 
-def _request(url, token):
+def _open(url, token):
     headers = {
         "Accept": "application/vnd.github+json",
         "User-Agent": "ai-resources-update-check",
@@ -163,11 +163,50 @@ def _request(url, token):
     req = urllib.request.Request(url, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
-            return json.loads(resp.read().decode()), None
+            return json.loads(resp.read().decode()), None, dict(resp.headers)
     except urllib.error.HTTPError as exc:
-        return None, "HTTP {}".format(exc.code)
+        return None, "HTTP {}".format(exc.code), {}
     except urllib.error.URLError as exc:
-        return None, "network error: {}".format(exc.reason)
+        return None, "network error: {}".format(exc.reason), {}
+
+
+def _request(url, token):
+    body, err, _headers = _open(url, token)
+    return body, err
+
+
+def _next_link(headers):
+    link = ""
+    for key, value in headers.items():
+        if key.lower() == "link":
+            link = value
+            break
+    for part in link.split(","):
+        if 'rel="next"' not in part:
+            continue
+        start = part.find("<")
+        end = part.find(">")
+        if start >= 0 and end > start:
+            return part[start + 1:end]
+    return None
+
+
+def _request_list(url, token):
+    """Follow GitHub Link headers until every page of a list endpoint is loaded."""
+    items = []
+    pages = 0
+    while url:
+        pages += 1
+        if pages > 50:
+            return None, "too many result pages"
+        body, err, headers = _open(url, token)
+        if err:
+            return None, err
+        if not isinstance(body, list):
+            return None, "expected a list"
+        items.extend(body)
+        url = _next_link(headers)
+    return items, None
 
 
 def fetch_upstream(source, token):
@@ -188,18 +227,20 @@ def fetch_upstream(source, token):
             return {"error": "tag lookup " + ref_err}
         result["tag_exists"] = ref_err is None and bool(ref)
         names = []
-        tags, tag_err = _request(base + "/tags?per_page=100", token)
+        tags, tag_err = _request_list(base + "/tags?per_page=100", token)
         if tag_err:
             return {"error": "tag list " + tag_err}
         names.extend(item.get("name") for item in tags or [] if item.get("name"))
-        releases, rel_err = _request(base + "/releases?per_page=30", token)
+        releases, rel_err = _request_list(base + "/releases?per_page=100", token)
         if rel_err == "HTTP 404":
             releases = []
         elif rel_err:
             return {"error": "release list " + rel_err}
         names.extend(item.get("tag_name") for item in releases or [] if item.get("tag_name"))
         result["names"] = names
-        if result["tag_exists"] and not newer_tag(tag, names):
+        # A real git tag is decided from the tag list alone. Do not drop that
+        # result when the default-branch request fails.
+        if result["tag_exists"]:
             return result
     commit, commit_err = _request(base + "/commits/" + urllib.parse.quote(branch), token)
     if commit_err:
@@ -280,6 +321,13 @@ def self_test():
         problems.append("branch drift not flagged")
     if "Status: updates-found" not in report or "`alpha`" not in report:
         problems.append("report missing the stale skill")
+    link = _next_link({
+        "Link": '<https://api.github.com/repos/a/b/tags?page=2>; rel="next", <https://api.github.com/repos/a/b/tags?page=5>; rel="last"',
+    })
+    if link != "https://api.github.com/repos/a/b/tags?page=2":
+        problems.append("next page link was not read")
+    if _next_link({"Link": '<https://api.github.com/repos/a/b/tags?page=5>; rel="last"'}) is not None:
+        problems.append("last page looked like another page")
     big = _skill_lines(["s{}".format(i) for i in range(LIST_LIMIT + 1)], "skills/oomol")
     if not any(line.startswith("- {}".format(LIST_LIMIT + 1)) for line in big):
         problems.append("large catalog was expanded")

@@ -26,6 +26,8 @@ ALLOWED_INSTALL_HOSTS = {
     "static.heygen.ai",
 }
 
+REDACTED = "[redacted]"
+URL_HOST = re.compile(r"https?://([^/\s\"'`]+)", re.I)
 SECRET_RULES = (
     ("private-key", re.compile(r"-----BEGIN (?:RSA |OPENSSH |EC |DSA |PGP )?PRIVATE KEY-----")),
     ("github-token", re.compile(r"\bghp_[A-Za-z0-9]{36}\b")),
@@ -68,12 +70,50 @@ def looks_like_code(path, first_line):
     return first_line.startswith("#!") and ("sh" in first_line or "bash" in first_line or "python" in first_line)
 
 
+def is_dotenv(path):
+    name = path.name.lower()
+    return name == ".env" or name.startswith(".env.")
+
+
+def unfold_shell(text):
+    """Join backslash-continued shell lines. The map sends each new index to the original."""
+    parts = []
+    index_map = []
+    index = 0
+    while index < len(text):
+        if text.startswith("\\\n", index):
+            parts.append(" ")
+            index_map.append(index)
+            index += 2
+            continue
+        if text.startswith("\\\r\n", index):
+            parts.append(" ")
+            index_map.append(index)
+            index += 3
+            continue
+        parts.append(text[index])
+        index_map.append(index)
+        index += 1
+    return "".join(parts), index_map
+
+
+def allowed_installer(command):
+    hosts = [match.group(1).lower() for match in URL_HOST.finditer(command)]
+    return bool(hosts) and all(host in ALLOWED_INSTALL_HOSTS for host in hosts)
+
+
 def scan_text(rel, text, code):
     findings = []
     for name, pattern in SECRET_RULES:
         match = pattern.search(text)
         if match:
-            findings.append((rel, _line_of(text, match.start()), name, _snippet(match.group(0))))
+            findings.append((rel, _line_of(text, match.start()), name, REDACTED))
+    folded, index_map = unfold_shell(text)
+
+    def original_line(start):
+        origin = index_map[start] if start < len(index_map) else 0
+        return _line_of(text, origin)
+
     if code:
         for name, pattern in (
             ("remote-shell", REMOTE_ANY),
@@ -82,15 +122,14 @@ def scan_text(rel, text, code):
             ("decode-exec", DECODE_EXEC),
             ("destructive-rm", DESTRUCTIVE_RM),
         ):
-            match = pattern.search(text)
+            match = pattern.search(folded)
             if match:
-                findings.append((rel, _line_of(text, match.start()), name, _snippet(match.group(0))))
+                findings.append((rel, original_line(match.start()), name, _snippet(match.group(0))))
         return findings
-    for match in REMOTE_URL.finditer(text):
-        host = match.group(1).lower()
-        if host in ALLOWED_INSTALL_HOSTS:
+    for match in REMOTE_URL.finditer(folded):
+        if allowed_installer(match.group(0)):
             continue
-        findings.append((rel, _line_of(text, match.start()), "remote-shell", _snippet(match.group(0))))
+        findings.append((rel, original_line(match.start()), "remote-shell", _snippet(match.group(0))))
     return findings
 
 
@@ -114,14 +153,15 @@ def scan(root):
         if path.stat().st_size > MAX_BYTES:
             continue
         suffix = path.suffix.lower()
-        if suffix not in TEXT_SUFFIXES and suffix != "":
+        dotenv = is_dotenv(path)
+        if not dotenv and suffix not in TEXT_SUFFIXES and suffix != "":
             continue
         raw = path.read_bytes()
         if b"\0" in raw[:800]:
             continue
         text = raw.decode("utf-8", errors="replace")
         first = text.splitlines()[0] if text else ""
-        if suffix == "" and not looks_like_code(path, first):
+        if not dotenv and suffix == "" and not looks_like_code(path, first):
             continue
         files += 1
         rel = str(path.relative_to(root.parent if root.name == "skills" else root))
