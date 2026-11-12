@@ -2,15 +2,15 @@
 
 Cursor loads skills from `.agents/skills/`, `.cursor/skills/`, `~/.agents/skills/`, and `~/.cursor/skills/`. It also loads Claude and Codex compatibility paths: `.claude/skills/`, `.codex/skills/`, `~/.claude/skills/`, and `~/.codex/skills/`. Source: [Cursor Agent Skills](https://cursor.com/docs/skills).
 
-The default install fills `~/.claude/skills` and `~/.agents/skills`. Cursor therefore sees each hub skill twice. Claude Code only reads the first. Codex only reads the second. To keep a single Cursor list, link one side only:
+Cursor's global skills live in `~/.cursor/skills/<name>`. That directory stays on this machine, and it is the one Cursor can sync to cloud agents. `~/.agents/skills` is not copied to cloud agents.
+
+When Cursor is installed, `./scripts/install.sh --skill <name>` links `~/.cursor/skills` and also Claude Code and Codex if those are installed too. Cursor reads all three, plus `~/.codex/skills`, so one skill can show up more than once. `doctor` reports that. To fill only Cursor:
 
 ```bash
-./scripts/install.sh --skill openconnector --clients codex
+./scripts/install.sh --skill openconnector --cursor
 ```
 
-Cursor still sees those skills through `~/.agents/skills`. Claude Code will not, until you link `claude` too. There is no Cursor setting in this repo that disables the compatibility scan.
-
-`~/.cursor/skills` is not filled by default. Cursor's cloud agents sync that directory, not `~/.agents/skills`. Turn on skill sync in Cursor if a cloud agent must see them, or use `--clients cursor` and accept the extra local copy. Cloud sync was not tested.
+There is no Cursor setting in this repo that turns the compatibility scan off. Cloud sync of `~/.cursor/skills` was not tested from here.
 
 Project skills live in that project's `.agents/skills` or `.cursor/skills`. Nested skill directories are scoped to files under that folder. Rules for a project stay in `.cursor/rules/`. Cursor also reads `AGENTS.md` and `CLAUDE.md` in the project. This hub does not generate rules.
 

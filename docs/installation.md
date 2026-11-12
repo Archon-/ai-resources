@@ -8,7 +8,7 @@ Scripts never write MCP config. They create one symlink per selected skill. `<na
 | --- | --- |
 | Claude Code | `~/.claude/skills/<name>` → `<this-repo>/skills/<group>/<name>` |
 | Codex | `~/.agents/skills/<name>` → `<this-repo>/skills/<group>/<name>` |
-| Cursor | no extra link. Cursor already reads the two directories above. |
+| Cursor | `~/.cursor/skills/<name>` → the same directory, when Cursor is installed |
 
 Linking `skills/` or `skills/<group>/` does not work. Clients only look one level down, and `SKILL.md` would sit one directory too deep. Detail: [architecture.md](architecture.md).
 
@@ -43,14 +43,40 @@ Do not combine `--skill` and `--skip-source` in one command. Use `--skill` to ad
 
 `--dry-run` prints the links and changes neither the home directory nor `enabled-skills.txt`.
 
-## Clients
+## Harnesses
+
+No flag links every harness found on this machine. A flag limits the run to that harness. `--clients` still takes a comma list. `claude`, `copilot`, and `gemini` are aliases for the longer ids.
+
+A harness is installed when its binary is on `PATH`, or its config directory exists and contains something besides skill drop folders (`skills`, `rules`, `global_skills`). An empty config directory does not count. `~/.gemini` does not count as Gemini CLI when the only other folder is `antigravity`. Passing the flag links that harness even when it is not detected.
 
 ```bash
-./scripts/install.sh --skill openconnector --clients claude
-./scripts/install.sh --skill openconnector --clients claude,codex,cursor
+./scripts/install.sh --skill openconnector --claude-code
+./scripts/install.sh --skill openconnector --cursor
+./scripts/install.sh --skill openconnector --clients claude,codex
 ```
 
-`--clients` defaults to `claude,codex`. Adding `cursor` also links `~/.cursor/skills`. Cursor already sees the Claude and Codex directories, so that third link usually shows the skill twice.
+Paths below are the global skill directories. Project skill directories are not touched. Codex uses `~/.agents/skills`. `~/.codex/skills` is the older Codex path and is not written. Warp, Pi, and Kimi Code CLI also read `~/.agents/skills`, so a Codex or Cline link covers them.
+
+| Flag | Global directory | Detected from |
+| --- | --- | --- |
+| `--claude-code` | `~/.claude/skills` | `claude`, or `~/.claude` |
+| `--codex` | `~/.agents/skills` | `codex`, or `~/.codex` |
+| `--cursor` | `~/.cursor/skills` | `cursor`, or `~/.cursor` |
+| `--github-copilot` | `~/.copilot/skills` | `~/.copilot` |
+| `--windsurf` | `~/.codeium/windsurf/skills` | `windsurf`, `~/.codeium/windsurf`, or `~/.windsurf` |
+| `--cline` | `~/.agents/skills` | `cline`, or `~/.cline` |
+| `--gemini-cli` | `~/.gemini/skills` | `gemini`, or `~/.gemini` |
+| `--opencode` | `~/.config/opencode/skills` | `opencode`, `~/.config/opencode`, or `~/.local/share/opencode` |
+| `--continue` | `~/.continue/skills` | `~/.continue` |
+| `--amp` | `~/.config/agents/skills` | `amp`, `~/.config/amp`, or `~/.amp` |
+| `--roo` | `~/.roo/skills` | `~/.roo` |
+| `--kilo` | `~/.kilo/skills` | `kilo`, `~/.kilo`, or `~/.kilocode` |
+| `--augment` | `~/.augment/skills` | `~/.augment` |
+| `--zed` | `~/.agents/skills` | `zed`, or `~/.config/zed` |
+
+Codex, Cline, and Zed share one directory. The installer creates that symlink once and says who else reads it. Cursor reads `~/.cursor/skills`, and also `~/.claude/skills` and `~/.agents/skills`. Links in more than one of those can show the skill more than once in Cursor. `doctor` reports that. Cursor cloud agents sync `~/.cursor/skills`, not `~/.agents/skills`.
+
+`install` and `doctor` color their status when stdout is a terminal. `NO_COLOR` turns that off. A pipe stays plain.
 
 ## Conflicts
 

@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
-"""Link skills from this repo into local AI clients.
+"""Link skills from this repo into local AI harnesses.
 
 Per-skill symlinks. Never replaces a real file or someone else's symlink.
 Does not edit MCP configs, CLAUDE.md, or AGENTS.md.
+
+Global paths follow the public agent table in
+https://github.com/vercel-labs/skills/blob/main/docs/agents.md
+plus the Cursor and Codex docs this repo already checked.
+Codex skills go to ~/.agents/skills. ~/.codex/skills is the old path and is not used.
 """
 
 import argparse
@@ -12,12 +17,97 @@ import shutil
 import sys
 from pathlib import Path
 
-CLIENTS = {
-    "claude": Path(".claude") / "skills",
-    "codex": Path(".agents") / "skills",
-    "cursor": Path(".cursor") / "skills",
+# id, label, skills path, config markers, binaries.
+# Markers are the app's own config directory. A directory that contains only
+# "skills" does not count: that is the directory this tool creates.
+HARNESSES = (
+    ("claude-code", "Claude Code", ".claude/skills", (".claude",), ("claude",)),
+    ("codex", "Codex", ".agents/skills", (".codex",), ("codex",)),
+    ("cursor", "Cursor", ".cursor/skills", (".cursor",), ("cursor",)),
+    ("github-copilot", "GitHub Copilot", ".copilot/skills", (".copilot",), ()),
+    ("windsurf", "Windsurf", ".codeium/windsurf/skills", (".codeium/windsurf", ".windsurf"), ("windsurf",)),
+    ("cline", "Cline", ".agents/skills", (".cline",), ("cline",)),
+    ("gemini-cli", "Gemini CLI", ".gemini/skills", (".gemini",), ("gemini",)),
+    ("opencode", "OpenCode", ".config/opencode/skills", (".config/opencode", ".local/share/opencode"), ("opencode",)),
+    ("continue", "Continue", ".continue/skills", (".continue",), ()),
+    ("amp", "Amp", ".config/agents/skills", (".config/amp", ".amp"), ("amp",)),
+    ("roo", "Roo Code", ".roo/skills", (".roo",), ()),
+    ("kilo", "Kilo Code", ".kilo/skills", (".kilo", ".kilocode"), ("kilo",)),
+    ("augment", "Augment", ".augment/skills", (".augment",), ()),
+    ("zed", "Zed", ".agents/skills", (".config/zed",), ("zed",)),
+)
+
+ALIASES = {
+    "claude": "claude-code",
+    "copilot": "github-copilot",
+    "gemini": "gemini-cli",
 }
-DEFAULT_CLIENTS = ("claude", "codex")
+
+# Cursor's global directory plus the compatibility directories it also scans.
+CURSOR_READS = (
+    Path(".claude") / "skills",
+    Path(".agents") / "skills",
+    Path(".cursor") / "skills",
+)
+
+ENABLED_FILE = "enabled-skills.txt"
+
+_COLOR = False
+
+
+# Names left behind by a skill installer. They are not the app itself.
+DROP_NAMES = frozenset({"skills", "rules", "global_skills"})
+
+
+class Harness(object):
+    def __init__(self, harness_id, label, skills, markers, binaries):
+        self.id = harness_id
+        self.label = label
+        self.skills = Path(skills)
+        self.markers = tuple(Path(marker) for marker in markers)
+        self.binaries = tuple(binaries)
+        self.ignore = set(DROP_NAMES)
+
+    @property
+    def attr(self):
+        return "harness_" + self.id.replace("-", "_")
+
+
+HARNESS_LIST = tuple(Harness(*row) for row in HARNESSES)
+HARNESS_BY_ID = {harness.id: harness for harness in HARNESS_LIST}
+# Antigravity keeps its own tree under ~/.gemini. That must not look like Gemini CLI.
+HARNESS_BY_ID["gemini-cli"].ignore.add("antigravity")
+
+
+def configure_color():
+    global _COLOR
+    if os.environ.get("NO_COLOR") is not None:
+        _COLOR = False
+        return
+    mode = os.environ.get("AI_RESOURCES_COLOR", "").strip().lower()
+    if mode in ("always", "1", "yes"):
+        _COLOR = True
+        return
+    if mode in ("never", "0", "no"):
+        _COLOR = False
+        return
+    _COLOR = sys.stdout.isatty()
+
+
+def paint(code, text):
+    if not _COLOR or not code:
+        return text
+    return "\033[{}m{}\033[0m".format(code, text)
+
+
+def kind_color(kind):
+    return {
+        "link": "32",
+        "ok": "2",
+        "relink": "33",
+        "unlink": "33",
+        "conflict": "31",
+    }.get(kind, "")
 
 
 def repo_root(explicit):
@@ -48,9 +138,6 @@ def load_origins(repo):
     if not path.exists():
         return {}
     return json.loads(path.read_text()).get("skills", {})
-
-
-ENABLED_FILE = "enabled-skills.txt"
 
 
 def iter_skill_dirs(skills_root):
@@ -105,9 +192,10 @@ def read_enabled(repo):
 def write_enabled(repo, names):
     path = enabled_path(repo)
     header = [
-        "# Skills this repo links into Claude Code and Codex.",
-        "# One directory name per line. Cursor reads both of those directories.",
+        "# Skills this repo links into harnesses it finds on this machine.",
+        "# One directory name per line.",
         "# Add one skill: ./scripts/install.sh --skill <name>",
+        "# One harness:  ./scripts/install.sh --skill <name> --cursor",
         "# Lean bulk:    ./scripts/install.sh --skip-source oomol --skip-source ecc",
         "",
     ]
@@ -156,7 +244,7 @@ def selection(repo, args):
     names = read_enabled(repo)
     missing = [name for name in names if name not in known_names(repo)]
     for name in missing:
-        print("missing skill in {}: {}".format(ENABLED_FILE, name))
+        print(paint("33", "missing skill in {}: {}".format(ENABLED_FILE, name)))
     return skill_dirs(repo, only_names=set(names) - set(missing)), False
 
 
@@ -179,25 +267,136 @@ def is_ours(path, repo):
     return True
 
 
-def parse_clients(value):
-    if not value or value == "default":
-        return list(DEFAULT_CLIENTS)
-    names = [part.strip() for part in value.split(",") if part.strip()]
-    unknown = [name for name in names if name not in CLIENTS]
-    if unknown:
-        raise SystemExit("unknown client: {}".format(", ".join(unknown)))
-    return names
+def resolve_harness_name(name):
+    key = ALIASES.get(name, name)
+    if key not in HARNESS_BY_ID:
+        known = ", ".join(harness.id for harness in HARNESS_LIST)
+        raise SystemExit("unknown harness: {} (known: {})".format(name, known))
+    return key
 
 
-def client_root(client):
-    return home_dir() / CLIENTS[client]
+def explicit_harnesses(args):
+    chosen = []
+    raw = getattr(args, "clients", None)
+    if raw and raw != "default":
+        for part in raw.split(","):
+            part = part.strip()
+            if part:
+                chosen.append(resolve_harness_name(part))
+    for harness in HARNESS_LIST:
+        if getattr(args, harness.attr, False):
+            chosen.append(harness.id)
+    seen = set()
+    ordered = []
+    for name in chosen:
+        if name in seen:
+            continue
+        seen.add(name)
+        ordered.append(name)
+    if ordered:
+        wanted = set(ordered)
+        return [harness.id for harness in HARNESS_LIST if harness.id in wanted]
+    return []
 
 
-def plan_links(clients, skills, repo):
-    """Return actions: link, relink, ok, conflict."""
+def marker_in_use(path, ignore):
+    """True when this config directory belongs to an installed app.
+
+    A directory that only holds skill drop folders is not the app.
+    """
+    if not path.exists():
+        return False
+    if not path.is_dir():
+        return True
+    try:
+        names = {child.name for child in path.iterdir()} - set(ignore)
+    except OSError:
+        return False
+    return bool(names)
+
+
+def harness_present(harness):
+    home = home_dir()
+    for marker in harness.markers:
+        if marker_in_use(home / marker, harness.ignore):
+            return True
+    for binary in harness.binaries:
+        if shutil.which(binary):
+            return True
+    return False
+
+
+def presence_reason(harness):
+    home = home_dir()
+    reasons = []
+    for marker in harness.markers:
+        if marker_in_use(home / marker, harness.ignore):
+            reasons.append("~/{}".format(marker))
+    for binary in harness.binaries:
+        if shutil.which(binary):
+            reasons.append("binary {}".format(binary))
+    return reasons
+
+
+def target_harnesses(args):
+    chosen = explicit_harnesses(args)
+    if chosen:
+        return chosen
+    return [harness.id for harness in HARNESS_LIST if harness_present(harness)]
+
+
+def client_root(harness_id):
+    return home_dir() / HARNESS_BY_ID[harness_id].skills
+
+
+def group_by_root(ids):
+    """Yield (root, [harness ids]) in harness-list order, one group per directory."""
+    groups = []
+    index = {}
+    for harness_id in ids:
+        root = client_root(harness_id)
+        key = str(root)
+        if key not in index:
+            index[key] = len(groups)
+            groups.append((root, []))
+        groups[index[key]][1].append(harness_id)
+    return groups
+
+
+def print_heading(text):
+    print(paint("1", text))
+
+
+def print_targets(ids):
+    print_heading("targets")
+    for root, hids in group_by_root(ids):
+        primary = hids[0]
+        print("  {}  {}".format(paint("1", "{:<16}".format(primary)), paint("2", str(root))))
+        extra = hids[1:]
+        if extra:
+            print(paint("2", "    also read by {}".format(", ".join(extra))))
+    print()
+
+
+def print_no_harness():
+    print(paint("33", "no harness detected on this machine."))
+    print("Pass --claude-code, --codex, --cursor, or another harness flag.")
+
+
+def print_action(kind, harness_id, name, extra=""):
+    kind_text = paint(kind_color(kind), "{:<8}".format(kind))
+    id_text = paint("1", "{:<16}".format(harness_id))
+    line = "  {}  {}  {}".format(kind_text, id_text, name)
+    if extra:
+        line += "  " + paint("2", extra)
+    print(line)
+
+
+def plan_links(ids, skills, repo):
+    """Return actions: link, relink, ok, conflict. One action per skills directory."""
     actions = []
-    for client in clients:
-        root = client_root(client)
+    for root, hids in group_by_root(ids):
+        harness_id = hids[0]
         for skill in skills:
             dest = root / skill.name
             target = skill.resolve()
@@ -209,70 +408,88 @@ def plan_links(clients, skills, repo):
                 except OSError:
                     same = False
                 if same:
-                    actions.append(("ok", client, skill.name, dest, target))
+                    actions.append(("ok", harness_id, skill.name, dest, target))
                 elif is_ours(dest, repo):
-                    actions.append(("relink", client, skill.name, dest, target))
+                    actions.append(("relink", harness_id, skill.name, dest, target))
                 else:
-                    actions.append(("conflict", client, skill.name, dest, target))
+                    actions.append(("conflict", harness_id, skill.name, dest, target))
             elif dest.exists():
-                actions.append(("conflict", client, skill.name, dest, target))
+                actions.append(("conflict", harness_id, skill.name, dest, target))
             else:
-                actions.append(("link", client, skill.name, dest, target))
+                actions.append(("link", harness_id, skill.name, dest, target))
     return actions
 
 
-def plan_removals(repo, clients, skills):
+def plan_removals(repo, ids, skills):
     desired = {skill.name for skill in skills}
     removals = []
-    for client in clients:
-        root = client_root(client)
+    for root, hids in group_by_root(ids):
         if not root.is_dir():
             continue
         for entry in sorted(root.iterdir()):
             if entry.name in desired:
                 continue
             if is_ours(entry, repo):
-                removals.append((client, entry.name, entry))
+                removals.append((hids[0], entry.name, entry))
     return removals
 
 
 def apply_links(actions, dry_run):
-    conflicts = 0
-    for kind, client, name, dest, target in actions:
-        if kind == "ok":
-            print("ok      {} {}".format(client, name))
-            continue
+    conflicts = set()
+    applied = set()
+    for kind, harness_id, name, dest, target in actions:
+        extra = ""
         if kind == "conflict":
-            conflicts += 1
-            print("conflict {} {} — left in place: {}".format(client, name, dest))
+            conflicts.add(str(dest))
+            extra = "left in place: {}".format(dest)
+        print_action(kind, harness_id, name, extra)
+        if dry_run or kind in ("ok", "conflict"):
             continue
-        print("{} {} {}".format(kind, client, name))
-        if dry_run:
+        key = str(dest)
+        if key in applied:
             continue
+        applied.add(key)
         dest.parent.mkdir(parents=True, exist_ok=True)
         if dest.is_symlink() or dest.exists():
             dest.unlink()
         dest.symlink_to(target)
-    return conflicts
+    return len(conflicts)
 
 
 def apply_removals(removals, dry_run):
-    for client, name, path in removals:
-        print("unlink  {} {}".format(client, name))
-        if not dry_run:
-            path.unlink()
-
-
-def write_manifest(repo, clients):
-    links = []
-    for client in clients:
-        root = client_root(client)
-        if not root.is_dir():
+    done = set()
+    for harness_id, name, path in removals:
+        print_action("unlink", harness_id, name)
+        key = str(path)
+        if dry_run or key in done:
             continue
+        done.add(key)
+        path.unlink()
+
+
+def finish(conflicts):
+    print()
+    if conflicts:
+        noun = "conflict" if conflicts == 1 else "conflicts"
+        print(paint("31", "  {} {}. Existing files were left in place.".format(conflicts, noun)))
+        return 1
+    print(paint("32", "  ok"))
+    return 0
+
+
+def write_manifest(repo):
+    links = []
+    seen = set()
+    for harness in HARNESS_LIST:
+        root = client_root(harness.id)
+        key = str(root)
+        if key in seen or not root.is_dir():
+            continue
+        seen.add(key)
         for entry in sorted(root.iterdir()):
             if is_ours(entry, repo):
                 links.append({
-                    "client": client,
+                    "client": harness.id,
                     "name": entry.name,
                     "path": str(entry),
                 })
@@ -285,54 +502,61 @@ def write_manifest(repo, clients):
 
 
 def command_install(args):
-    clients = parse_clients(args.clients)
     skills, save = selection(args.repo, args)
     if not skills and not (args.skill or args.skip_source):
         print("no skills selected. Add one with --skill <name>, or bulk-link with --skip-source.")
         print("saved list: {}".format(enabled_path(args.repo)))
         return 0
-    actions = plan_links(clients, skills, args.repo)
+    ids = target_harnesses(args)
+    if not ids:
+        print_no_harness()
+        return 1
+    print_targets(ids)
+    actions = plan_links(ids, skills, args.repo)
     conflicts = apply_links(actions, args.dry_run)
-    # A bulk skip replaces the set, so links for the skipped sources come back off.
-    removals = plan_removals(args.repo, clients, skills) if args.skip_source else []
+    removals = plan_removals(args.repo, ids, skills) if args.skip_source else []
     apply_removals(removals, args.dry_run)
     if not args.dry_run and save:
         write_enabled(args.repo, [skill.name for skill in skills])
-        write_manifest(args.repo, list(CLIENTS))
+        write_manifest(args.repo)
     elif not args.dry_run:
-        write_manifest(args.repo, list(CLIENTS))
-    return 1 if conflicts else 0
+        write_manifest(args.repo)
+    return finish(conflicts)
 
 
 def command_sync(args):
-    clients = parse_clients(args.clients)
     if not args.skill and not args.skip_source and not read_enabled(args.repo):
         print("enabled-skills.txt has no skills. Nothing to sync.")
         print("Add one with --skill, or bulk-link with --skip-source.")
         return 0
     skills, save = selection(args.repo, args)
-    actions = plan_links(clients, skills, args.repo)
-    removals = plan_removals(args.repo, clients, skills)
+    ids = target_harnesses(args)
+    if not ids:
+        print_no_harness()
+        return 1
+    print_targets(ids)
+    actions = plan_links(ids, skills, args.repo)
+    removals = plan_removals(args.repo, ids, skills)
     conflicts = apply_links(actions, args.dry_run)
     apply_removals(removals, args.dry_run)
     if not args.dry_run:
-        if save or args.skip_source or args.skill:
+        if save or args.skip_source or args.skill or read_enabled(args.repo):
             write_enabled(args.repo, [skill.name for skill in skills])
-        elif read_enabled(args.repo):
-            # Drop names whose folders disappeared.
-            write_enabled(args.repo, [skill.name for skill in skills])
-        write_manifest(args.repo, list(CLIENTS))
-    return 1 if conflicts else 0
+        write_manifest(args.repo)
+    return finish(conflicts)
 
 
 def command_uninstall(args):
-    """Remove symlinks that point into this repo. Scan every known client."""
+    """Remove symlinks that point into this repo."""
     chosen = set(args.skill or [])
     if chosen:
         require_known(args.repo, list(chosen))
-    removed = 0
-    for client in CLIENTS:
-        root = client_root(client)
+    explicit = explicit_harnesses(args)
+    ids = explicit if explicit else [harness.id for harness in HARNESS_LIST]
+    if explicit:
+        print_targets(ids)
+    removed = set()
+    for root, hids in group_by_root(ids):
         if not root.is_dir():
             continue
         for entry in sorted(root.iterdir()):
@@ -340,84 +564,166 @@ def command_uninstall(args):
                 continue
             if not is_ours(entry, args.repo):
                 continue
-            print("unlink  {} {}".format(client, entry.name))
-            if not args.dry_run:
-                entry.unlink()
-            removed += 1
+            print_action("unlink", hids[0], entry.name)
+            key = str(entry)
+            if args.dry_run or key in removed:
+                removed.add(key)
+                continue
+            entry.unlink()
+            removed.add(key)
     if not args.dry_run:
         if chosen:
             write_enabled(args.repo, [name for name in read_enabled(args.repo) if name not in chosen])
-        else:
+        elif not explicit:
             write_enabled(args.repo, [])
             path = state_path()
             if path.exists():
                 path.unlink()
-        write_manifest(args.repo, list(CLIENTS))
-    print("removed {}".format(removed))
+        write_manifest(args.repo)
+    print()
+    print("  removed {}".format(len(removed)))
     return 0
+
+
+def wrap_ids(ids, width=68):
+    lines = []
+    current = ""
+    for harness_id in ids:
+        piece = harness_id if not current else ", " + harness_id
+        if current and len(current) + len(piece) > width:
+            lines.append(current)
+            current = harness_id
+        else:
+            current += piece
+    if current:
+        lines.append(current)
+    return lines or [""]
 
 
 def command_doctor(args):
     problems = 0
     home = home_dir()
-    print("repo  {}".format(args.repo))
-    print("home  {}".format(home))
-    skills = list(iter_skill_dirs(args.repo / "skills"))
-    enabled = read_enabled(args.repo)
-    print("skills in repo  {}".format(len(skills)))
-    print("enabled         {}".format(len(enabled)))
-    for binary in ("claude", "codex", "cursor"):
-        found = shutil.which(binary) is not None
-        print("binary {}  {}".format(binary, "found" if found else "not on PATH"))
+    repo = args.repo
+    print_heading("repo")
+    print("  {}".format(repo))
+    print()
+    print_heading("home")
+    print("  {}".format(home))
+    print()
+    skills = list(iter_skill_dirs(repo / "skills"))
+    enabled = read_enabled(repo)
+    print_heading("catalog")
+    print("  {} skills".format(len(skills)))
+    print("  {} enabled".format(len(enabled)))
 
-    linked = {client: [] for client in CLIENTS}
-    for client in CLIENTS:
-        root = client_root(client)
-        print("dir {}  {}".format(client, root))
-        if not root.exists():
-            print("  missing")
+    print()
+    print_heading("harnesses")
+    absent = []
+    for harness in HARNESS_LIST:
+        if not harness_present(harness):
+            absent.append(harness.id)
             continue
-        if not root.is_dir():
-            print("  not a directory")
-            problems += 1
-            continue
-        for entry in sorted(root.iterdir()):
-            if not is_ours(entry, args.repo):
-                continue
-            linked[client].append(entry.name)
-            if not entry.exists():
-                print("  broken {}".format(entry.name))
-                problems += 1
-        print("  linked {}".format(len(linked[client])))
+        print("  {}".format(paint("32", harness.id)))
+        print("    {}".format(paint("2", "~/" + harness.skills.as_posix())))
+        reasons = presence_reason(harness)
+        if reasons:
+            print("    {}".format(paint("2", ", ".join(reasons))))
+        print()
+    if absent:
+        print("  {}".format(paint("2", "not installed")))
+        for line in wrap_ids(absent):
+            print("    {}".format(paint("2", line)))
 
+    print()
+    print_heading("links")
     ours = set(enabled)
-    for client in DEFAULT_CLIENTS:
-        root = client_root(client)
-        if not root.is_dir():
+    seen_roots = set()
+    any_links = False
+    for root, hids in group_by_root([harness.id for harness in HARNESS_LIST]):
+        key = str(root)
+        if key in seen_roots:
             continue
-        for name in sorted(ours):
-            dest = root / name
-            if dest.exists() and not dest.is_symlink():
-                print("conflict {} {} is a real file".format(client, name))
+        seen_roots.add(key)
+        present = [harness_id for harness_id in hids if harness_present(HARNESS_BY_ID[harness_id])]
+        exists = root.exists()
+        owned = []
+        if root.is_dir():
+            for entry in sorted(root.iterdir()):
+                if is_ours(entry, repo):
+                    owned.append(entry)
+        if not present and not owned:
+            continue
+        any_links = True
+        label = ", ".join(present or hids[:1])
+        print("  {}".format(paint("1", label)))
+        if not exists:
+            print("    {}".format(paint("2", "directory not created yet")))
+            print()
+            continue
+        if not root.is_dir():
+            print("    {}".format(paint("31", "not a directory")))
+            problems += 1
+            print()
+            continue
+        print("    {} linked".format(len(owned)))
+        for entry in owned:
+            if not entry.exists():
+                print("    {}".format(paint("31", "broken  {}".format(entry.name))))
                 problems += 1
-            elif dest.is_symlink() and not is_ours(dest, args.repo):
-                print("conflict {} {} points elsewhere".format(client, name))
-                problems += 1
+        if present:
+            for name in sorted(ours):
+                dest = root / name
+                if dest.exists() and not dest.is_symlink():
+                    print("    {}".format(paint("31", "conflict  {} is a real file".format(name))))
+                    problems += 1
+                elif dest.is_symlink() and not is_ours(dest, repo):
+                    print("    {}".format(paint("31", "conflict  {} points elsewhere".format(name))))
+                    problems += 1
+        print()
+    if not any_links:
+        print("  {}".format(paint("2", "none")))
+        print()
 
-    if linked["claude"] and linked["codex"]:
-        print("note  Cursor reads both {} and {}, so each skill linked to claude and codex can show up twice in Cursor. Claude Code and Codex each read only their own directory.".format(
-            home / CLIENTS["claude"], home / CLIENTS["codex"]
-        ))
-    if linked["cursor"] and (linked["claude"] or linked["codex"]):
-        print("note  ~/.cursor/skills is also populated. Cursor already reads the Claude and Codex skill directories, so this is a third copy.")
+    populated = []
+    for rel in CURSOR_READS:
+        root = home / rel
+        if root.is_dir() and any(is_ours(entry, repo) for entry in root.iterdir()):
+            populated.append("~/" + rel.as_posix())
+    if len(populated) >= 2:
+        print_heading("notes")
+        print(paint("33", "  Cursor reads ~/.claude/skills, ~/.agents/skills, and ~/.cursor/skills."))
+        print(paint("33", "  Hub links are in more than one of those, so Cursor can list a skill more than once."))
+        print()
 
     state = state_path()
-    print("manifest  {}".format(state if state.exists() else "none"))
+    print_heading("manifest")
+    print("  {}".format(state if state.exists() else "none"))
+    print()
     if problems:
-        print("problems  {}".format(problems))
+        noun = "problem" if problems == 1 else "problems"
+        print(paint("31", "  {} {}".format(problems, noun)))
         return 1
-    print("ok")
+    print(paint("32", "  ok"))
     return 0
+
+
+def add_target_flags(command):
+    command.add_argument(
+        "--clients",
+        default="default",
+        help="comma list of harness ids. Aliases: claude, copilot, gemini",
+    )
+    for harness in HARNESS_LIST:
+        flags = ["--" + harness.id]
+        for alias, target in ALIASES.items():
+            if target == harness.id:
+                flags.append("--" + alias)
+        command.add_argument(
+            *flags,
+            dest=harness.attr,
+            action="store_true",
+            help="select {} ({})".format(harness.label, "~/" + harness.skills.as_posix()),
+        )
 
 
 def build_parser():
@@ -425,17 +731,19 @@ def build_parser():
     parser.add_argument("--repo", type=Path)
     sub = parser.add_subparsers(dest="command", required=True)
 
-    def add_common(command):
-        command.add_argument("--clients", default="default", help="comma list: claude,codex,cursor")
+    def add_skill_flags(command):
         command.add_argument("--skill", action="append", default=[], help="link this skill too; repeat for more than one")
         command.add_argument("--skip-source", action="append", default=[], help="bulk-link every skill except this source; repeatable")
         command.add_argument("--dry-run", action="store_true")
 
     install = sub.add_parser("install", help="link selected skills, never overwrite unrelated files")
-    add_common(install)
-    sync = sub.add_parser("sync", help="make client links match enabled-skills.txt")
-    add_common(sync)
+    add_target_flags(install)
+    add_skill_flags(install)
+    sync = sub.add_parser("sync", help="make harness links match enabled-skills.txt")
+    add_target_flags(sync)
+    add_skill_flags(sync)
     uninstall = sub.add_parser("uninstall", help="remove symlinks that point into this repo")
+    add_target_flags(uninstall)
     uninstall.add_argument("--skill", action="append", default=[], help="remove only this skill; repeatable")
     uninstall.add_argument("--dry-run", action="store_true")
     sub.add_parser("doctor", help="report broken links and conflicts")
@@ -443,6 +751,7 @@ def build_parser():
 
 
 def main(argv):
+    configure_color()
     parser = build_parser()
     args = parser.parse_args(argv)
     args.repo = repo_root(args.repo)
