@@ -62,7 +62,7 @@ Paths below are the global skill directories. Project skill directories are not 
 | `--claude-code` | `~/.claude/skills` | `claude`, or `~/.claude` |
 | `--codex` | `~/.agents/skills` | `codex`, or `~/.codex` |
 | `--cursor` | `~/.cursor/skills` | `cursor`, or `~/.cursor` |
-| `--github-copilot` | `~/.copilot/skills` | `~/.copilot` |
+| `--github-copilot` | `~/.copilot/skills` | `copilot`, or `~/.copilot` |
 | `--windsurf` | `~/.codeium/windsurf/skills` | `windsurf`, `~/.codeium/windsurf`, or `~/.windsurf` |
 | `--cline` | `~/.agents/skills` | `cline`, or `~/.cline` |
 | `--gemini-cli` | `~/.gemini/skills` | `gemini`, or `~/.gemini` |
@@ -74,7 +74,7 @@ Paths below are the global skill directories. Project skill directories are not 
 | `--augment` | `~/.augment/skills` | `~/.augment` |
 | `--zed` | `~/.agents/skills` | `zed`, or `~/.config/zed` |
 
-Codex, Cline, and Zed share one directory. The installer creates that symlink once and says who else reads it. Cursor reads `~/.cursor/skills`, and also `~/.claude/skills` and `~/.agents/skills`. Links in more than one of those can show the skill more than once in Cursor. `doctor` reports that. Cursor cloud agents sync `~/.cursor/skills`, not `~/.agents/skills`.
+Codex, Cline, and Zed share one directory. The installer creates that symlink once and says who else reads it. Cursor reads `~/.cursor/skills`, and also `~/.claude/skills` and `~/.agents/skills`. Links in more than one of those can show the skill more than once in Cursor. `doctor` reports that. Cursor Cloud Agents skip symlinked folders in `~/.cursor/skills`, so links from this installer stay local. `~/.agents/skills` is not synced either.
 
 `install` and `doctor` color their status when stdout is a terminal. `NO_COLOR` turns that off. A pipe stays plain.
 

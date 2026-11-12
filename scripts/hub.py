@@ -23,8 +23,9 @@ from pathlib import Path
 HARNESSES = (
     ("claude-code", "Claude Code", ".claude/skills", (".claude",), ("claude",)),
     ("codex", "Codex", ".agents/skills", (".codex",), ("codex",)),
+    # Local Cursor follows this symlink. Cloud Agent sync skips symlinked skill folders.
     ("cursor", "Cursor", ".cursor/skills", (".cursor",), ("cursor",)),
-    ("github-copilot", "GitHub Copilot", ".copilot/skills", (".copilot",), ()),
+    ("github-copilot", "GitHub Copilot", ".copilot/skills", (".copilot",), ("copilot",)),
     ("windsurf", "Windsurf", ".codeium/windsurf/skills", (".codeium/windsurf", ".windsurf"), ("windsurf",)),
     ("cline", "Cline", ".agents/skills", (".cline",), ("cline",)),
     ("gemini-cli", "Gemini CLI", ".gemini/skills", (".gemini",), ("gemini",)),
@@ -574,12 +575,14 @@ def command_uninstall(args):
     if not args.dry_run:
         if chosen:
             write_enabled(args.repo, [name for name in read_enabled(args.repo) if name not in chosen])
-        elif not explicit:
+            write_manifest(args.repo)
+        elif explicit:
+            write_manifest(args.repo)
+        else:
             write_enabled(args.repo, [])
             path = state_path()
             if path.exists():
                 path.unlink()
-        write_manifest(args.repo)
     print()
     print("  removed {}".format(len(removed)))
     return 0

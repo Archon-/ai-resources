@@ -11,9 +11,13 @@ trap cleanup EXIT
 export AI_RESOURCES_HOME="$TMP/home"
 export AI_RESOURCES_STATE_DIR="$TMP/state"
 mkdir -p "$AI_RESOURCES_HOME" "$TMP/bin"
-ln -s "$(command -v python3)" "$TMP/bin/python3"
-# Hide the developer machine's harness binaries. Presence comes from config dirs below.
-export PATH="$TMP/bin:/usr/bin:/bin"
+# Only binaries linked here are visible. A harness binary in /usr/bin must not count.
+# python3 may be a pyenv shim. Point at the real interpreter so the shim's bash is not required.
+ln -s "$(python3 -c 'import sys; print(sys.executable)')" "$TMP/bin/python3"
+for cmd in find grep wc tr ln rm mkdir cp readlink cksum awk env rmdir; do
+  ln -s "$(command -v "$cmd")" "$TMP/bin/$cmd"
+done
+export PATH="$TMP/bin"
 mkdir -p "$AI_RESOURCES_HOME/.claude" "$AI_RESOURCES_HOME/.codex"
 printf '%s\n' '{}' > "$AI_RESOURCES_HOME/.claude/settings.json"
 printf '%s\n' '' > "$AI_RESOURCES_HOME/.codex/config.toml"
@@ -108,6 +112,7 @@ run sync --clients claude >/dev/null || true
 [ ! -e "$AI_RESOURCES_HOME/.claude/skills/gone" ] || fail "broken link survived sync"
 
 run uninstall >/dev/null
+[ ! -e "$AI_RESOURCES_STATE_DIR/manifest.json" ] || fail "full uninstall recreated the manifest"
 find "$AI_RESOURCES_HOME" -type l > "$TMP/links"
 fix_skills=$(python3 -c 'import os,sys; print(os.path.realpath(sys.argv[1]))' "$FIX/skills")
 root_skills=$(python3 -c 'import os,sys; print(os.path.realpath(sys.argv[1]))' "$ROOT/skills")
@@ -208,6 +213,16 @@ run install --skill gamma --cursor >/dev/null
 [ ! -e "$AI_RESOURCES_HOME/.agents/skills/gamma" ] || fail "--cursor also linked codex"
 gamma_real=$(python3 -c 'import os,sys; print(os.path.realpath(sys.argv[1]))' "$FIX/skills/fixture/gamma")
 [ "$(readlink "$AI_RESOURCES_HOME/.cursor/skills/gamma")" = "$gamma_real" ] || fail "cursor link target"
+run uninstall --skill gamma >/dev/null
+[ -f "$AI_RESOURCES_STATE_DIR/manifest.json" ] || fail "filtered uninstall removed the manifest"
+python3 - "$AI_RESOURCES_STATE_DIR/manifest.json" << 'PY' || fail "filtered uninstall manifest"
+import json, sys
+names = {item["name"] for item in json.load(open(sys.argv[1]))["links"]}
+if "gamma" in names:
+    raise SystemExit("gamma still listed")
+if "alpha" not in names:
+    raise SystemExit("alpha missing")
+PY
 
 # Cline and Zed share Codex's directory. One symlink, named once.
 mkdir -p "$AI_RESOURCES_HOME/.cline"

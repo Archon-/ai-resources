@@ -82,7 +82,7 @@ A source with one skill lives in `skills/other/<name>/`. The other groups are `s
 
 With no harness flag, install links every harness it finds on this machine. A harness counts as installed when its binary is on `PATH`, or its config directory holds more than skill-drop folders (`skills`, `rules`). Claude Code, Codex, and Cursor are the usual set.
 
-Cursor's global directory is `~/.cursor/skills/<name>`. That is the copy Cursor can sync to cloud agents. Cursor also reads `~/.claude/skills` and `~/.agents/skills`, so the same skill can show up more than once. `doctor` reports that. `--cursor`, `--claude-code`, or `--codex` limits the link to one harness. The other eleven are listed in [docs/installation.md](docs/installation.md). `--clients claude,codex` still works.
+Cursor's global directory is `~/.cursor/skills/<name>`. The symlink works in the local app. Cursor Cloud Agents skip symlinked skill folders, so this hub's links stay on this machine. Cursor also reads `~/.claude/skills` and `~/.agents/skills`, so the same skill can show up more than once. `doctor` reports that. `--cursor`, `--claude-code`, or `--codex` limits the link to one harness. The other eleven are listed in [docs/installation.md](docs/installation.md). `--clients claude,codex` still works.
 
 ## Keep a set of skills
 

@@ -2,7 +2,7 @@
 
 Cursor loads skills from `.agents/skills/`, `.cursor/skills/`, `~/.agents/skills/`, and `~/.cursor/skills/`. It also loads Claude and Codex compatibility paths: `.claude/skills/`, `.codex/skills/`, `~/.claude/skills/`, and `~/.codex/skills/`. Source: [Cursor Agent Skills](https://cursor.com/docs/skills).
 
-Cursor's global skills live in `~/.cursor/skills/<name>`. That directory stays on this machine, and it is the one Cursor can sync to cloud agents. `~/.agents/skills` is not copied to cloud agents.
+Cursor's global skills live in `~/.cursor/skills/<name>`. The symlink works in the local app. Cloud Agent skill sync skips symlinked folders, so these links are not uploaded. `~/.agents/skills` is not copied to cloud agents either.
 
 When Cursor is installed, `./scripts/install.sh --skill <name>` links `~/.cursor/skills` and also Claude Code and Codex if those are installed too. Cursor reads all three, plus `~/.codex/skills`, so one skill can show up more than once. `doctor` reports that. To fill only Cursor:
 
@@ -10,7 +10,7 @@ When Cursor is installed, `./scripts/install.sh --skill <name>` links `~/.cursor
 ./scripts/install.sh --skill openconnector --cursor
 ```
 
-There is no Cursor setting in this repo that turns the compatibility scan off. Cloud sync of `~/.cursor/skills` was not tested from here.
+There is no Cursor setting in this repo that turns the compatibility scan off.
 
 Project skills live in that project's `.agents/skills` or `.cursor/skills`. Nested skill directories are scoped to files under that folder. Rules for a project stay in `.cursor/rules/`. Cursor also reads `AGENTS.md` and `CLAUDE.md` in the project. This hub does not generate rules.
 
