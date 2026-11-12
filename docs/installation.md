@@ -2,13 +2,15 @@
 
 The catalog stays in `skills/`. Nothing is linked until you name it. The chosen names are saved in `enabled-skills.txt` so the next machine, and `sync.sh`, can repeat the same set.
 
-Scripts never write MCP config. They create one symlink per selected skill:
+Scripts never write MCP config. They create one symlink per selected skill. `<name>` is the skill directory (`openconnector`), not the group (`other`). The client opens `~/.claude/skills/openconnector/SKILL.md`, the symlink resolves into this repo, and the bytes it reads are `skills/other/openconnector/SKILL.md`. Same file. No copy.
 
 | Client | Link |
 | --- | --- |
-| Claude Code | `~/.claude/skills/<name>` → `skills/<group>/<name>` |
-| Codex | `~/.agents/skills/<name>` → `skills/<group>/<name>` |
+| Claude Code | `~/.claude/skills/<name>` → `<this-repo>/skills/<group>/<name>` |
+| Codex | `~/.agents/skills/<name>` → `<this-repo>/skills/<group>/<name>` |
 | Cursor | no extra link. Cursor already reads the two directories above. |
+
+Linking `skills/` or `skills/<group>/` does not work. Clients only look one level down, and `SKILL.md` would sit one directory too deep. Detail: [architecture.md](architecture.md).
 
 ```bash
 ./scripts/install.sh --skill openconnector

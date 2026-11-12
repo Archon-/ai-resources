@@ -20,6 +20,6 @@ What you should not expect:
 
 - `git pull` updating ChatGPT.
 - The `openconnector` skill running in chat unless that chat is actually connected to the MCP server.
-- Dokploy or OpenConnector credentials living in this repo.
+- OpenConnector tokens, or any other MCP token, living in this repo.
 
 Codex setup stays in [codex.md](codex.md).

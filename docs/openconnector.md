@@ -1,6 +1,6 @@
 # OpenConnector
 
-[OpenConnector](https://github.com/oomol-lab/open-connector) runs on Dokploy. Agents reach it over MCP. This repo only holds the skill and the templates.
+I suggest configuring each client to call [OpenConnector](https://github.com/oomol-lab/open-connector) over MCP. This repo only holds the skill and the templates. It does not host the server. Where you run OpenConnector is your choice. See the [proposed architecture](architecture.md).
 
 ```text
 Claude Code, Codex, Cursor
@@ -25,8 +25,6 @@ The vendored `oo-*` skills call the `oo` CLI. That is a different product. If Op
 ```
 
 To keep one `oo-*` skill anyway: `./scripts/install.sh --skill oo-github`.
-
-Dokploy's own MCP server (`mcp/dokploy`) manages Dokploy. It is not the gateway.
 
 ## Configure a client
 
@@ -65,4 +63,4 @@ The endpoint is `POST /mcp`. It is stateless HTTP, not a long-lived SSE stream.
 
 Action ids come from search and the guide, not from memory. `connectionName` is optional and must be a name `list_connections` returned. Connection payloads do not include stored credentials.
 
-Nothing in this task was changed on the running Dokploy or OpenConnector instance.
+These steps configure the client on your machine. They do not change a running OpenConnector server.
