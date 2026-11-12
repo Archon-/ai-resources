@@ -21,4 +21,5 @@ Commit is the exact tree that was copied. Tag is the latest release known at fet
 | [i-have-adhd](https://github.com/ayghri/i-have-adhd) | `v0.4.1` | `1ecea1993b7fce257ffbd686c070948b5e07eda6` | MIT |
 | [marketingskills](https://github.com/coreyhaines31/marketingskills) | `v2.14.12` | `1f837447b20bb6f0e72d87b80ece1c221c362c7d` | MIT |
 | [oomol](https://github.com/oomol-lab/skills) | `—` | `136cef67a41ac27ace0af9b20a9bd96accfb50cd` | MIT |
+| [modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) | `v1.0.0` | `4dd968349e54ca45a05dd5c818fb035c9054b022` | Apache-2.0 |
 | [dokploy-mcp](https://github.com/Dokploy/mcp) | `v0.30.7` | `ea58c7af033f56f730aad1167a3d8070b256e8c8` | Apache-2.0 |
