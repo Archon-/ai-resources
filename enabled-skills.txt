@@ -1,0 +1,7 @@
+# Skills this repo links into Claude Code (~/.claude/skills) and Codex (~/.agents/skills).
+# One directory name per line. Cursor reads both of those directories.
+# Add one skill: ./scripts/install.sh --skill <name>
+# Lean bulk:    ./scripts/install.sh --skip-source oomol --skip-source ecc
+#
+# Names below are the skill directory, not a description. See docs/skills-index.md.
+# This file starts empty so install does not symlink the whole catalog.

@@ -1,0 +1,2482 @@
+# Skills index
+
+Generated from `skills/<group>/<name>/`. A one-skill source is in `skills/other/`. Fetched 2026-11-12.
+2232 skills.
+Bundle version and commit: [versions.md](versions.md). Folder origin: [skill-origins.json](skill-origins.json).
+
+## taste-skill
+
+[https://github.com/leonxlnx/taste-skill](https://github.com/leonxlnx/taste-skill) · `v2.5.1` · `f6b76575f949` · 1 skills
+
+- `taste-skill` — `skills/other/taste-skill/SKILL.md`
+
+## impeccable
+
+[https://github.com/pbakaus/impeccable](https://github.com/pbakaus/impeccable) · `skill-v4.8.2` · `b4bff1626c34` · 1 skills
+
+- `impeccable` `4.8.2` — `skills/other/impeccable/SKILL.md`
+
+## playwright-cli
+
+[https://github.com/microsoft/playwright-cli](https://github.com/microsoft/playwright-cli) · `v0.180.0` · `b21724888b81` · 1 skills
+
+- `playwright-cli` — `skills/other/playwright-cli/SKILL.md`
+
+## obscura
+
+[https://github.com/h4ckf0r0day/obscura](https://github.com/h4ckf0r0day/obscura) · `v0.2.6` · `3bae60909615` · 1 skills
+
+- `obscura` — `skills/other/obscura/SKILL.md`
+
+## openmontage
+
+[https://github.com/OpenMontageInc/OpenMontage](https://github.com/OpenMontageInc/OpenMontage) · `no release tag` · `fecb9a1e3cc2` · 92 skills
+
+- `3d-asset-generation` — `skills/openmontage/3d-asset-generation/SKILL.md`
+- `acestep` — `skills/openmontage/acestep/SKILL.md`
+- `agents` — `skills/openmontage/agents/SKILL.md`
+- `ai-video-gen` — `skills/openmontage/ai-video-gen/SKILL.md`
+- `atlas-cloud` — `skills/openmontage/atlas-cloud/SKILL.md`
+- `avatar-video` — `skills/openmontage/avatar-video/SKILL.md`
+- `azure-speech-to-text` — `skills/openmontage/azure-speech-to-text/SKILL.md`
+- `azure-text-to-speech` — `skills/openmontage/azure-text-to-speech/SKILL.md`
+- `beautiful-mermaid` — `skills/openmontage/beautiful-mermaid/SKILL.md`
+- `bfl-api` `1.0.0` — `skills/openmontage/bfl-api/SKILL.md`
+- `canvas-procedural-animation` — `skills/openmontage/canvas-procedural-animation/SKILL.md`
+- `character-animation-qa` — `skills/openmontage/character-animation-qa/SKILL.md`
+- `character-rigging` — `skills/openmontage/character-rigging/SKILL.md`
+- `comfyui` — `skills/openmontage/comfyui/SKILL.md`
+- `create-video` — `skills/openmontage/create-video/SKILL.md`
+- `d3-viz` — `skills/openmontage/d3-viz/SKILL.md`
+- `dashscope` — `skills/openmontage/dashscope/SKILL.md`
+- `doubao-tts` — `skills/openmontage/doubao-tts/SKILL.md`
+- `elevenlabs` — `skills/openmontage/elevenlabs/SKILL.md`
+- `faceswap` — `skills/openmontage/faceswap/SKILL.md`
+- `ffmpeg` — `skills/openmontage/ffmpeg/SKILL.md`
+- `fish-audio-tts` — `skills/openmontage/fish-audio-tts/SKILL.md`
+- `flux-best-practices` `1.0.0` — `skills/openmontage/flux-best-practices/SKILL.md`
+- `framer-motion` — `skills/openmontage/framer-motion/SKILL.md`
+- `gemini-omni` — `skills/openmontage/gemini-omni/SKILL.md`
+- `grok-media` `1.0.0` — `skills/openmontage/grok-media/SKILL.md`
+- `gsap-core` — `skills/openmontage/gsap-core/SKILL.md`
+- `gsap-frameworks` — `skills/openmontage/gsap-frameworks/SKILL.md`
+- `gsap-performance` — `skills/openmontage/gsap-performance/SKILL.md`
+- `gsap-plugins` — `skills/openmontage/gsap-plugins/SKILL.md`
+- `gsap-react` — `skills/openmontage/gsap-react/SKILL.md`
+- `gsap-scrolltrigger` — `skills/openmontage/gsap-scrolltrigger/SKILL.md`
+- `gsap-timeline` — `skills/openmontage/gsap-timeline/SKILL.md`
+- `gsap-utils` — `skills/openmontage/gsap-utils/SKILL.md`
+- `heygen` — `skills/openmontage/heygen/SKILL.md`
+- `hyperframes` — `skills/openmontage/hyperframes/SKILL.md`
+- `hyperframes-animation` — `skills/openmontage/hyperframes-animation/SKILL.md`
+- `hyperframes-cli` — `skills/openmontage/hyperframes-cli/SKILL.md`
+- `hyperframes-core` — `skills/openmontage/hyperframes-core/SKILL.md`
+- `hyperframes-creative` — `skills/openmontage/hyperframes-creative/SKILL.md`
+- `hyperframes-media` — `skills/openmontage/hyperframes-media/SKILL.md`
+- `hyperframes-registry` — `skills/openmontage/hyperframes-registry/SKILL.md`
+- `kling-official` — `skills/openmontage/kling-official/SKILL.md`
+- `lottie-bodymovin` — `skills/openmontage/lottie-bodymovin/SKILL.md`
+- `ltx2` — `skills/openmontage/ltx2/SKILL.md`
+- `lyria` — `skills/openmontage/lyria/SKILL.md`
+- `manim-composer` — `skills/openmontage/manim-composer/SKILL.md`
+- `manimce-best-practices` — `skills/openmontage/manimce-best-practices/SKILL.md`
+- `manimgl-best-practices` — `skills/openmontage/manimgl-best-practices/SKILL.md`
+- `media-use` — `skills/openmontage/media-use/SKILL.md`
+- `minimax-h3` — `skills/openmontage/minimax-h3/SKILL.md`
+- `motion-graphics` — `skills/openmontage/motion-graphics/SKILL.md`
+- `music` — `skills/openmontage/music/SKILL.md`
+- `music-to-video` — `skills/openmontage/music-to-video/SKILL.md`
+- `pika-h3-flex` — `skills/openmontage/pika-h3-flex/SKILL.md`
+- `playwright-recording` — `skills/openmontage/playwright-recording/SKILL.md`
+- `pose-library-design` — `skills/openmontage/pose-library-design/SKILL.md`
+- `provider-model-refresh` — `skills/openmontage/provider-model-refresh/SKILL.md`
+- `provider-refresh-oct23` — `skills/openmontage/provider-refresh-oct23/SKILL.md`
+- `remotion` — `skills/openmontage/remotion/SKILL.md`
+- `remotion-best-practices` — `skills/openmontage/remotion-best-practices/SKILL.md`
+- `remotion-to-hyperframes` — `skills/openmontage/remotion-to-hyperframes/SKILL.md`
+- `seedance-2-0` — `skills/openmontage/seedance-2-0/SKILL.md`
+- `seedance-2-5` — `skills/openmontage/seedance-2-5/SKILL.md`
+- `setup-api-key` — `skills/openmontage/setup-api-key/SKILL.md`
+- `sound-effects` — `skills/openmontage/sound-effects/SKILL.md`
+- `speech-to-text` — `skills/openmontage/speech-to-text/SKILL.md`
+- `svg-character-animation` — `skills/openmontage/svg-character-animation/SKILL.md`
+- `synthetic-screen-recording` — `skills/openmontage/synthetic-screen-recording/SKILL.md`
+- `tailwind-design-system` — `skills/openmontage/tailwind-design-system/SKILL.md`
+- `text-to-speech` — `skills/openmontage/text-to-speech/SKILL.md`
+- `threejs-animation` — `skills/openmontage/threejs-animation/SKILL.md`
+- `threejs-fundamentals` — `skills/openmontage/threejs-fundamentals/SKILL.md`
+- `threejs-geometry` — `skills/openmontage/threejs-geometry/SKILL.md`
+- `threejs-interaction` — `skills/openmontage/threejs-interaction/SKILL.md`
+- `threejs-lighting` — `skills/openmontage/threejs-lighting/SKILL.md`
+- `threejs-loaders` — `skills/openmontage/threejs-loaders/SKILL.md`
+- `threejs-materials` — `skills/openmontage/threejs-materials/SKILL.md`
+- `threejs-postprocessing` — `skills/openmontage/threejs-postprocessing/SKILL.md`
+- `threejs-shaders` — `skills/openmontage/threejs-shaders/SKILL.md`
+- `threejs-textures` — `skills/openmontage/threejs-textures/SKILL.md`
+- `threejs-world-generation` — `skills/openmontage/threejs-world-generation/SKILL.md`
+- `vercel-composition-patterns` `1.0.0` — `skills/openmontage/vercel-composition-patterns/SKILL.md`
+- `vercel-react-best-practices` `1.0.0` — `skills/openmontage/vercel-react-best-practices/SKILL.md`
+- `video-download` — `skills/openmontage/video-download/SKILL.md`
+- `video-edit` — `skills/openmontage/video-edit/SKILL.md`
+- `video-toolkit` — `skills/openmontage/video-toolkit/SKILL.md`
+- `video-translate` — `skills/openmontage/video-translate/SKILL.md`
+- `video-understand` — `skills/openmontage/video-understand/SKILL.md`
+- `visual-style` — `skills/openmontage/visual-style/SKILL.md`
+- `web-design-guidelines` `1.0.0` — `skills/openmontage/web-design-guidelines/SKILL.md`
+- `website-to-video` — `skills/openmontage/website-to-video/SKILL.md`
+
+Playbooks (not skills): 158
+
+- `playbooks/openmontage/INDEX.md`
+- `playbooks/openmontage/core/color-grading.md`
+- `playbooks/openmontage/core/ffmpeg.md`
+- `playbooks/openmontage/core/hyperframes.md`
+- `playbooks/openmontage/core/remotion.md`
+- `playbooks/openmontage/core/subtitle-sync.md`
+- `playbooks/openmontage/core/whisperx.md`
+- `playbooks/openmontage/creative/3d-world-generation.md`
+- `playbooks/openmontage/creative/animated-drawing.md`
+- `playbooks/openmontage/creative/animation-pipeline.md`
+- `playbooks/openmontage/creative/bg-remove-usage.md`
+- `playbooks/openmontage/creative/broll-planning.md`
+- `playbooks/openmontage/creative/cinematic.md`
+- `playbooks/openmontage/creative/commercial-product-video.md`
+- `playbooks/openmontage/creative/data-visualization.md`
+- `playbooks/openmontage/creative/diagram-gen-usage.md`
+- `playbooks/openmontage/creative/enhancement-strategy.md`
+- `playbooks/openmontage/creative/face-restore-usage.md`
+- `playbooks/openmontage/creative/image-gen-usage.md`
+- `playbooks/openmontage/creative/image-provider-usage.md`
+- `playbooks/openmontage/creative/ink-theater.md`
+- `playbooks/openmontage/creative/lip-sync-usage.md`
+- `playbooks/openmontage/creative/long-form.md`
+- `playbooks/openmontage/creative/manim-usage.md`
+- `playbooks/openmontage/creative/music-gen-usage.md`
+- `playbooks/openmontage/creative/prompting/grok-prompting.md`
+- `playbooks/openmontage/creative/prompting/hunyuan-prompting.md`
+- `playbooks/openmontage/creative/prompting/ltx-prompting.md`
+- `playbooks/openmontage/creative/prompting/seedance-prompting.md`
+- `playbooks/openmontage/creative/prompting/sora-prompting.md`
+- `playbooks/openmontage/creative/prompting/veo-prompting.md`
+- `playbooks/openmontage/creative/scene-detect-usage.md`
+- `playbooks/openmontage/creative/screen-recording.md`
+- `playbooks/openmontage/creative/short-form.md`
+- `playbooks/openmontage/creative/sound-design.md`
+- `playbooks/openmontage/creative/stock-sourcing-usage.md`
+- `playbooks/openmontage/creative/storytelling.md`
+- `playbooks/openmontage/creative/talking-head-gen-usage.md`
+- `playbooks/openmontage/creative/typography.md`
+- `playbooks/openmontage/creative/upscale-usage.md`
+- `playbooks/openmontage/creative/video-editing.md`
+- `playbooks/openmontage/creative/video-gen-prompting.md`
+- `playbooks/openmontage/creative/video-stitching.md`
+- `playbooks/openmontage/creative/video-understand-usage.md`
+- `playbooks/openmontage/meta/animation-runtime-selector.md`
+- `playbooks/openmontage/meta/bespoke-composition.md`
+- `playbooks/openmontage/meta/capability-extension.md`
+- `playbooks/openmontage/meta/checkpoint-protocol.md`
+- `playbooks/openmontage/meta/creative-intake.md`
+- `playbooks/openmontage/meta/onboarding.md`
+- `playbooks/openmontage/meta/reviewer.md`
+- `playbooks/openmontage/meta/skill-creator.md`
+- `playbooks/openmontage/meta/taste-direction.md`
+- `playbooks/openmontage/meta/video-reference-analyst.md`
+- `playbooks/openmontage/meta/voice-performance-director.md`
+- `playbooks/openmontage/pipelines/animation/asset-director.md`
+- `playbooks/openmontage/pipelines/animation/compose-director.md`
+- `playbooks/openmontage/pipelines/animation/edit-director.md`
+- `playbooks/openmontage/pipelines/animation/executive-producer.md`
+- `playbooks/openmontage/pipelines/animation/idea-director.md`
+- `playbooks/openmontage/pipelines/animation/proposal-director.md`
+- `playbooks/openmontage/pipelines/animation/publish-director.md`
+- `playbooks/openmontage/pipelines/animation/research-director.md`
+- `playbooks/openmontage/pipelines/animation/scene-director.md`
+- `playbooks/openmontage/pipelines/animation/script-director.md`
+- `playbooks/openmontage/pipelines/avatar-spokesperson/asset-director.md`
+- `playbooks/openmontage/pipelines/avatar-spokesperson/compose-director.md`
+- `playbooks/openmontage/pipelines/avatar-spokesperson/edit-director.md`
+- `playbooks/openmontage/pipelines/avatar-spokesperson/executive-producer.md`
+- `playbooks/openmontage/pipelines/avatar-spokesperson/idea-director.md`
+- `playbooks/openmontage/pipelines/avatar-spokesperson/publish-director.md`
+- `playbooks/openmontage/pipelines/avatar-spokesperson/scene-director.md`
+- `playbooks/openmontage/pipelines/avatar-spokesperson/script-director.md`
+- `playbooks/openmontage/pipelines/character-animation/asset-director.md`
+- `playbooks/openmontage/pipelines/character-animation/character-design-director.md`
+- `playbooks/openmontage/pipelines/character-animation/compose-director.md`
+- `playbooks/openmontage/pipelines/character-animation/edit-director.md`
+- `playbooks/openmontage/pipelines/character-animation/executive-producer.md`
+- `playbooks/openmontage/pipelines/character-animation/proposal-director.md`
+- `playbooks/openmontage/pipelines/character-animation/publish-director.md`
+- `playbooks/openmontage/pipelines/character-animation/research-director.md`
+- `playbooks/openmontage/pipelines/character-animation/rig-plan-director.md`
+- `playbooks/openmontage/pipelines/character-animation/scene-director.md`
+- `playbooks/openmontage/pipelines/character-animation/script-director.md`
+- `playbooks/openmontage/pipelines/cinematic/asset-director.md`
+- `playbooks/openmontage/pipelines/cinematic/compose-director.md`
+- `playbooks/openmontage/pipelines/cinematic/edit-director.md`
+- `playbooks/openmontage/pipelines/cinematic/executive-producer.md`
+- `playbooks/openmontage/pipelines/cinematic/idea-director.md`
+- `playbooks/openmontage/pipelines/cinematic/proposal-director.md`
+- `playbooks/openmontage/pipelines/cinematic/publish-director.md`
+- `playbooks/openmontage/pipelines/cinematic/research-director.md`
+- `playbooks/openmontage/pipelines/cinematic/scene-director.md`
+- `playbooks/openmontage/pipelines/cinematic/script-director.md`
+- `playbooks/openmontage/pipelines/clip-factory/asset-director.md`
+- `playbooks/openmontage/pipelines/clip-factory/compose-director.md`
+- `playbooks/openmontage/pipelines/clip-factory/edit-director.md`
+- `playbooks/openmontage/pipelines/clip-factory/executive-producer.md`
+- `playbooks/openmontage/pipelines/clip-factory/idea-director.md`
+- `playbooks/openmontage/pipelines/clip-factory/publish-director.md`
+- `playbooks/openmontage/pipelines/clip-factory/scene-director.md`
+- `playbooks/openmontage/pipelines/clip-factory/script-director.md`
+- `playbooks/openmontage/pipelines/documentary-montage/asset-director.md`
+- `playbooks/openmontage/pipelines/documentary-montage/compose-director.md`
+- `playbooks/openmontage/pipelines/documentary-montage/edit-director.md`
+- `playbooks/openmontage/pipelines/documentary-montage/executive-producer.md`
+- `playbooks/openmontage/pipelines/documentary-montage/idea-director.md`
+- `playbooks/openmontage/pipelines/documentary-montage/scene-director.md`
+- `playbooks/openmontage/pipelines/explainer/asset-director.md`
+- `playbooks/openmontage/pipelines/explainer/compose-director.md`
+- `playbooks/openmontage/pipelines/explainer/edit-director.md`
+- `playbooks/openmontage/pipelines/explainer/executive-producer.md`
+- `playbooks/openmontage/pipelines/explainer/idea-director.md`
+- `playbooks/openmontage/pipelines/explainer/proposal-director.md`
+- `playbooks/openmontage/pipelines/explainer/publish-director.md`
+- `playbooks/openmontage/pipelines/explainer/research-director.md`
+- `playbooks/openmontage/pipelines/explainer/scene-director.md`
+- `playbooks/openmontage/pipelines/explainer/script-director.md`
+- `playbooks/openmontage/pipelines/hybrid/asset-director.md`
+- `playbooks/openmontage/pipelines/hybrid/compose-director.md`
+- `playbooks/openmontage/pipelines/hybrid/edit-director.md`
+- `playbooks/openmontage/pipelines/hybrid/executive-producer.md`
+- `playbooks/openmontage/pipelines/hybrid/idea-director.md`
+- `playbooks/openmontage/pipelines/hybrid/publish-director.md`
+- `playbooks/openmontage/pipelines/hybrid/scene-director.md`
+- `playbooks/openmontage/pipelines/hybrid/script-director.md`
+- `playbooks/openmontage/pipelines/localization-dub/asset-director.md`
+- `playbooks/openmontage/pipelines/localization-dub/compose-director.md`
+- `playbooks/openmontage/pipelines/localization-dub/edit-director.md`
+- `playbooks/openmontage/pipelines/localization-dub/executive-producer.md`
+- `playbooks/openmontage/pipelines/localization-dub/idea-director.md`
+- `playbooks/openmontage/pipelines/localization-dub/publish-director.md`
+- `playbooks/openmontage/pipelines/localization-dub/scene-director.md`
+- `playbooks/openmontage/pipelines/localization-dub/script-director.md`
+- `playbooks/openmontage/pipelines/podcast-repurpose/asset-director.md`
+- `playbooks/openmontage/pipelines/podcast-repurpose/compose-director.md`
+- `playbooks/openmontage/pipelines/podcast-repurpose/edit-director.md`
+- `playbooks/openmontage/pipelines/podcast-repurpose/executive-producer.md`
+- `playbooks/openmontage/pipelines/podcast-repurpose/idea-director.md`
+- `playbooks/openmontage/pipelines/podcast-repurpose/publish-director.md`
+- `playbooks/openmontage/pipelines/podcast-repurpose/scene-director.md`
+- `playbooks/openmontage/pipelines/podcast-repurpose/script-director.md`
+- `playbooks/openmontage/pipelines/screen-demo/asset-director.md`
+- `playbooks/openmontage/pipelines/screen-demo/compose-director.md`
+- `playbooks/openmontage/pipelines/screen-demo/edit-director.md`
+- `playbooks/openmontage/pipelines/screen-demo/executive-producer.md`
+- `playbooks/openmontage/pipelines/screen-demo/idea-director.md`
+- `playbooks/openmontage/pipelines/screen-demo/publish-director.md`
+- `playbooks/openmontage/pipelines/screen-demo/scene-director.md`
+- `playbooks/openmontage/pipelines/screen-demo/script-director.md`
+- `playbooks/openmontage/pipelines/talking-head/asset-director.md`
+- `playbooks/openmontage/pipelines/talking-head/compose-director.md`
+- `playbooks/openmontage/pipelines/talking-head/edit-director.md`
+- `playbooks/openmontage/pipelines/talking-head/executive-producer.md`
+- `playbooks/openmontage/pipelines/talking-head/idea-director.md`
+- `playbooks/openmontage/pipelines/talking-head/publish-director.md`
+- `playbooks/openmontage/pipelines/talking-head/scene-director.md`
+- `playbooks/openmontage/pipelines/talking-head/script-director.md`
+
+## ecc
+
+[https://github.com/affaan-m/ECC](https://github.com/affaan-m/ECC) · `v2.2.3` · `d2ef2680594f` · 314 skills
+
+- `accessibility` — `skills/ecc/accessibility/SKILL.md`
+- `agent-architecture-audit` — `skills/ecc/agent-architecture-audit/SKILL.md`
+- `agent-eval` — `skills/ecc/agent-eval/SKILL.md`
+- `agent-harness-construction` — `skills/ecc/agent-harness-construction/SKILL.md`
+- `agent-introspection-debugging` — `skills/ecc/agent-introspection-debugging/SKILL.md`
+- `agent-payment-x402` — `skills/ecc/agent-payment-x402/SKILL.md`
+- `agent-runtime-gateway-smoke-test` — `skills/ecc/agent-runtime-gateway-smoke-test/SKILL.md`
+- `agent-security-hardening` — `skills/ecc/agent-security-hardening/SKILL.md`
+- `agent-self-evaluation` — `skills/ecc/agent-self-evaluation/SKILL.md`
+- `agent-sort` — `skills/ecc/agent-sort/SKILL.md`
+- `agentic-engineering` — `skills/ecc/agentic-engineering/SKILL.md`
+- `agentic-os` — `skills/ecc/agentic-os/SKILL.md`
+- `ai-first-engineering` — `skills/ecc/ai-first-engineering/SKILL.md`
+- `ai-regression-testing` — `skills/ecc/ai-regression-testing/SKILL.md`
+- `android-clean-architecture` — `skills/ecc/android-clean-architecture/SKILL.md`
+- `angular-developer` — `skills/ecc/angular-developer/SKILL.md`
+- `api-connector-builder` `1.0.0` — `skills/ecc/api-connector-builder/SKILL.md`
+- `api-design` — `skills/ecc/api-design/SKILL.md`
+- `architecture-decision-records` — `skills/ecc/architecture-decision-records/SKILL.md`
+- `article-writing` — `skills/ecc/article-writing/SKILL.md`
+- `automation-audit-ops` — `skills/ecc/automation-audit-ops/SKILL.md`
+- `autonomous-agent-harness` — `skills/ecc/autonomous-agent-harness/SKILL.md`
+- `autonomous-loops` — `skills/ecc/autonomous-loops/SKILL.md`
+- `backend-patterns` — `skills/ecc/backend-patterns/SKILL.md`
+- `benchmark` — `skills/ecc/benchmark/SKILL.md`
+- `benchmark-methodology` — `skills/ecc/benchmark-methodology/SKILL.md`
+- `benchmark-optimization-loop` — `skills/ecc/benchmark-optimization-loop/SKILL.md`
+- `bengali-nlp` — `skills/ecc/bengali-nlp/SKILL.md`
+- `blender-motion-state-inspection` — `skills/ecc/blender-motion-state-inspection/SKILL.md`
+- `blueprint` — `skills/ecc/blueprint/SKILL.md`
+- `brand-discovery` — `skills/ecc/brand-discovery/SKILL.md`
+- `brand-voice` — `skills/ecc/brand-voice/SKILL.md`
+- `brownfield-retrospective` — `skills/ecc/brownfield-retrospective/SKILL.md`
+- `browser-qa` — `skills/ecc/browser-qa/SKILL.md`
+- `bun-runtime` — `skills/ecc/bun-runtime/SKILL.md`
+- `canary-watch` — `skills/ecc/canary-watch/SKILL.md`
+- `carrier-relationship-management` `1.0.0` — `skills/ecc/carrier-relationship-management/SKILL.md`
+- `change-impact` — `skills/ecc/change-impact/SKILL.md`
+- `cisco-ios-patterns` — `skills/ecc/cisco-ios-patterns/SKILL.md`
+- `ck` `2.0.0` — `skills/ecc/ck/SKILL.md`
+- `claude-devfleet` — `skills/ecc/claude-devfleet/SKILL.md`
+- `click-path-audit` — `skills/ecc/click-path-audit/SKILL.md`
+- `clickhouse-io` — `skills/ecc/clickhouse-io/SKILL.md`
+- `code-tour` — `skills/ecc/code-tour/SKILL.md`
+- `codebase-onboarding` — `skills/ecc/codebase-onboarding/SKILL.md`
+- `codehealth-mcp` — `skills/ecc/codehealth-mcp/SKILL.md`
+- `coding-standards` — `skills/ecc/coding-standards/SKILL.md`
+- `competitive-platform-analysis` — `skills/ecc/competitive-platform-analysis/SKILL.md`
+- `competitive-report-structure` — `skills/ecc/competitive-report-structure/SKILL.md`
+- `compose-multiplatform-patterns` — `skills/ecc/compose-multiplatform-patterns/SKILL.md`
+- `config-gc` — `skills/ecc/config-gc/SKILL.md`
+- `configure-ecc` — `skills/ecc/configure-ecc/SKILL.md`
+- `connections-optimizer` — `skills/ecc/connections-optimizer/SKILL.md`
+- `content-engine` — `skills/ecc/content-engine/SKILL.md`
+- `content-hash-cache-pattern` — `skills/ecc/content-hash-cache-pattern/SKILL.md`
+- `context-and-decisions` — `skills/ecc/context-and-decisions/SKILL.md`
+- `context-budget` — `skills/ecc/context-budget/SKILL.md`
+- `continuous-agent-loop` — `skills/ecc/continuous-agent-loop/SKILL.md`
+- `continuous-learning` — `skills/ecc/continuous-learning/SKILL.md`
+- `continuous-learning-v2` `2.1.0` — `skills/ecc/continuous-learning-v2/SKILL.md`
+- `contract-first` — `skills/ecc/contract-first/SKILL.md`
+- `conventional-commit-review` — `skills/ecc/conventional-commit-review/SKILL.md`
+- `cost-aware-llm-pipeline` — `skills/ecc/cost-aware-llm-pipeline/SKILL.md`
+- `cost-tracking` — `skills/ecc/cost-tracking/SKILL.md`
+- `council` — `skills/ecc/council/SKILL.md`
+- `council-multi-model` — `skills/ecc/council-multi-model/SKILL.md`
+- `counterparty-channel-discipline` — `skills/ecc/counterparty-channel-discipline/SKILL.md`
+- `cpp-coding-standards` — `skills/ecc/cpp-coding-standards/SKILL.md`
+- `cpp-testing` — `skills/ecc/cpp-testing/SKILL.md`
+- `crosspost` — `skills/ecc/crosspost/SKILL.md`
+- `csharp-testing` — `skills/ecc/csharp-testing/SKILL.md`
+- `customer-billing-ops` — `skills/ecc/customer-billing-ops/SKILL.md`
+- `customs-trade-compliance` `1.0.0` — `skills/ecc/customs-trade-compliance/SKILL.md`
+- `dart-flutter-patterns` — `skills/ecc/dart-flutter-patterns/SKILL.md`
+- `dashboard-builder` `1.0.0` — `skills/ecc/dashboard-builder/SKILL.md`
+- `data-scraper-agent` — `skills/ecc/data-scraper-agent/SKILL.md`
+- `data-throughput-accelerator` — `skills/ecc/data-throughput-accelerator/SKILL.md`
+- `database-migrations` — `skills/ecc/database-migrations/SKILL.md`
+- `deep-research` — `skills/ecc/deep-research/SKILL.md`
+- `deepseek-harness-setup` — `skills/ecc/deepseek-harness-setup/SKILL.md`
+- `defi-amm-security` `1.0.0` — `skills/ecc/defi-amm-security/SKILL.md`
+- `delivery-gate` `1.1.1` — `skills/ecc/delivery-gate/SKILL.md`
+- `deployment-patterns` — `skills/ecc/deployment-patterns/SKILL.md`
+- `design-system` — `skills/ecc/design-system/SKILL.md`
+- `dev-team` — `skills/ecc/dev-team/SKILL.md`
+- `django-celery` — `skills/ecc/django-celery/SKILL.md`
+- `django-patterns` — `skills/ecc/django-patterns/SKILL.md`
+- `django-security` — `skills/ecc/django-security/SKILL.md`
+- `django-tdd` — `skills/ecc/django-tdd/SKILL.md`
+- `django-verification` — `skills/ecc/django-verification/SKILL.md`
+- `dmux-workflows` — `skills/ecc/dmux-workflows/SKILL.md`
+- `docker-patterns` — `skills/ecc/docker-patterns/SKILL.md`
+- `docs-governance` — `skills/ecc/docs-governance/SKILL.md`
+- `documentation-lookup` — `skills/ecc/documentation-lookup/SKILL.md`
+- `dotnet-patterns` — `skills/ecc/dotnet-patterns/SKILL.md`
+- `dynamic-workflow-mode` — `skills/ecc/dynamic-workflow-mode/SKILL.md`
+- `e2e-testing` — `skills/ecc/e2e-testing/SKILL.md`
+- `ecc-guide` — `skills/ecc/ecc-guide/SKILL.md`
+- `ecc-recipes` `1.0.0` — `skills/ecc/ecc-recipes/SKILL.md`
+- `ecc-tools-cost-audit` — `skills/ecc/ecc-tools-cost-audit/SKILL.md`
+- `email-ops` — `skills/ecc/email-ops/SKILL.md`
+- `energy-procurement` `1.0.0` — `skills/ecc/energy-procurement/SKILL.md`
+- `enterprise-agent-ops` — `skills/ecc/enterprise-agent-ops/SKILL.md`
+- `error-handling` — `skills/ecc/error-handling/SKILL.md`
+- `esign-field-placement` — `skills/ecc/esign-field-placement/SKILL.md`
+- `eval-harness` — `skills/ecc/eval-harness/SKILL.md`
+- `evm-token-decimals` `1.0.0` — `skills/ecc/evm-token-decimals/SKILL.md`
+- `exa-search` — `skills/ecc/exa-search/SKILL.md`
+- `fal-ai-media` — `skills/ecc/fal-ai-media/SKILL.md`
+- `fastapi-patterns` — `skills/ecc/fastapi-patterns/SKILL.md`
+- `finance-billing-ops` — `skills/ecc/finance-billing-ops/SKILL.md`
+- `flox-environments` — `skills/ecc/flox-environments/SKILL.md`
+- `flutter-dart-code-review` — `skills/ecc/flutter-dart-code-review/SKILL.md`
+- `foundation-models-on-device` — `skills/ecc/foundation-models-on-device/SKILL.md`
+- `frontend-a11y` — `skills/ecc/frontend-a11y/SKILL.md`
+- `frontend-design-direction` — `skills/ecc/frontend-design-direction/SKILL.md`
+- `frontend-patterns` — `skills/ecc/frontend-patterns/SKILL.md`
+- `frontend-slides` — `skills/ecc/frontend-slides/SKILL.md`
+- `fsharp-testing` — `skills/ecc/fsharp-testing/SKILL.md`
+- `gan-style-harness` — `skills/ecc/gan-style-harness/SKILL.md`
+- `gateguard` — `skills/ecc/gateguard/SKILL.md`
+- `generating-python-installer` — `skills/ecc/generating-python-installer/SKILL.md`
+- `git-workflow` — `skills/ecc/git-workflow/SKILL.md`
+- `github-ops` — `skills/ecc/github-ops/SKILL.md`
+- `golang-patterns` — `skills/ecc/golang-patterns/SKILL.md`
+- `golang-testing` — `skills/ecc/golang-testing/SKILL.md`
+- `google-workspace-ops` — `skills/ecc/google-workspace-ops/SKILL.md`
+- `growth-log` `1.1.0` — `skills/ecc/growth-log/SKILL.md`
+- `healthcare-cdss-patterns` `1.0.0` — `skills/ecc/healthcare-cdss-patterns/SKILL.md`
+- `healthcare-emr-patterns` `1.0.0` — `skills/ecc/healthcare-emr-patterns/SKILL.md`
+- `healthcare-eval-harness` `1.0.0` — `skills/ecc/healthcare-eval-harness/SKILL.md`
+- `healthcare-phi-compliance` `1.0.0` — `skills/ecc/healthcare-phi-compliance/SKILL.md`
+- `hermes-imports` — `skills/ecc/hermes-imports/SKILL.md`
+- `hexagonal-architecture` — `skills/ecc/hexagonal-architecture/SKILL.md`
+- `hipaa-compliance` `1.0.0` — `skills/ecc/hipaa-compliance/SKILL.md`
+- `homelab-network-readiness` — `skills/ecc/homelab-network-readiness/SKILL.md`
+- `homelab-network-setup` — `skills/ecc/homelab-network-setup/SKILL.md`
+- `homelab-pihole-dns` — `skills/ecc/homelab-pihole-dns/SKILL.md`
+- `homelab-vlan-segmentation` — `skills/ecc/homelab-vlan-segmentation/SKILL.md`
+- `homelab-wireguard-vpn` — `skills/ecc/homelab-wireguard-vpn/SKILL.md`
+- `hookify-rules` — `skills/ecc/hookify-rules/SKILL.md`
+- `i18n-sync` — `skills/ecc/i18n-sync/SKILL.md`
+- `inherit-legacy-style` — `skills/ecc/inherit-legacy-style/SKILL.md`
+- `intent-driven-development` — `skills/ecc/intent-driven-development/SKILL.md`
+- `inventory-demand-planning` `1.0.0` — `skills/ecc/inventory-demand-planning/SKILL.md`
+- `investor-materials` — `skills/ecc/investor-materials/SKILL.md`
+- `investor-outreach` — `skills/ecc/investor-outreach/SKILL.md`
+- `ios-icon-gen` — `skills/ecc/ios-icon-gen/SKILL.md`
+- `issue-review` — `skills/ecc/issue-review/SKILL.md`
+- `iterative-retrieval` — `skills/ecc/iterative-retrieval/SKILL.md`
+- `ito-baskets` — `skills/ecc/ito-baskets/SKILL.md`
+- `ito-compute` — `skills/ecc/ito-compute/SKILL.md`
+- `ito-inference` — `skills/ecc/ito-inference/SKILL.md`
+- `ito-training` — `skills/ecc/ito-training/SKILL.md`
+- `java-coding-standards` — `skills/ecc/java-coding-standards/SKILL.md`
+- `jira-integration` — `skills/ecc/jira-integration/SKILL.md`
+- `jpa-patterns` — `skills/ecc/jpa-patterns/SKILL.md`
+- `knowledge-ops` — `skills/ecc/knowledge-ops/SKILL.md`
+- `kotlin-coroutines-flows` — `skills/ecc/kotlin-coroutines-flows/SKILL.md`
+- `kotlin-exposed-patterns` — `skills/ecc/kotlin-exposed-patterns/SKILL.md`
+- `kotlin-ktor-patterns` — `skills/ecc/kotlin-ktor-patterns/SKILL.md`
+- `kotlin-patterns` — `skills/ecc/kotlin-patterns/SKILL.md`
+- `kotlin-testing` — `skills/ecc/kotlin-testing/SKILL.md`
+- `kubernetes-patterns` — `skills/ecc/kubernetes-patterns/SKILL.md`
+- `laravel-patterns` — `skills/ecc/laravel-patterns/SKILL.md`
+- `laravel-plugin-discovery` — `skills/ecc/laravel-plugin-discovery/SKILL.md`
+- `laravel-security` — `skills/ecc/laravel-security/SKILL.md`
+- `laravel-tdd` — `skills/ecc/laravel-tdd/SKILL.md`
+- `laravel-verification` — `skills/ecc/laravel-verification/SKILL.md`
+- `latency-critical-systems` — `skills/ecc/latency-critical-systems/SKILL.md`
+- `lead-intelligence` — `skills/ecc/lead-intelligence/SKILL.md`
+- `liquid-glass-design` — `skills/ecc/liquid-glass-design/SKILL.md`
+- `living-docs-governance` — `skills/ecc/living-docs-governance/SKILL.md`
+- `llm-trading-agent-security` `1.0.0` — `skills/ecc/llm-trading-agent-security/SKILL.md`
+- `logistics-exception-management` `1.0.0` — `skills/ecc/logistics-exception-management/SKILL.md`
+- `loop-design-check` — `skills/ecc/loop-design-check/SKILL.md`
+- `mailtrap-email-integration` — `skills/ecc/mailtrap-email-integration/SKILL.md`
+- `make-interfaces-feel-better` — `skills/ecc/make-interfaces-feel-better/SKILL.md`
+- `manim-video` — `skills/ecc/manim-video/SKILL.md`
+- `market-research` — `skills/ecc/market-research/SKILL.md`
+- `marketing-campaign` — `skills/ecc/marketing-campaign/SKILL.md`
+- `master-agreement-generator` — `skills/ecc/master-agreement-generator/SKILL.md`
+- `mcp-dependency-review` — `skills/ecc/mcp-dependency-review/SKILL.md`
+- `mcp-server-patterns` — `skills/ecc/mcp-server-patterns/SKILL.md`
+- `messages-ops` — `skills/ecc/messages-ops/SKILL.md`
+- `ml-adoption-playbook` — `skills/ecc/ml-adoption-playbook/SKILL.md`
+- `mle-workflow` — `skills/ecc/mle-workflow/SKILL.md`
+- `module-governance` — `skills/ecc/module-governance/SKILL.md`
+- `module-regression` — `skills/ecc/module-regression/SKILL.md`
+- `motion-advanced` `1.0.0` — `skills/ecc/motion-advanced/SKILL.md`
+- `motion-foundations` `1.0.0` — `skills/ecc/motion-foundations/SKILL.md`
+- `motion-patterns` `1.0.0` — `skills/ecc/motion-patterns/SKILL.md`
+- `mybatis-patterns` — `skills/ecc/mybatis-patterns/SKILL.md`
+- `mysql-patterns` — `skills/ecc/mysql-patterns/SKILL.md`
+- `nanoclaw-repl` — `skills/ecc/nanoclaw-repl/SKILL.md`
+- `nasiko-control-plane` — `skills/ecc/nasiko-control-plane/SKILL.md`
+- `nestjs-patterns` — `skills/ecc/nestjs-patterns/SKILL.md`
+- `netmiko-ssh-automation` — `skills/ecc/netmiko-ssh-automation/SKILL.md`
+- `network-bgp-diagnostics` — `skills/ecc/network-bgp-diagnostics/SKILL.md`
+- `network-config-validation` — `skills/ecc/network-config-validation/SKILL.md`
+- `network-interface-health` — `skills/ecc/network-interface-health/SKILL.md`
+- `nextjs-turbopack` — `skills/ecc/nextjs-turbopack/SKILL.md`
+- `nodejs-keccak256` `1.0.0` — `skills/ecc/nodejs-keccak256/SKILL.md`
+- `nutrient-document-processing` — `skills/ecc/nutrient-document-processing/SKILL.md`
+- `nuxt4-patterns` — `skills/ecc/nuxt4-patterns/SKILL.md`
+- `openclaw-persona-forge` — `skills/ecc/openclaw-persona-forge/SKILL.md`
+- `opensource-pipeline` — `skills/ecc/opensource-pipeline/SKILL.md`
+- `operator-approval-loop` — `skills/ecc/operator-approval-loop/SKILL.md`
+- `orch-add-feature` — `skills/ecc/orch-add-feature/SKILL.md`
+- `orch-build-mvp` — `skills/ecc/orch-build-mvp/SKILL.md`
+- `orch-change-feature` — `skills/ecc/orch-change-feature/SKILL.md`
+- `orch-fix-defect` — `skills/ecc/orch-fix-defect/SKILL.md`
+- `orch-pipeline` — `skills/ecc/orch-pipeline/SKILL.md`
+- `orch-refine-code` — `skills/ecc/orch-refine-code/SKILL.md`
+- `osint-investigation` — `skills/ecc/osint-investigation/SKILL.md`
+- `parallel-execution-optimizer` — `skills/ecc/parallel-execution-optimizer/SKILL.md`
+- `perl-patterns` — `skills/ecc/perl-patterns/SKILL.md`
+- `perl-security` — `skills/ecc/perl-security/SKILL.md`
+- `perl-testing` — `skills/ecc/perl-testing/SKILL.md`
+- `plan-canvas` `1.0.0` — `skills/ecc/plan-canvas/SKILL.md`
+- `plan-orchestrate` — `skills/ecc/plan-orchestrate/SKILL.md`
+- `plankton-code-quality` — `skills/ecc/plankton-code-quality/SKILL.md`
+- `postgres-patterns` — `skills/ecc/postgres-patterns/SKILL.md`
+- `prediction-market-oracle-research` — `skills/ecc/prediction-market-oracle-research/SKILL.md`
+- `prediction-market-risk-review` — `skills/ecc/prediction-market-risk-review/SKILL.md`
+- `prisma-patterns` — `skills/ecc/prisma-patterns/SKILL.md`
+- `product-capability` — `skills/ecc/product-capability/SKILL.md`
+- `product-lens` — `skills/ecc/product-lens/SKILL.md`
+- `production-audit` — `skills/ecc/production-audit/SKILL.md`
+- `production-scheduling` `1.0.0` — `skills/ecc/production-scheduling/SKILL.md`
+- `project-flow-ops` — `skills/ecc/project-flow-ops/SKILL.md`
+- `prompt-caching-strategy` `1.0.0` — `skills/ecc/prompt-caching-strategy/SKILL.md`
+- `prompt-optimizer` `1.0.0` — `skills/ecc/prompt-optimizer/SKILL.md`
+- `python-patterns` — `skills/ecc/python-patterns/SKILL.md`
+- `python-testing` — `skills/ecc/python-testing/SKILL.md`
+- `pytorch-patterns` — `skills/ecc/pytorch-patterns/SKILL.md`
+- `quality-nonconformance` `1.0.0` — `skills/ecc/quality-nonconformance/SKILL.md`
+- `quarkus-patterns` — `skills/ecc/quarkus-patterns/SKILL.md`
+- `quarkus-security` — `skills/ecc/quarkus-security/SKILL.md`
+- `quarkus-tdd` — `skills/ecc/quarkus-tdd/SKILL.md`
+- `quarkus-verification` — `skills/ecc/quarkus-verification/SKILL.md`
+- `rails-patterns` — `skills/ecc/rails-patterns/SKILL.md`
+- `ralphinho-rfc-pipeline` — `skills/ecc/ralphinho-rfc-pipeline/SKILL.md`
+- `react-native-patterns` — `skills/ecc/react-native-patterns/SKILL.md`
+- `react-patterns` — `skills/ecc/react-patterns/SKILL.md`
+- `react-performance` — `skills/ecc/react-performance/SKILL.md`
+- `react-testing` — `skills/ecc/react-testing/SKILL.md`
+- `recsys-pipeline-architect` — `skills/ecc/recsys-pipeline-architect/SKILL.md`
+- `recursive-decision-ledger` — `skills/ecc/recursive-decision-ledger/SKILL.md`
+- `redis-patterns` — `skills/ecc/redis-patterns/SKILL.md`
+- `regex-vs-llm-structured-text` — `skills/ecc/regex-vs-llm-structured-text/SKILL.md`
+- `remotion-video-creation` — `skills/ecc/remotion-video-creation/SKILL.md`
+- `repo-scan` — `skills/ecc/repo-scan/SKILL.md`
+- `research-ops` — `skills/ecc/research-ops/SKILL.md`
+- `returns-reverse-logistics` `1.0.0` — `skills/ecc/returns-reverse-logistics/SKILL.md`
+- `rules-distill` — `skills/ecc/rules-distill/SKILL.md`
+- `rust-patterns` — `skills/ecc/rust-patterns/SKILL.md`
+- `rust-testing` — `skills/ecc/rust-testing/SKILL.md`
+- `safety-guard` — `skills/ecc/safety-guard/SKILL.md`
+- `santa-method` — `skills/ecc/santa-method/SKILL.md`
+- `scientific-db-pubmed-database` — `skills/ecc/scientific-db-pubmed-database/SKILL.md`
+- `scientific-db-uspto-database` — `skills/ecc/scientific-db-uspto-database/SKILL.md`
+- `scientific-pkg-gget` — `skills/ecc/scientific-pkg-gget/SKILL.md`
+- `scientific-thinking-literature-review` — `skills/ecc/scientific-thinking-literature-review/SKILL.md`
+- `scientific-thinking-scholar-evaluation` — `skills/ecc/scientific-thinking-scholar-evaluation/SKILL.md`
+- `search-first` — `skills/ecc/search-first/SKILL.md`
+- `security-bounty-hunter` `1.0.0` — `skills/ecc/security-bounty-hunter/SKILL.md`
+- `security-review` — `skills/ecc/security-review/SKILL.md`
+- `security-scan` — `skills/ecc/security-scan/SKILL.md`
+- `seo` — `skills/ecc/seo/SKILL.md`
+- `skill-comply` — `skills/ecc/skill-comply/SKILL.md`
+- `skill-host-compat` — `skills/ecc/skill-host-compat/SKILL.md`
+- `skill-scout` — `skills/ecc/skill-scout/SKILL.md`
+- `skill-stocktake` — `skills/ecc/skill-stocktake/SKILL.md`
+- `social-graph-ranker` — `skills/ecc/social-graph-ranker/SKILL.md`
+- `social-publisher` — `skills/ecc/social-publisher/SKILL.md`
+- `springboot-patterns` — `skills/ecc/springboot-patterns/SKILL.md`
+- `springboot-security` — `skills/ecc/springboot-security/SKILL.md`
+- `springboot-tdd` — `skills/ecc/springboot-tdd/SKILL.md`
+- `springboot-verification` — `skills/ecc/springboot-verification/SKILL.md`
+- `story-lifecycle` — `skills/ecc/story-lifecycle/SKILL.md`
+- `strategic-compact` — `skills/ecc/strategic-compact/SKILL.md`
+- `swift-actor-persistence` — `skills/ecc/swift-actor-persistence/SKILL.md`
+- `swift-concurrency-6-2` — `skills/ecc/swift-concurrency-6-2/SKILL.md`
+- `swift-protocol-di-testing` — `skills/ecc/swift-protocol-di-testing/SKILL.md`
+- `swiftui-patterns` — `skills/ecc/swiftui-patterns/SKILL.md`
+- `taste` — `skills/ecc/taste/SKILL.md`
+- `taste-application` — `skills/ecc/taste-application/SKILL.md`
+- `taste-distillation` — `skills/ecc/taste-distillation/SKILL.md`
+- `tasteforge-video` — `skills/ecc/tasteforge-video/SKILL.md`
+- `tdd-workflow` — `skills/ecc/tdd-workflow/SKILL.md`
+- `team-agent-orchestration` — `skills/ecc/team-agent-orchestration/SKILL.md`
+- `team-builder` — `skills/ecc/team-builder/SKILL.md`
+- `terminal-opener` — `skills/ecc/terminal-opener/SKILL.md`
+- `terminal-ops` — `skills/ecc/terminal-ops/SKILL.md`
+- `test-collaboration` — `skills/ecc/test-collaboration/SKILL.md`
+- `tinystruct-patterns` — `skills/ecc/tinystruct-patterns/SKILL.md`
+- `token-budget-advisor` — `skills/ecc/token-budget-advisor/SKILL.md`
+- `token-card` — `skills/ecc/token-card/SKILL.md`
+- `typescript-patterns` — `skills/ecc/typescript-patterns/SKILL.md`
+- `ui-demo` — `skills/ecc/ui-demo/SKILL.md`
+- `ui-to-vue` — `skills/ecc/ui-to-vue/SKILL.md`
+- `uncloud` — `skills/ecc/uncloud/SKILL.md`
+- `unified-memory` — `skills/ecc/unified-memory/SKILL.md`
+- `unified-notifications-ops` — `skills/ecc/unified-notifications-ops/SKILL.md`
+- `verification-loop` — `skills/ecc/verification-loop/SKILL.md`
+- `video-editing` — `skills/ecc/video-editing/SKILL.md`
+- `videodb` — `skills/ecc/videodb/SKILL.md`
+- `visa-doc-translate` — `skills/ecc/visa-doc-translate/SKILL.md`
+- `vite-patterns` — `skills/ecc/vite-patterns/SKILL.md`
+- `vue-patterns` — `skills/ecc/vue-patterns/SKILL.md`
+- `windows-desktop-e2e` — `skills/ecc/windows-desktop-e2e/SKILL.md`
+- `workspace-surface-audit` — `skills/ecc/workspace-surface-audit/SKILL.md`
+- `x-api` — `skills/ecc/x-api/SKILL.md`
+
+## karpathy-guidelines
+
+[https://github.com/multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) · `1.0.0` · `2c606141936f` · 1 skills
+
+- `karpathy-guidelines` — `skills/other/karpathy-guidelines/SKILL.md`
+
+## ponytail
+
+[https://github.com/dietrichgebert/ponytail](https://github.com/dietrichgebert/ponytail) · `v5.3.3` · `96608e078b2d` · 6 skills
+
+- `ponytail` — `skills/ponytail/ponytail/SKILL.md`
+- `ponytail-audit` — `skills/ponytail/ponytail-audit/SKILL.md`
+- `ponytail-debt` — `skills/ponytail/ponytail-debt/SKILL.md`
+- `ponytail-gain` — `skills/ponytail/ponytail-gain/SKILL.md`
+- `ponytail-help` — `skills/ponytail/ponytail-help/SKILL.md`
+- `ponytail-review` — `skills/ponytail/ponytail-review/SKILL.md`
+
+## agent-skills
+
+[https://github.com/addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) · `0.6.15` · `301b02b12bff` · 25 skills
+
+- `api-and-interface-design` — `skills/agent-skills/api-and-interface-design/SKILL.md`
+- `browser-testing-with-devtools` — `skills/agent-skills/browser-testing-with-devtools/SKILL.md`
+- `ci-cd-and-automation` — `skills/agent-skills/ci-cd-and-automation/SKILL.md`
+- `code-review-and-quality` — `skills/agent-skills/code-review-and-quality/SKILL.md`
+- `code-simplification` — `skills/agent-skills/code-simplification/SKILL.md`
+- `constraint-driven-development` — `skills/agent-skills/constraint-driven-development/SKILL.md`
+- `context-engineering` — `skills/agent-skills/context-engineering/SKILL.md`
+- `debugging-and-error-recovery` — `skills/agent-skills/debugging-and-error-recovery/SKILL.md`
+- `deprecation-and-migration` — `skills/agent-skills/deprecation-and-migration/SKILL.md`
+- `documentation-and-adrs` — `skills/agent-skills/documentation-and-adrs/SKILL.md`
+- `doubt-driven-development` — `skills/agent-skills/doubt-driven-development/SKILL.md`
+- `frontend-ui-engineering` — `skills/agent-skills/frontend-ui-engineering/SKILL.md`
+- `git-workflow-and-versioning` — `skills/agent-skills/git-workflow-and-versioning/SKILL.md`
+- `idea-refine` — `skills/agent-skills/idea-refine/SKILL.md`
+- `incremental-implementation` — `skills/agent-skills/incremental-implementation/SKILL.md`
+- `interview-me` — `skills/agent-skills/interview-me/SKILL.md`
+- `observability-and-instrumentation` — `skills/agent-skills/observability-and-instrumentation/SKILL.md`
+- `performance-optimization` — `skills/agent-skills/performance-optimization/SKILL.md`
+- `planning-and-task-breakdown` — `skills/agent-skills/planning-and-task-breakdown/SKILL.md`
+- `security-and-hardening` — `skills/agent-skills/security-and-hardening/SKILL.md`
+- `shipping-and-launch` — `skills/agent-skills/shipping-and-launch/SKILL.md`
+- `source-driven-development` — `skills/agent-skills/source-driven-development/SKILL.md`
+- `spec-driven-development` — `skills/agent-skills/spec-driven-development/SKILL.md`
+- `test-driven-development` — `skills/agent-skills/test-driven-development/SKILL.md`
+- `using-agent-skills` — `skills/agent-skills/using-agent-skills/SKILL.md`
+
+## ui-ux-pro-max
+
+[https://github.com/nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) · `v2.15.0` · `6ae86f61f520` · 7 skills
+
+- `banner-design` `1.0.0` — `skills/ui-ux-pro-max/banner-design/SKILL.md`
+- `brand` `1.0.0` — `skills/ui-ux-pro-max/brand/SKILL.md`
+- `design` `2.1.0` — `skills/ui-ux-pro-max/design/SKILL.md`
+- `design-system-ui-ux-pro-max` `1.0.0` — `skills/ui-ux-pro-max/design-system-ui-ux-pro-max/SKILL.md`
+- `slides` `1.0.0` — `skills/ui-ux-pro-max/slides/SKILL.md`
+- `ui-styling` `1.0.0` — `skills/ui-ux-pro-max/ui-styling/SKILL.md`
+- `ui-ux-pro-max` — `skills/ui-ux-pro-max/ui-ux-pro-max/SKILL.md`
+
+## anthropics
+
+[https://github.com/anthropics/skills](https://github.com/anthropics/skills) · `no release tag` · `2c5958ecac7c` · 20 skills
+
+- `academy-guide` — `skills/anthropics/academy-guide/SKILL.md`
+- `algorithmic-art` — `skills/anthropics/algorithmic-art/SKILL.md`
+- `brand-guidelines` — `skills/anthropics/brand-guidelines/SKILL.md`
+- `canvas-design` — `skills/anthropics/canvas-design/SKILL.md`
+- `claude-api` — `skills/anthropics/claude-api/SKILL.md`
+- `discernment-nudge` — `skills/anthropics/discernment-nudge/SKILL.md`
+- `doc-coauthoring` — `skills/anthropics/doc-coauthoring/SKILL.md`
+- `docx` — `skills/anthropics/docx/SKILL.md`
+- `frontend-design` — `skills/anthropics/frontend-design/SKILL.md`
+- `internal-comms` — `skills/anthropics/internal-comms/SKILL.md`
+- `mcp-builder` — `skills/anthropics/mcp-builder/SKILL.md`
+- `pdf` — `skills/anthropics/pdf/SKILL.md`
+- `pptx` — `skills/anthropics/pptx/SKILL.md`
+- `skill-creator` — `skills/anthropics/skill-creator/SKILL.md`
+- `slack-gif-creator` — `skills/anthropics/slack-gif-creator/SKILL.md`
+- `template` — `skills/anthropics/template/SKILL.md`
+- `theme-factory` — `skills/anthropics/theme-factory/SKILL.md`
+- `web-artifacts-builder` — `skills/anthropics/web-artifacts-builder/SKILL.md`
+- `webapp-testing` — `skills/anthropics/webapp-testing/SKILL.md`
+- `xlsx` — `skills/anthropics/xlsx/SKILL.md`
+
+## humanizer
+
+[https://github.com/blader/humanizer](https://github.com/blader/humanizer) · `v4.0.0` · `b48c832f0f80` · 1 skills
+
+- `humanizer` `4.0.0` — `skills/other/humanizer/SKILL.md`
+
+## i-have-adhd
+
+[https://github.com/ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) · `v0.4.1` · `1ecea1993b7f` · 1 skills
+
+- `i-have-adhd` — `skills/other/i-have-adhd/SKILL.md`
+
+## marketingskills
+
+[https://github.com/coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) · `v2.14.12` · `1f837447b20b` · 53 skills
+
+- `ab-testing` `2.0.7` — `skills/marketingskills/ab-testing/SKILL.md`
+- `ad-creative` `2.13.0` — `skills/marketingskills/ad-creative/SKILL.md`
+- `ads` `2.7.5` — `skills/marketingskills/ads/SKILL.md`
+- `ai-seo` `2.12.3` — `skills/marketingskills/ai-seo/SKILL.md`
+- `analytics` `2.2.5` — `skills/marketingskills/analytics/SKILL.md`
+- `aso` `2.0.6` — `skills/marketingskills/aso/SKILL.md`
+- `attribution` `1.1.9` — `skills/marketingskills/attribution/SKILL.md`
+- `churn-prevention` `2.0.6` — `skills/marketingskills/churn-prevention/SKILL.md`
+- `co-marketing` `2.0.6` — `skills/marketingskills/co-marketing/SKILL.md`
+- `cold-email` `2.2.4` — `skills/marketingskills/cold-email/SKILL.md`
+- `community-marketing` `2.0.5` — `skills/marketingskills/community-marketing/SKILL.md`
+- `competitor-profiling` `2.1.8` — `skills/marketingskills/competitor-profiling/SKILL.md`
+- `competitors` `2.3.3` — `skills/marketingskills/competitors/SKILL.md`
+- `content-strategy` `2.1.8` — `skills/marketingskills/content-strategy/SKILL.md`
+- `conversion-tracking` `1.0.6` — `skills/marketingskills/conversion-tracking/SKILL.md`
+- `copy-editing` `2.2.4` — `skills/marketingskills/copy-editing/SKILL.md`
+- `copywriting` `2.3.5` — `skills/marketingskills/copywriting/SKILL.md`
+- `cro` `2.0.6` — `skills/marketingskills/cro/SKILL.md`
+- `customer-research` `2.0.8` — `skills/marketingskills/customer-research/SKILL.md`
+- `directory-submissions` `2.2.0` — `skills/marketingskills/directory-submissions/SKILL.md`
+- `emails` `2.1.7` — `skills/marketingskills/emails/SKILL.md`
+- `events` `1.0.3` — `skills/marketingskills/events/SKILL.md`
+- `free-tools` `2.0.6` — `skills/marketingskills/free-tools/SKILL.md`
+- `image` `2.0.6` — `skills/marketingskills/image/SKILL.md`
+- `influencer-marketing` `1.4.3` — `skills/marketingskills/influencer-marketing/SKILL.md`
+- `launch` `2.2.3` — `skills/marketingskills/launch/SKILL.md`
+- `lead-magnets` `2.1.5` — `skills/marketingskills/lead-magnets/SKILL.md`
+- `link-building` `1.0.4` — `skills/marketingskills/link-building/SKILL.md`
+- `marketing-council` `1.0.3` — `skills/marketingskills/marketing-council/SKILL.md`
+- `marketing-ideas` `2.0.5` — `skills/marketingskills/marketing-ideas/SKILL.md`
+- `marketing-loops` `1.8.4` — `skills/marketingskills/marketing-loops/SKILL.md`
+- `marketing-plan` `1.2.5` — `skills/marketingskills/marketing-plan/SKILL.md`
+- `marketing-psychology` `2.0.3` — `skills/marketingskills/marketing-psychology/SKILL.md`
+- `offers` `1.0.6` — `skills/marketingskills/offers/SKILL.md`
+- `onboarding` `2.0.5` — `skills/marketingskills/onboarding/SKILL.md`
+- `paywalls` `2.1.4` — `skills/marketingskills/paywalls/SKILL.md`
+- `popups` `2.0.4` — `skills/marketingskills/popups/SKILL.md`
+- `pricing` `2.1.7` — `skills/marketingskills/pricing/SKILL.md`
+- `product-marketing` `2.2.3` — `skills/marketingskills/product-marketing/SKILL.md`
+- `programmatic-seo` `2.1.3` — `skills/marketingskills/programmatic-seo/SKILL.md`
+- `prospecting` `1.5.3` — `skills/marketingskills/prospecting/SKILL.md`
+- `public-relations` `1.2.4` — `skills/marketingskills/public-relations/SKILL.md`
+- `referrals` `2.2.4` — `skills/marketingskills/referrals/SKILL.md`
+- `reverse-engineer-marketing` `1.1.4` — `skills/marketingskills/reverse-engineer-marketing/SKILL.md`
+- `revops` `2.2.4` — `skills/marketingskills/revops/SKILL.md`
+- `sales-enablement` `2.4.3` — `skills/marketingskills/sales-enablement/SKILL.md`
+- `schema` `2.0.5` — `skills/marketingskills/schema/SKILL.md`
+- `seo-audit` `2.2.5` — `skills/marketingskills/seo-audit/SKILL.md`
+- `signup` `2.0.3` — `skills/marketingskills/signup/SKILL.md`
+- `site-architecture` `2.1.3` — `skills/marketingskills/site-architecture/SKILL.md`
+- `sms` `1.1.3` — `skills/marketingskills/sms/SKILL.md`
+- `social` `2.5.2` — `skills/marketingskills/social/SKILL.md`
+- `video` `2.4.3` — `skills/marketingskills/video/SKILL.md`
+
+## oomol
+
+[https://github.com/oomol-lab/skills](https://github.com/oomol-lab/skills) · `no release tag` · `136cef67a41a` · 1707 skills
+
+- `oo-1688` `1.0.2` — `skills/oomol/oo-1688/SKILL.md`
+- `oo-17track` `1.0.4` — `skills/oomol/oo-17track/SKILL.md`
+- `oo-7-shifts` `1.0.4` — `skills/oomol/oo-7-shifts/SKILL.md`
+- `oo-a-leads` `1.0.4` — `skills/oomol/oo-a-leads/SKILL.md`
+- `oo-ablefy` `1.0.4` — `skills/oomol/oo-ablefy/SKILL.md`
+- `oo-ably` `1.0.5` — `skills/oomol/oo-ably/SKILL.md`
+- `oo-ably-control` `1.0.4` — `skills/oomol/oo-ably-control/SKILL.md`
+- `oo-abstract` `1.0.5` — `skills/oomol/oo-abstract/SKILL.md`
+- `oo-abuseipdb` `1.0.6` — `skills/oomol/oo-abuseipdb/SKILL.md`
+- `oo-abyssale` `1.0.7` — `skills/oomol/oo-abyssale/SKILL.md`
+- `oo-accredible-certificates` `1.0.5` — `skills/oomol/oo-accredible-certificates/SKILL.md`
+- `oo-acculynx` `1.0.5` — `skills/oomol/oo-acculynx/SKILL.md`
+- `oo-accuweather` `1.0.4` — `skills/oomol/oo-accuweather/SKILL.md`
+- `oo-active-trail` `1.0.5` — `skills/oomol/oo-active-trail/SKILL.md`
+- `oo-activecampaign` `1.0.5` — `skills/oomol/oo-activecampaign/SKILL.md`
+- `oo-acuity-scheduling` `1.0.5` — `skills/oomol/oo-acuity-scheduling/SKILL.md`
+- `oo-adafruit-io` `1.0.4` — `skills/oomol/oo-adafruit-io/SKILL.md`
+- `oo-addressfinder` `1.0.5` — `skills/oomol/oo-addressfinder/SKILL.md`
+- `oo-addresszen` `1.0.5` — `skills/oomol/oo-addresszen/SKILL.md`
+- `oo-adobe-commerce` `1.0.5` — `skills/oomol/oo-adobe-commerce/SKILL.md`
+- `oo-adyen` `1.0.4` — `skills/oomol/oo-adyen/SKILL.md`
+- `oo-adyntel` `1.0.4` — `skills/oomol/oo-adyntel/SKILL.md`
+- `oo-aerisweather` `1.0.4` — `skills/oomol/oo-aerisweather/SKILL.md`
+- `oo-aeroleads` `1.0.5` — `skills/oomol/oo-aeroleads/SKILL.md`
+- `oo-affinda` `1.0.5` — `skills/oomol/oo-affinda/SKILL.md`
+- `oo-affinity` `1.0.5` — `skills/oomol/oo-affinity/SKILL.md`
+- `oo-aftership` `1.0.5` — `skills/oomol/oo-aftership/SKILL.md`
+- `oo-agent-mail` `1.0.7` — `skills/oomol/oo-agent-mail/SKILL.md`
+- `oo-agentearth` `1.0.2` — `skills/oomol/oo-agentearth/SKILL.md`
+- `oo-agentline` `1.0.1` — `skills/oomol/oo-agentline/SKILL.md`
+- `oo-agentql` `1.0.5` — `skills/oomol/oo-agentql/SKILL.md`
+- `oo-agenty` `1.0.6` — `skills/oomol/oo-agenty/SKILL.md`
+- `oo-agiled` `1.0.4` — `skills/oomol/oo-agiled/SKILL.md`
+- `oo-agility` `1.0.4` — `skills/oomol/oo-agility/SKILL.md`
+- `oo-agora` `1.0.5` — `skills/oomol/oo-agora/SKILL.md`
+- `oo-ahrefs` `1.0.5` — `skills/oomol/oo-ahrefs/SKILL.md`
+- `oo-aimfox` `1.0.5` — `skills/oomol/oo-aimfox/SKILL.md`
+- `oo-airbrake` `1.0.5` — `skills/oomol/oo-airbrake/SKILL.md`
+- `oo-aircall` `1.0.4` — `skills/oomol/oo-aircall/SKILL.md`
+- `oo-airfocus` `1.0.4` — `skills/oomol/oo-airfocus/SKILL.md`
+- `oo-airmeet` `1.0.2` — `skills/oomol/oo-airmeet/SKILL.md`
+- `oo-airtable` `1.0.7` — `skills/oomol/oo-airtable/SKILL.md`
+- `oo-aisa` `1.0.5` — `skills/oomol/oo-aisa/SKILL.md`
+- `oo-aitable-ai` `1.0.2` — `skills/oomol/oo-aitable-ai/SKILL.md`
+- `oo-aivoov` `1.0.5` — `skills/oomol/oo-aivoov/SKILL.md`
+- `oo-akta` `1.0.2` — `skills/oomol/oo-akta/SKILL.md`
+- `oo-alchemy` `1.0.5` — `skills/oomol/oo-alchemy/SKILL.md`
+- `oo-algo-docs` `1.0.4` — `skills/oomol/oo-algo-docs/SKILL.md`
+- `oo-algolia` `1.0.6` — `skills/oomol/oo-algolia/SKILL.md`
+- `oo-alipay` `1.0.0` — `skills/oomol/oo-alipay/SKILL.md`
+- `oo-aliyun-ack` `1.0.2` — `skills/oomol/oo-aliyun-ack/SKILL.md`
+- `oo-aliyun-oss` `1.0.8` — `skills/oomol/oo-aliyun-oss/SKILL.md`
+- `oo-aliyun-sls` `1.0.4` — `skills/oomol/oo-aliyun-sls/SKILL.md`
+- `oo-aliyun-sts` `1.0.7` — `skills/oomol/oo-aliyun-sts/SKILL.md`
+- `oo-allratestoday` `1.0.1` — `skills/oomol/oo-allratestoday/SKILL.md`
+- `oo-alpaca` `1.0.5` — `skills/oomol/oo-alpaca/SKILL.md`
+- `oo-alpha-vantage` `1.0.7` — `skills/oomol/oo-alpha-vantage/SKILL.md`
+- `oo-alt-text-ai` `1.0.6` — `skills/oomol/oo-alt-text-ai/SKILL.md`
+- `oo-alt-text-generator-ai` `1.0.4` — `skills/oomol/oo-alt-text-generator-ai/SKILL.md`
+- `oo-altiria` `1.0.4` — `skills/oomol/oo-altiria/SKILL.md`
+- `oo-altoviz` `1.0.4` — `skills/oomol/oo-altoviz/SKILL.md`
+- `oo-amap` `1.0.5` — `skills/oomol/oo-amap/SKILL.md`
+- `oo-amara` `1.0.6` — `skills/oomol/oo-amara/SKILL.md`
+- `oo-amazing-marvin` `1.0.2` — `skills/oomol/oo-amazing-marvin/SKILL.md`
+- `oo-ambee` `1.0.5` — `skills/oomol/oo-ambee/SKILL.md`
+- `oo-ambient-weather` `1.0.5` — `skills/oomol/oo-ambient-weather/SKILL.md`
+- `oo-ambivo` `1.0.4` — `skills/oomol/oo-ambivo/SKILL.md`
+- `oo-amilia` `1.0.4` — `skills/oomol/oo-amilia/SKILL.md`
+- `oo-amplemarket` `1.0.5` — `skills/oomol/oo-amplemarket/SKILL.md`
+- `oo-amplitude` `1.0.4` — `skills/oomol/oo-amplitude/SKILL.md`
+- `oo-anchor-browser` `1.0.4` — `skills/oomol/oo-anchor-browser/SKILL.md`
+- `oo-anrok` `1.0.5` — `skills/oomol/oo-anrok/SKILL.md`
+- `oo-anthropic` `1.0.6` — `skills/oomol/oo-anthropic/SKILL.md`
+- `oo-anthropic-admin` `1.0.4` — `skills/oomol/oo-anthropic-admin/SKILL.md`
+- `oo-anyapi` `1.0.2` — `skills/oomol/oo-anyapi/SKILL.md`
+- `oo-anydb` `1.0.4` — `skills/oomol/oo-anydb/SKILL.md`
+- `oo-anymail-finder` `1.0.4` — `skills/oomol/oo-anymail-finder/SKILL.md`
+- `oo-anysearch` `1.0.4` — `skills/oomol/oo-anysearch/SKILL.md`
+- `oo-apaleo` `1.0.7` — `skills/oomol/oo-apaleo/SKILL.md`
+- `oo-api-bible` `1.0.5` — `skills/oomol/oo-api-bible/SKILL.md`
+- `oo-api-ninjas` `1.0.5` — `skills/oomol/oo-api-ninjas/SKILL.md`
+- `oo-api-route` `1.0.2` — `skills/oomol/oo-api-route/SKILL.md`
+- `oo-api-sports` `1.0.5` — `skills/oomol/oo-api-sports/SKILL.md`
+- `oo-api-void` `1.0.4` — `skills/oomol/oo-api-void/SKILL.md`
+- `oo-api2pdf` `1.0.5` — `skills/oomol/oo-api2pdf/SKILL.md`
+- `oo-apiflash` `1.0.5` — `skills/oomol/oo-apiflash/SKILL.md`
+- `oo-apiframe` `1.0.3` — `skills/oomol/oo-apiframe/SKILL.md`
+- `oo-apify` `1.0.6` — `skills/oomol/oo-apify/SKILL.md`
+- `oo-apipie-ai` `1.0.5` — `skills/oomol/oo-apipie-ai/SKILL.md`
+- `oo-apiverve` `1.0.5` — `skills/oomol/oo-apiverve/SKILL.md`
+- `oo-apollo` `1.0.5` — `skills/oomol/oo-apollo/SKILL.md`
+- `oo-app-store-connect` `1.0.7` — `skills/oomol/oo-app-store-connect/SKILL.md`
+- `oo-app-store-server` `1.0.5` — `skills/oomol/oo-app-store-server/SKILL.md`
+- `oo-appcircle` `1.0.4` — `skills/oomol/oo-appcircle/SKILL.md`
+- `oo-appcues` `1.0.5` — `skills/oomol/oo-appcues/SKILL.md`
+- `oo-appdrag` `1.0.6` — `skills/oomol/oo-appdrag/SKILL.md`
+- `oo-appgrowing-mcp` `1.0.2` — `skills/oomol/oo-appgrowing-mcp/SKILL.md`
+- `oo-apple-ads` `1.0.5` — `skills/oomol/oo-apple-ads/SKILL.md`
+- `oo-apple-maps` `1.0.2` — `skills/oomol/oo-apple-maps/SKILL.md`
+- `oo-apple-notary` `1.0.4` — `skills/oomol/oo-apple-notary/SKILL.md`
+- `oo-appledb` `1.0.4` — `skills/oomol/oo-appledb/SKILL.md`
+- `oo-appstle-subscriptions` `1.0.5` — `skills/oomol/oo-appstle-subscriptions/SKILL.md`
+- `oo-appveyor` `1.0.5` — `skills/oomol/oo-appveyor/SKILL.md`
+- `oo-arcgis-online` `1.0.5` — `skills/oomol/oo-arcgis-online/SKILL.md`
+- `oo-arcmira` `1.0.2` — `skills/oomol/oo-arcmira/SKILL.md`
+- `oo-aroflo` `1.0.4` — `skills/oomol/oo-aroflo/SKILL.md`
+- `oo-artificial-analysis` `1.0.2` — `skills/oomol/oo-artificial-analysis/SKILL.md`
+- `oo-arxiv` `1.0.5` — `skills/oomol/oo-arxiv/SKILL.md`
+- `oo-asana` `1.0.7` — `skills/oomol/oo-asana/SKILL.md`
+- `oo-ashby` `1.0.4` — `skills/oomol/oo-ashby/SKILL.md`
+- `oo-asin-data-api` `1.0.5` — `skills/oomol/oo-asin-data-api/SKILL.md`
+- `oo-assemblyai` `1.0.4` — `skills/oomol/oo-assemblyai/SKILL.md`
+- `oo-assured-platform` `1.0.2` — `skills/oomol/oo-assured-platform/SKILL.md`
+- `oo-atlas-so` `1.0.5` — `skills/oomol/oo-atlas-so/SKILL.md`
+- `oo-atmorouter` `1.0.0` — `skills/oomol/oo-atmorouter/SKILL.md`
+- `oo-attention` `1.0.6` — `skills/oomol/oo-attention/SKILL.md`
+- `oo-attio` `1.0.6` — `skills/oomol/oo-attio/SKILL.md`
+- `oo-auth0-management` `1.0.4` — `skills/oomol/oo-auth0-management/SKILL.md`
+- `oo-autoblogger` `1.0.4` — `skills/oomol/oo-autoblogger/SKILL.md`
+- `oo-autobound` `1.0.5` — `skills/oomol/oo-autobound/SKILL.md`
+- `oo-autom` `1.0.5` — `skills/oomol/oo-autom/SKILL.md`
+- `oo-autotask` `1.0.5` — `skills/oomol/oo-autotask/SKILL.md`
+- `oo-aviationstack` `1.0.5` — `skills/oomol/oo-aviationstack/SKILL.md`
+- `oo-avochato` `1.0.4` — `skills/oomol/oo-avochato/SKILL.md`
+- `oo-avoma` `1.0.4` — `skills/oomol/oo-avoma/SKILL.md`
+- `oo-aws-s3` `1.0.7` — `skills/oomol/oo-aws-s3/SKILL.md`
+- `oo-aws-sts` `1.0.6` — `skills/oomol/oo-aws-sts/SKILL.md`
+- `oo-axiom` `1.0.4` — `skills/oomol/oo-axiom/SKILL.md`
+- `oo-ayrshare` `1.0.8` — `skills/oomol/oo-ayrshare/SKILL.md`
+- `oo-baidu-maps` `1.0.4` — `skills/oomol/oo-baidu-maps/SKILL.md`
+- `oo-baidu-netdisk` `1.0.7` — `skills/oomol/oo-baidu-netdisk/SKILL.md`
+- `oo-bainiu` `1.0.2` — `skills/oomol/oo-bainiu/SKILL.md`
+- `oo-baixiao` `1.0.2` — `skills/oomol/oo-baixiao/SKILL.md`
+- `oo-baizhi-mcp` `1.0.2` — `skills/oomol/oo-baizhi-mcp/SKILL.md`
+- `oo-balldontlie-worldcup` `1.0.4` — `skills/oomol/oo-balldontlie-worldcup/SKILL.md`
+- `oo-bamboohr` `1.0.4` — `skills/oomol/oo-bamboohr/SKILL.md`
+- `oo-bannerbear` `1.0.4` — `skills/oomol/oo-bannerbear/SKILL.md`
+- `oo-baremetrics` `1.0.5` — `skills/oomol/oo-baremetrics/SKILL.md`
+- `oo-bark` `1.0.5` — `skills/oomol/oo-bark/SKILL.md`
+- `oo-baselinker` `1.0.6` — `skills/oomol/oo-baselinker/SKILL.md`
+- `oo-baserow` `1.0.5` — `skills/oomol/oo-baserow/SKILL.md`
+- `oo-basin` `1.0.5` — `skills/oomol/oo-basin/SKILL.md`
+- `oo-bazhuayu` `1.0.5` — `skills/oomol/oo-bazhuayu/SKILL.md`
+- `oo-beaconchain` `1.0.5` — `skills/oomol/oo-beaconchain/SKILL.md`
+- `oo-beamer` `1.0.6` — `skills/oomol/oo-beamer/SKILL.md`
+- `oo-beebole` `1.0.5` — `skills/oomol/oo-beebole/SKILL.md`
+- `oo-beehiiv` `1.0.7` — `skills/oomol/oo-beehiiv/SKILL.md`
+- `oo-beeminder` `1.0.5` — `skills/oomol/oo-beeminder/SKILL.md`
+- `oo-benchmark-email` `1.0.5` — `skills/oomol/oo-benchmark-email/SKILL.md`
+- `oo-benchmarkone` `1.0.2` — `skills/oomol/oo-benchmarkone/SKILL.md`
+- `oo-benzinga` `1.0.5` — `skills/oomol/oo-benzinga/SKILL.md`
+- `oo-bestbuy` `1.0.5` — `skills/oomol/oo-bestbuy/SKILL.md`
+- `oo-better-proposals` `1.0.6` — `skills/oomol/oo-better-proposals/SKILL.md`
+- `oo-better-stack` `1.0.6` — `skills/oomol/oo-better-stack/SKILL.md`
+- `oo-bettercontact` `1.0.5` — `skills/oomol/oo-bettercontact/SKILL.md`
+- `oo-bidsketch` `1.0.5` — `skills/oomol/oo-bidsketch/SKILL.md`
+- `oo-big-commerce` `1.0.4` — `skills/oomol/oo-big-commerce/SKILL.md`
+- `oo-big-data-cloud` `1.0.5` — `skills/oomol/oo-big-data-cloud/SKILL.md`
+- `oo-bigmailer` `1.0.5` — `skills/oomol/oo-bigmailer/SKILL.md`
+- `oo-bigml` `1.0.4` — `skills/oomol/oo-bigml/SKILL.md`
+- `oo-bigpicture-io` `1.0.5` — `skills/oomol/oo-bigpicture-io/SKILL.md`
+- `oo-bilibili` `1.0.2` — `skills/oomol/oo-bilibili/SKILL.md`
+- `oo-bing-webmaster` `1.0.2` — `skills/oomol/oo-bing-webmaster/SKILL.md`
+- `oo-biorxiv-medrxiv` `1.0.4` — `skills/oomol/oo-biorxiv-medrxiv/SKILL.md`
+- `oo-bird` `1.0.4` — `skills/oomol/oo-bird/SKILL.md`
+- `oo-bitbucket` `1.0.5` — `skills/oomol/oo-bitbucket/SKILL.md`
+- `oo-bitly` `1.0.5` — `skills/oomol/oo-bitly/SKILL.md`
+- `oo-bitquery` `1.0.5` — `skills/oomol/oo-bitquery/SKILL.md`
+- `oo-bitrise` `1.0.4` — `skills/oomol/oo-bitrise/SKILL.md`
+- `oo-bitwarden` `1.0.3` — `skills/oomol/oo-bitwarden/SKILL.md`
+- `oo-bland-ai` `1.0.4` — `skills/oomol/oo-bland-ai/SKILL.md`
+- `oo-blaze-meter-functional` `1.0.4` — `skills/oomol/oo-blaze-meter-functional/SKILL.md`
+- `oo-blaze-meter-performance` `1.0.4` — `skills/oomol/oo-blaze-meter-performance/SKILL.md`
+- `oo-blaze-meter-service-virtualization` `1.0.4` — `skills/oomol/oo-blaze-meter-service-virtualization/SKILL.md`
+- `oo-blocknative` `1.0.5` — `skills/oomol/oo-blocknative/SKILL.md`
+- `oo-bloomerang` `1.0.2` — `skills/oomol/oo-bloomerang/SKILL.md`
+- `oo-bluesky` `1.0.5` — `skills/oomol/oo-bluesky/SKILL.md`
+- `oo-boldsign` `1.0.4` — `skills/oomol/oo-boldsign/SKILL.md`
+- `oo-bolna` `1.0.5` — `skills/oomol/oo-bolna/SKILL.md`
+- `oo-boloforms` `1.0.5` — `skills/oomol/oo-boloforms/SKILL.md`
+- `oo-bookingmood` `1.0.4` — `skills/oomol/oo-bookingmood/SKILL.md`
+- `oo-booqable` `1.0.6` — `skills/oomol/oo-booqable/SKILL.md`
+- `oo-bot-star` `1.0.4` — `skills/oomol/oo-bot-star/SKILL.md`
+- `oo-botpress` `1.0.5` — `skills/oomol/oo-botpress/SKILL.md`
+- `oo-botsonic` `1.0.6` — `skills/oomol/oo-botsonic/SKILL.md`
+- `oo-bouncer` `1.0.6` — `skills/oomol/oo-bouncer/SKILL.md`
+- `oo-box` `1.0.4` — `skills/oomol/oo-box/SKILL.md`
+- `oo-boxhero` `1.0.5` — `skills/oomol/oo-boxhero/SKILL.md`
+- `oo-brandfetch` `1.0.6` — `skills/oomol/oo-brandfetch/SKILL.md`
+- `oo-brave-search` `1.0.5` — `skills/oomol/oo-brave-search/SKILL.md`
+- `oo-braze` `1.0.5` — `skills/oomol/oo-braze/SKILL.md`
+- `oo-breathe` `1.0.4` — `skills/oomol/oo-breathe/SKILL.md`
+- `oo-breeze` `1.0.5` — `skills/oomol/oo-breeze/SKILL.md`
+- `oo-breezy-hr` `1.0.4` — `skills/oomol/oo-breezy-hr/SKILL.md`
+- `oo-brevo` `1.0.5` — `skills/oomol/oo-brevo/SKILL.md`
+- `oo-brex` `1.0.4` — `skills/oomol/oo-brex/SKILL.md`
+- `oo-bright-data` `1.0.4` — `skills/oomol/oo-bright-data/SKILL.md`
+- `oo-browse-ai` `1.0.6` — `skills/oomol/oo-browse-ai/SKILL.md`
+- `oo-browser-use` `1.0.5` — `skills/oomol/oo-browser-use/SKILL.md`
+- `oo-browserbase` `1.0.6` — `skills/oomol/oo-browserbase/SKILL.md`
+- `oo-browserless` `1.0.5` — `skills/oomol/oo-browserless/SKILL.md`
+- `oo-browserstack` `1.0.4` — `skills/oomol/oo-browserstack/SKILL.md`
+- `oo-bt-mcp` `1.0.5` — `skills/oomol/oo-bt-mcp/SKILL.md`
+- `oo-btcpay-server` `1.0.5` — `skills/oomol/oo-btcpay-server/SKILL.md`
+- `oo-bug-herd` `1.0.5` — `skills/oomol/oo-bug-herd/SKILL.md`
+- `oo-bugbug` `1.0.6` — `skills/oomol/oo-bugbug/SKILL.md`
+- `oo-bugsnag` `1.0.5` — `skills/oomol/oo-bugsnag/SKILL.md`
+- `oo-builder-io` `1.0.4` — `skills/oomol/oo-builder-io/SKILL.md`
+- `oo-buildium` `1.0.4` — `skills/oomol/oo-buildium/SKILL.md`
+- `oo-buildkite` `1.0.6` — `skills/oomol/oo-buildkite/SKILL.md`
+- `oo-builtwith` `1.0.5` — `skills/oomol/oo-builtwith/SKILL.md`
+- `oo-bunnycdn` `1.0.5` — `skills/oomol/oo-bunnycdn/SKILL.md`
+- `oo-businessmap` `1.0.5` — `skills/oomol/oo-businessmap/SKILL.md`
+- `oo-buttondown` `1.0.4` — `skills/oomol/oo-buttondown/SKILL.md`
+- `oo-buzzsprout` `1.0.2` — `skills/oomol/oo-buzzsprout/SKILL.md`
+- `oo-byteforms` `1.0.5` — `skills/oomol/oo-byteforms/SKILL.md`
+- `oo-cal` `1.0.7` — `skills/oomol/oo-cal/SKILL.md`
+- `oo-calendarific` `1.0.5` — `skills/oomol/oo-calendarific/SKILL.md`
+- `oo-calendly` `1.0.6` — `skills/oomol/oo-calendly/SKILL.md`
+- `oo-callerapi` `1.0.5` — `skills/oomol/oo-callerapi/SKILL.md`
+- `oo-callingly` `1.0.5` — `skills/oomol/oo-callingly/SKILL.md`
+- `oo-callpage` `1.0.5` — `skills/oomol/oo-callpage/SKILL.md`
+- `oo-callrail` `1.0.4` — `skills/oomol/oo-callrail/SKILL.md`
+- `oo-campaign-cleaner` `1.0.5` — `skills/oomol/oo-campaign-cleaner/SKILL.md`
+- `oo-canny` `1.0.6` — `skills/oomol/oo-canny/SKILL.md`
+- `oo-canva` `1.0.6` — `skills/oomol/oo-canva/SKILL.md`
+- `oo-capsule-crm` `1.0.5` — `skills/oomol/oo-capsule-crm/SKILL.md`
+- `oo-captainbi` `1.0.4` — `skills/oomol/oo-captainbi/SKILL.md`
+- `oo-carbone` `1.0.4` — `skills/oomol/oo-carbone/SKILL.md`
+- `oo-cardly` `1.0.5` — `skills/oomol/oo-cardly/SKILL.md`
+- `oo-cartes` `1.0.4` — `skills/oomol/oo-cartes/SKILL.md`
+- `oo-castingwords` `1.0.4` — `skills/oomol/oo-castingwords/SKILL.md`
+- `oo-cats` `1.0.4` — `skills/oomol/oo-cats/SKILL.md`
+- `oo-celigo` `1.0.6` — `skills/oomol/oo-celigo/SKILL.md`
+- `oo-census-bureau` `1.0.5` — `skills/oomol/oo-census-bureau/SKILL.md`
+- `oo-censys` `1.0.5` — `skills/oomol/oo-censys/SKILL.md`
+- `oo-central-station-crm` `1.0.4` — `skills/oomol/oo-central-station-crm/SKILL.md`
+- `oo-certifier` `1.0.5` — `skills/oomol/oo-certifier/SKILL.md`
+- `oo-certn` `1.0.5` — `skills/oomol/oo-certn/SKILL.md`
+- `oo-chaport` `1.0.2` — `skills/oomol/oo-chaport/SKILL.md`
+- `oo-chargebee` `1.0.5` — `skills/oomol/oo-chargebee/SKILL.md`
+- `oo-chargeblast` `1.0.5` — `skills/oomol/oo-chargeblast/SKILL.md`
+- `oo-chargify` `1.0.4` — `skills/oomol/oo-chargify/SKILL.md`
+- `oo-chartmogul` `1.0.4` — `skills/oomol/oo-chartmogul/SKILL.md`
+- `oo-chaserhq` `1.0.4` — `skills/oomol/oo-chaserhq/SKILL.md`
+- `oo-chat-api-for-whatsapp` `1.0.4` — `skills/oomol/oo-chat-api-for-whatsapp/SKILL.md`
+- `oo-chatarmin` `1.0.6` — `skills/oomol/oo-chatarmin/SKILL.md`
+- `oo-chatbotkit` `1.0.6` — `skills/oomol/oo-chatbotkit/SKILL.md`
+- `oo-chatpdf` `1.0.5` — `skills/oomol/oo-chatpdf/SKILL.md`
+- `oo-chatra` `1.0.2` — `skills/oomol/oo-chatra/SKILL.md`
+- `oo-chattermill` `1.0.4` — `skills/oomol/oo-chattermill/SKILL.md`
+- `oo-chatwork` `1.0.5` — `skills/oomol/oo-chatwork/SKILL.md`
+- `oo-cheaperinference` `1.0.2` — `skills/oomol/oo-cheaperinference/SKILL.md`
+- `oo-check` `1.0.4` — `skills/oomol/oo-check/SKILL.md`
+- `oo-checkly` `1.0.4` — `skills/oomol/oo-checkly/SKILL.md`
+- `oo-checkout-com` `1.0.4` — `skills/oomol/oo-checkout-com/SKILL.md`
+- `oo-chengxin` `1.0.5` — `skills/oomol/oo-chengxin/SKILL.md`
+- `oo-chorus` `1.0.5` — `skills/oomol/oo-chorus/SKILL.md`
+- `oo-chuhaijiang` `1.0.5` — `skills/oomol/oo-chuhaijiang/SKILL.md`
+- `oo-cin7-core` `1.0.5` — `skills/oomol/oo-cin7-core/SKILL.md`
+- `oo-cincopa` `1.0.5` — `skills/oomol/oo-cincopa/SKILL.md`
+- `oo-circle` `1.0.6` — `skills/oomol/oo-circle/SKILL.md`
+- `oo-circleci` `1.0.5` — `skills/oomol/oo-circleci/SKILL.md`
+- `oo-cisco-meraki` `1.0.4` — `skills/oomol/oo-cisco-meraki/SKILL.md`
+- `oo-claid-ai` `1.0.6` — `skills/oomol/oo-claid-ai/SKILL.md`
+- `oo-clari-copilot` `1.0.5` — `skills/oomol/oo-clari-copilot/SKILL.md`
+- `oo-classmarker` `1.0.5` — `skills/oomol/oo-classmarker/SKILL.md`
+- `oo-clay` `1.0.3` — `skills/oomol/oo-clay/SKILL.md`
+- `oo-clearout` `1.0.5` — `skills/oomol/oo-clearout/SKILL.md`
+- `oo-clerk` `1.0.7` — `skills/oomol/oo-clerk/SKILL.md`
+- `oo-clickhelp` `1.0.4` — `skills/oomol/oo-clickhelp/SKILL.md`
+- `oo-clickhouse` `1.0.6` — `skills/oomol/oo-clickhouse/SKILL.md`
+- `oo-clickmeeting` `1.0.5` — `skills/oomol/oo-clickmeeting/SKILL.md`
+- `oo-clicksend` `1.0.5` — `skills/oomol/oo-clicksend/SKILL.md`
+- `oo-clickup` `1.0.5` — `skills/oomol/oo-clickup/SKILL.md`
+- `oo-clickup-mcp` `1.0.4` — `skills/oomol/oo-clickup-mcp/SKILL.md`
+- `oo-clinicalkey` `1.0.4` — `skills/oomol/oo-clinicalkey/SKILL.md`
+- `oo-clinicaltrials-gov` `1.0.4` — `skills/oomol/oo-clinicaltrials-gov/SKILL.md`
+- `oo-clockify` `1.0.5` — `skills/oomol/oo-clockify/SKILL.md`
+- `oo-cloro` `1.0.2` — `skills/oomol/oo-cloro/SKILL.md`
+- `oo-close` `1.0.5` — `skills/oomol/oo-close/SKILL.md`
+- `oo-cloudconvert` `1.0.6` — `skills/oomol/oo-cloudconvert/SKILL.md`
+- `oo-cloudflare-browser-rendering` `1.0.6` — `skills/oomol/oo-cloudflare-browser-rendering/SKILL.md`
+- `oo-cloudflare-dns` `1.0.7` — `skills/oomol/oo-cloudflare-dns/SKILL.md`
+- `oo-cloudflare-docs` `1.0.4` — `skills/oomol/oo-cloudflare-docs/SKILL.md`
+- `oo-cloudflare-email-routing` `1.0.5` — `skills/oomol/oo-cloudflare-email-routing/SKILL.md`
+- `oo-cloudflare-mcp` `1.0.5` — `skills/oomol/oo-cloudflare-mcp/SKILL.md`
+- `oo-cloudflare-r2` `1.0.12` — `skills/oomol/oo-cloudflare-r2/SKILL.md`
+- `oo-cloudflare-worker` `1.0.9` — `skills/oomol/oo-cloudflare-worker/SKILL.md`
+- `oo-cloudgpu` `1.0.0` — `skills/oomol/oo-cloudgpu/SKILL.md`
+- `oo-cloudinary` `1.0.5` — `skills/oomol/oo-cloudinary/SKILL.md`
+- `oo-cloudlayer` `1.0.5` — `skills/oomol/oo-cloudlayer/SKILL.md`
+- `oo-cnb` `1.0.2` — `skills/oomol/oo-cnb/SKILL.md`
+- `oo-cochrane` `1.0.4` — `skills/oomol/oo-cochrane/SKILL.md`
+- `oo-cockroach-labs` `1.0.4` — `skills/oomol/oo-cockroach-labs/SKILL.md`
+- `oo-coda` `1.0.5` — `skills/oomol/oo-coda/SKILL.md`
+- `oo-codacy` `1.0.5` — `skills/oomol/oo-codacy/SKILL.md`
+- `oo-codegen` `1.0.5` — `skills/oomol/oo-codegen/SKILL.md`
+- `oo-codemagic` `1.0.6` — `skills/oomol/oo-codemagic/SKILL.md`
+- `oo-coderabbit` `1.0.6` — `skills/oomol/oo-coderabbit/SKILL.md`
+- `oo-coderpad` `1.0.5` — `skills/oomol/oo-coderpad/SKILL.md`
+- `oo-cohere` `1.0.5` — `skills/oomol/oo-cohere/SKILL.md`
+- `oo-coinbase` `1.0.5` — `skills/oomol/oo-coinbase/SKILL.md`
+- `oo-coingecko` `1.0.4` — `skills/oomol/oo-coingecko/SKILL.md`
+- `oo-coinmarketcal` `1.0.5` — `skills/oomol/oo-coinmarketcal/SKILL.md`
+- `oo-coinmarketcap` `1.0.5` — `skills/oomol/oo-coinmarketcap/SKILL.md`
+- `oo-coinranking` `1.0.5` — `skills/oomol/oo-coinranking/SKILL.md`
+- `oo-college-football-data` `1.0.5` — `skills/oomol/oo-college-football-data/SKILL.md`
+- `oo-collegiate` `1.0.6` — `skills/oomol/oo-collegiate/SKILL.md`
+- `oo-commonninja` `1.0.2` — `skills/oomol/oo-commonninja/SKILL.md`
+- `oo-commpeak` `1.0.4` — `skills/oomol/oo-commpeak/SKILL.md`
+- `oo-companycam` `1.0.5` — `skills/oomol/oo-companycam/SKILL.md`
+- `oo-companyenrich` `1.0.5` — `skills/oomol/oo-companyenrich/SKILL.md`
+- `oo-concord` `1.0.4` — `skills/oomol/oo-concord/SKILL.md`
+- `oo-conductor` `1.0.5` — `skills/oomol/oo-conductor/SKILL.md`
+- `oo-configcat` `1.0.4` — `skills/oomol/oo-configcat/SKILL.md`
+- `oo-confluence` `1.0.4` — `skills/oomol/oo-confluence/SKILL.md`
+- `oo-confluent` `1.0.4` — `skills/oomol/oo-confluent/SKILL.md`
+- `oo-consensus` `1.0.4` — `skills/oomol/oo-consensus/SKILL.md`
+- `oo-contactout` `1.0.4` — `skills/oomol/oo-contactout/SKILL.md`
+- `oo-contentful` `1.0.5` — `skills/oomol/oo-contentful/SKILL.md`
+- `oo-contentful-graphql` `1.0.5` — `skills/oomol/oo-contentful-graphql/SKILL.md`
+- `oo-contentstack-content-delivery` `1.0.4` — `skills/oomol/oo-contentstack-content-delivery/SKILL.md`
+- `oo-contentstack-content-management` `1.0.4` — `skills/oomol/oo-contentstack-content-management/SKILL.md`
+- `oo-context7` `1.0.4` — `skills/oomol/oo-context7/SKILL.md`
+- `oo-contextdev` `1.0.2` — `skills/oomol/oo-contextdev/SKILL.md`
+- `oo-control-d` `1.0.6` — `skills/oomol/oo-control-d/SKILL.md`
+- `oo-convertapi` `1.0.5` — `skills/oomol/oo-convertapi/SKILL.md`
+- `oo-convex` `1.0.6` — `skills/oomol/oo-convex/SKILL.md`
+- `oo-coolify` `1.0.3` — `skills/oomol/oo-coolify/SKILL.md`
+- `oo-coresignal` `1.0.4` — `skills/oomol/oo-coresignal/SKILL.md`
+- `oo-countdown-api` `1.0.5` — `skills/oomol/oo-countdown-api/SKILL.md`
+- `oo-countly` `1.0.4` — `skills/oomol/oo-countly/SKILL.md`
+- `oo-coupang` `1.0.5` — `skills/oomol/oo-coupang/SKILL.md`
+- `oo-coupontools` `1.0.2` — `skills/oomol/oo-coupontools/SKILL.md`
+- `oo-courier` `1.0.5` — `skills/oomol/oo-courier/SKILL.md`
+- `oo-craftmypdf` `1.0.5` — `skills/oomol/oo-craftmypdf/SKILL.md`
+- `oo-cratedb-cloud` `1.0.4` — `skills/oomol/oo-cratedb-cloud/SKILL.md`
+- `oo-credit-repair-cloud` `1.0.4` — `skills/oomol/oo-credit-repair-cloud/SKILL.md`
+- `oo-crisp` `1.0.5` — `skills/oomol/oo-crisp/SKILL.md`
+- `oo-cronfree` `1.0.2` — `skills/oomol/oo-cronfree/SKILL.md`
+- `oo-cronitor` `1.0.4` — `skills/oomol/oo-cronitor/SKILL.md`
+- `oo-cronly` `1.0.4` — `skills/oomol/oo-cronly/SKILL.md`
+- `oo-cronlytic` `1.0.2` — `skills/oomol/oo-cronlytic/SKILL.md`
+- `oo-crossref` `1.0.4` — `skills/oomol/oo-crossref/SKILL.md`
+- `oo-crowdin` `1.0.5` — `skills/oomol/oo-crowdin/SKILL.md`
+- `oo-crtsh` `1.0.1` — `skills/oomol/oo-crtsh/SKILL.md`
+- `oo-crunchbase` `1.0.5` — `skills/oomol/oo-crunchbase/SKILL.md`
+- `oo-crustdata` `1.0.5` — `skills/oomol/oo-crustdata/SKILL.md`
+- `oo-crypto-apis` `1.0.4` — `skills/oomol/oo-crypto-apis/SKILL.md`
+- `oo-cubox` `1.0.4` — `skills/oomol/oo-cubox/SKILL.md`
+- `oo-cufinder` `1.0.2` — `skills/oomol/oo-cufinder/SKILL.md`
+- `oo-currencyapi` `1.0.5` — `skills/oomol/oo-currencyapi/SKILL.md`
+- `oo-currencyscoop` `1.0.6` — `skills/oomol/oo-currencyscoop/SKILL.md`
+- `oo-currents-api` `1.0.5` — `skills/oomol/oo-currents-api/SKILL.md`
+- `oo-cursor` `1.0.6` — `skills/oomol/oo-cursor/SKILL.md`
+- `oo-customerio` `1.0.5` — `skills/oomol/oo-customerio/SKILL.md`
+- `oo-customgpt` `1.0.5` — `skills/oomol/oo-customgpt/SKILL.md`
+- `oo-cutt-ly` `1.0.6` — `skills/oomol/oo-cutt-ly/SKILL.md`
+- `oo-cyberimpact` `1.0.5` — `skills/oomol/oo-cyberimpact/SKILL.md`
+- `oo-dachser` `1.0.5` — `skills/oomol/oo-dachser/SKILL.md`
+- `oo-dadata-ru` `1.0.5` — `skills/oomol/oo-dadata-ru/SKILL.md`
+- `oo-daffy` `1.0.5` — `skills/oomol/oo-daffy/SKILL.md`
+- `oo-daily` `1.0.5` — `skills/oomol/oo-daily/SKILL.md`
+- `oo-dailybot` `1.0.6` — `skills/oomol/oo-dailybot/SKILL.md`
+- `oo-dami-mcp` `1.0.2` — `skills/oomol/oo-dami-mcp/SKILL.md`
+- `oo-dandelion` `1.0.4` — `skills/oomol/oo-dandelion/SKILL.md`
+- `oo-dart` `1.0.4` — `skills/oomol/oo-dart/SKILL.md`
+- `oo-data247` `1.0.6` — `skills/oomol/oo-data247/SKILL.md`
+- `oo-databar-ai` `1.0.5` — `skills/oomol/oo-databar-ai/SKILL.md`
+- `oo-databox` `1.0.6` — `skills/oomol/oo-databox/SKILL.md`
+- `oo-databricks` `1.0.6` — `skills/oomol/oo-databricks/SKILL.md`
+- `oo-datacite` `1.0.4` — `skills/oomol/oo-datacite/SKILL.md`
+- `oo-datadog` `1.0.5` — `skills/oomol/oo-datadog/SKILL.md`
+- `oo-dataforb2b` `1.0.2` — `skills/oomol/oo-dataforb2b/SKILL.md`
+- `oo-dataforseo` `1.0.6` — `skills/oomol/oo-dataforseo/SKILL.md`
+- `oo-datagma` `1.0.4` — `skills/oomol/oo-datagma/SKILL.md`
+- `oo-datalust` `1.0.5` — `skills/oomol/oo-datalust/SKILL.md`
+- `oo-datascope` `1.0.5` — `skills/oomol/oo-datascope/SKILL.md`
+- `oo-daytona` `1.0.5` — `skills/oomol/oo-daytona/SKILL.md`
+- `oo-dealmachine` `1.0.4` — `skills/oomol/oo-dealmachine/SKILL.md`
+- `oo-dealnews` `1.0.4` — `skills/oomol/oo-dealnews/SKILL.md`
+- `oo-dealroom` `1.0.4` — `skills/oomol/oo-dealroom/SKILL.md`
+- `oo-deck-co` `1.0.5` — `skills/oomol/oo-deck-co/SKILL.md`
+- `oo-deepgram` `1.0.5` — `skills/oomol/oo-deepgram/SKILL.md`
+- `oo-deepl` `1.0.5` — `skills/oomol/oo-deepl/SKILL.md`
+- `oo-deepseek` `1.0.7` — `skills/oomol/oo-deepseek/SKILL.md`
+- `oo-defillama` `1.0.2` — `skills/oomol/oo-defillama/SKILL.md`
+- `oo-delighted` `1.0.5` — `skills/oomol/oo-delighted/SKILL.md`
+- `oo-demio` `1.0.5` — `skills/oomol/oo-demio/SKILL.md`
+- `oo-demodesk` `1.0.5` — `skills/oomol/oo-demodesk/SKILL.md`
+- `oo-descript` `1.0.3` — `skills/oomol/oo-descript/SKILL.md`
+- `oo-desktime` `1.0.5` — `skills/oomol/oo-desktime/SKILL.md`
+- `oo-detect-language` `1.0.4` — `skills/oomol/oo-detect-language/SKILL.md`
+- `oo-detrack` `1.0.4` — `skills/oomol/oo-detrack/SKILL.md`
+- `oo-deutschlandgpt` `1.0.5` — `skills/oomol/oo-deutschlandgpt/SKILL.md`
+- `oo-devin` `1.0.4` — `skills/oomol/oo-devin/SKILL.md`
+- `oo-devto` `1.0.5` — `skills/oomol/oo-devto/SKILL.md`
+- `oo-dialmycalls` `1.0.4` — `skills/oomol/oo-dialmycalls/SKILL.md`
+- `oo-dialpad-wfm` `1.0.6` — `skills/oomol/oo-dialpad-wfm/SKILL.md`
+- `oo-dida365` `1.0.9` — `skills/oomol/oo-dida365/SKILL.md`
+- `oo-didi` `1.0.1` — `skills/oomol/oo-didi/SKILL.md`
+- `oo-diffbot` `1.0.5` — `skills/oomol/oo-diffbot/SKILL.md`
+- `oo-diffy` `1.0.4` — `skills/oomol/oo-diffy/SKILL.md`
+- `oo-digistore24` `1.0.4` — `skills/oomol/oo-digistore24/SKILL.md`
+- `oo-digital-ocean` `1.0.6` — `skills/oomol/oo-digital-ocean/SKILL.md`
+- `oo-dingtalk-bot` `1.0.5` — `skills/oomol/oo-dingtalk-bot/SKILL.md`
+- `oo-dingtalk-mcp` `1.0.5` — `skills/oomol/oo-dingtalk-mcp/SKILL.md`
+- `oo-discolike` `1.0.5` — `skills/oomol/oo-discolike/SKILL.md`
+- `oo-discord` `1.0.7` — `skills/oomol/oo-discord/SKILL.md`
+- `oo-discordbot` `1.0.8` — `skills/oomol/oo-discordbot/SKILL.md`
+- `oo-discourse` `1.0.5` — `skills/oomol/oo-discourse/SKILL.md`
+- `oo-dixa` `1.0.4` — `skills/oomol/oo-dixa/SKILL.md`
+- `oo-dns-filter` `1.0.5` — `skills/oomol/oo-dns-filter/SKILL.md`
+- `oo-docker-hub` `1.0.5` — `skills/oomol/oo-docker-hub/SKILL.md`
+- `oo-docmosis` `1.0.5` — `skills/oomol/oo-docmosis/SKILL.md`
+- `oo-docparser` `1.0.6` — `skills/oomol/oo-docparser/SKILL.md`
+- `oo-docraptor` `1.0.6` — `skills/oomol/oo-docraptor/SKILL.md`
+- `oo-docsautomator` `1.0.5` — `skills/oomol/oo-docsautomator/SKILL.md`
+- `oo-docsbot-ai` `1.0.5` — `skills/oomol/oo-docsbot-ai/SKILL.md`
+- `oo-docsend-2-pdf` `1.0.4` — `skills/oomol/oo-docsend-2-pdf/SKILL.md`
+- `oo-docsumo` `1.0.5` — `skills/oomol/oo-docsumo/SKILL.md`
+- `oo-docugenerate` `1.0.6` — `skills/oomol/oo-docugenerate/SKILL.md`
+- `oo-documenso` `1.0.4` — `skills/oomol/oo-documenso/SKILL.md`
+- `oo-document360` `1.0.5` — `skills/oomol/oo-document360/SKILL.md`
+- `oo-docuseal` `1.0.6` — `skills/oomol/oo-docuseal/SKILL.md`
+- `oo-dokploy` `1.0.5` — `skills/oomol/oo-dokploy/SKILL.md`
+- `oo-doppler` `1.0.6` — `skills/oomol/oo-doppler/SKILL.md`
+- `oo-doppler-marketing-automation` `1.0.4` — `skills/oomol/oo-doppler-marketing-automation/SKILL.md`
+- `oo-doris` `1.0.0` — `skills/oomol/oo-doris/SKILL.md`
+- `oo-doubao-seedream` `1.0.5` — `skills/oomol/oo-doubao-seedream/SKILL.md`
+- `oo-doubao-speech` `1.0.4` — `skills/oomol/oo-doubao-speech/SKILL.md`
+- `oo-dovetail` `1.0.5` — `skills/oomol/oo-dovetail/SKILL.md`
+- `oo-drata` `1.0.4` — `skills/oomol/oo-drata/SKILL.md`
+- `oo-drawio-mcp` `1.0.2` — `skills/oomol/oo-drawio-mcp/SKILL.md`
+- `oo-drimify` `1.0.4` — `skills/oomol/oo-drimify/SKILL.md`
+- `oo-dropbox` `1.0.8` — `skills/oomol/oo-dropbox/SKILL.md`
+- `oo-dropbox-sign` `1.0.4` — `skills/oomol/oo-dropbox-sign/SKILL.md`
+- `oo-dropcontact` `1.0.4` — `skills/oomol/oo-dropcontact/SKILL.md`
+- `oo-dub` `1.0.6` — `skills/oomol/oo-dub/SKILL.md`
+- `oo-dumplingai` `1.0.5` — `skills/oomol/oo-dumplingai/SKILL.md`
+- `oo-dune` `1.0.5` — `skills/oomol/oo-dune/SKILL.md`
+- `oo-dynalist` `1.0.2` — `skills/oomol/oo-dynalist/SKILL.md`
+- `oo-dynapictures` `1.0.5` — `skills/oomol/oo-dynapictures/SKILL.md`
+- `oo-dynatrace` `1.0.5` — `skills/oomol/oo-dynatrace/SKILL.md`
+- `oo-e2b` `1.0.5` — `skills/oomol/oo-e2b/SKILL.md`
+- `oo-eagle-doc` `1.0.6` — `skills/oomol/oo-eagle-doc/SKILL.md`
+- `oo-eastmoney-miaoxiang` `1.0.2` — `skills/oomol/oo-eastmoney-miaoxiang/SKILL.md`
+- `oo-easy-peasy-ai` `1.0.2` — `skills/oomol/oo-easy-peasy-ai/SKILL.md`
+- `oo-easy8` `1.0.4` — `skills/oomol/oo-easy8/SKILL.md`
+- `oo-easypost` `1.0.5` — `skills/oomol/oo-easypost/SKILL.md`
+- `oo-echotik` `1.0.5` — `skills/oomol/oo-echotik/SKILL.md`
+- `oo-ecologi` `1.0.5` — `skills/oomol/oo-ecologi/SKILL.md`
+- `oo-edenai` `1.0.5` — `skills/oomol/oo-edenai/SKILL.md`
+- `oo-edgeone-makers` `1.0.2` — `skills/oomol/oo-edgeone-makers/SKILL.md`
+- `oo-elasticemail` `1.0.4` — `skills/oomol/oo-elasticemail/SKILL.md`
+- `oo-elasticsearch` `1.0.8` — `skills/oomol/oo-elasticsearch/SKILL.md`
+- `oo-elevenlabs` `1.0.7` — `skills/oomol/oo-elevenlabs/SKILL.md`
+- `oo-elevenreader` `1.0.5` — `skills/oomol/oo-elevenreader/SKILL.md`
+- `oo-elevio` `1.0.5` — `skills/oomol/oo-elevio/SKILL.md`
+- `oo-elorus` `1.0.5` — `skills/oomol/oo-elorus/SKILL.md`
+- `oo-emailable` `1.0.6` — `skills/oomol/oo-emailable/SKILL.md`
+- `oo-emaillistverify` `1.0.5` — `skills/oomol/oo-emaillistverify/SKILL.md`
+- `oo-emailoctopus` `1.0.5` — `skills/oomol/oo-emailoctopus/SKILL.md`
+- `oo-embase` `1.0.4` — `skills/oomol/oo-embase/SKILL.md`
+- `oo-emelia` `1.0.5` — `skills/oomol/oo-emelia/SKILL.md`
+- `oo-encharge` `1.0.4` — `skills/oomol/oo-encharge/SKILL.md`
+- `oo-encodian` `1.0.6` — `skills/oomol/oo-encodian/SKILL.md`
+- `oo-energy-performance-certificates` `1.0.4` — `skills/oomol/oo-energy-performance-certificates/SKILL.md`
+- `oo-enigma` `1.0.5` — `skills/oomol/oo-enigma/SKILL.md`
+- `oo-enormail` `1.0.2` — `skills/oomol/oo-enormail/SKILL.md`
+- `oo-envoy` `1.0.5` — `skills/oomol/oo-envoy/SKILL.md`
+- `oo-eodhd-apis` `1.0.5` — `skills/oomol/oo-eodhd-apis/SKILL.md`
+- `oo-eraser` `1.0.5` — `skills/oomol/oo-eraser/SKILL.md`
+- `oo-erpnext` `1.0.6` — `skills/oomol/oo-erpnext/SKILL.md`
+- `oo-esa` `1.0.6` — `skills/oomol/oo-esa/SKILL.md`
+- `oo-esignatures-io` `1.0.6` — `skills/oomol/oo-esignatures-io/SKILL.md`
+- `oo-espocrm` `1.0.5` — `skills/oomol/oo-espocrm/SKILL.md`
+- `oo-europe-pmc` `1.0.4` — `skills/oomol/oo-europe-pmc/SKILL.md`
+- `oo-evenium` `1.0.6` — `skills/oomol/oo-evenium/SKILL.md`
+- `oo-eventee` `1.0.5` — `skills/oomol/oo-eventee/SKILL.md`
+- `oo-eventzilla` `1.0.5` — `skills/oomol/oo-eventzilla/SKILL.md`
+- `oo-everhour` `1.0.6` — `skills/oomol/oo-everhour/SKILL.md`
+- `oo-eversign` `1.0.5` — `skills/oomol/oo-eversign/SKILL.md`
+- `oo-evervault` `1.0.5` — `skills/oomol/oo-evervault/SKILL.md`
+- `oo-exa` `1.0.6` — `skills/oomol/oo-exa/SKILL.md`
+- `oo-excalidraw-mcp` `1.0.5` — `skills/oomol/oo-excalidraw-mcp/SKILL.md`
+- `oo-excel` `1.0.6` — `skills/oomol/oo-excel/SKILL.md`
+- `oo-exhibitday` `1.0.2` — `skills/oomol/oo-exhibitday/SKILL.md`
+- `oo-explorium` `1.0.2` — `skills/oomol/oo-explorium/SKILL.md`
+- `oo-expofp` `1.0.5` — `skills/oomol/oo-expofp/SKILL.md`
+- `oo-fairing` `1.0.4` — `skills/oomol/oo-fairing/SKILL.md`
+- `oo-faktoora` `1.0.5` — `skills/oomol/oo-faktoora/SKILL.md`
+- `oo-fal-ai` `1.0.7` — `skills/oomol/oo-fal-ai/SKILL.md`
+- `oo-faraday` `1.0.4` — `skills/oomol/oo-faraday/SKILL.md`
+- `oo-fast-note-sync` `1.0.5` — `skills/oomol/oo-fast-note-sync/SKILL.md`
+- `oo-fastmoss-mcp` `1.0.3` — `skills/oomol/oo-fastmoss-mcp/SKILL.md`
+- `oo-fathom` `1.0.4` — `skills/oomol/oo-fathom/SKILL.md`
+- `oo-favro` `1.0.4` — `skills/oomol/oo-favro/SKILL.md`
+- `oo-feathery` `1.0.5` — `skills/oomol/oo-feathery/SKILL.md`
+- `oo-featurebase` `1.0.5` — `skills/oomol/oo-featurebase/SKILL.md`
+- `oo-feedier` `1.0.5` — `skills/oomol/oo-feedier/SKILL.md`
+- `oo-feishu` `1.0.8` — `skills/oomol/oo-feishu/SKILL.md`
+- `oo-feishu-app-bot` `1.0.11` — `skills/oomol/oo-feishu-app-bot/SKILL.md`
+- `oo-feishu-custom-bot` `1.0.5` — `skills/oomol/oo-feishu-custom-bot/SKILL.md`
+- `oo-fellow` `1.0.5` — `skills/oomol/oo-fellow/SKILL.md`
+- `oo-felt` `1.0.6` — `skills/oomol/oo-felt/SKILL.md`
+- `oo-fengshui` `1.0.2` — `skills/oomol/oo-fengshui/SKILL.md`
+- `oo-fern` `1.0.5` — `skills/oomol/oo-fern/SKILL.md`
+- `oo-ffhub` `1.0.5` — `skills/oomol/oo-ffhub/SKILL.md`
+- `oo-fiber-ai` `1.0.5` — `skills/oomol/oo-fiber-ai/SKILL.md`
+- `oo-fidel-api` `1.0.5` — `skills/oomol/oo-fidel-api/SKILL.md`
+- `oo-figma` `1.0.7` — `skills/oomol/oo-figma/SKILL.md`
+- `oo-files-com` `1.0.5` — `skills/oomol/oo-files-com/SKILL.md`
+- `oo-fillout` `1.0.6` — `skills/oomol/oo-fillout/SKILL.md`
+- `oo-finage` `1.0.6` — `skills/oomol/oo-finage/SKILL.md`
+- `oo-financial-modeling-prep` `1.0.6` — `skills/oomol/oo-financial-modeling-prep/SKILL.md`
+- `oo-finchina` `1.0.2` — `skills/oomol/oo-finchina/SKILL.md`
+- `oo-findymail` `1.0.5` — `skills/oomol/oo-findymail/SKILL.md`
+- `oo-finerworks` `1.0.4` — `skills/oomol/oo-finerworks/SKILL.md`
+- `oo-finlight` `1.0.2` — `skills/oomol/oo-finlight/SKILL.md`
+- `oo-fireberry` `1.0.4` — `skills/oomol/oo-fireberry/SKILL.md`
+- `oo-firecrawl` `1.0.8` — `skills/oomol/oo-firecrawl/SKILL.md`
+- `oo-fireflies` `1.0.6` — `skills/oomol/oo-fireflies/SKILL.md`
+- `oo-firehydrant` `1.0.4` — `skills/oomol/oo-firehydrant/SKILL.md`
+- `oo-firstbase` `1.0.5` — `skills/oomol/oo-firstbase/SKILL.md`
+- `oo-fivetran` `1.0.4` — `skills/oomol/oo-fivetran/SKILL.md`
+- `oo-fixer` `1.0.5` — `skills/oomol/oo-fixer/SKILL.md`
+- `oo-flagsmith` `1.0.5` — `skills/oomol/oo-flagsmith/SKILL.md`
+- `oo-flexmail` `1.0.4` — `skills/oomol/oo-flexmail/SKILL.md`
+- `oo-float` `1.0.5` — `skills/oomol/oo-float/SKILL.md`
+- `oo-flomo` `1.0.7` — `skills/oomol/oo-flomo/SKILL.md`
+- `oo-flotiq` `1.0.2` — `skills/oomol/oo-flotiq/SKILL.md`
+- `oo-flowiseai` `1.0.5` — `skills/oomol/oo-flowiseai/SKILL.md`
+- `oo-fluxguard` `1.0.5` — `skills/oomol/oo-fluxguard/SKILL.md`
+- `oo-fly` `1.0.6` — `skills/oomol/oo-fly/SKILL.md`
+- `oo-folk` `1.0.5` — `skills/oomol/oo-folk/SKILL.md`
+- `oo-fomo` `1.0.5` — `skills/oomol/oo-fomo/SKILL.md`
+- `oo-football-data` `1.0.4` — `skills/oomol/oo-football-data/SKILL.md`
+- `oo-forem` `1.0.5` — `skills/oomol/oo-forem/SKILL.md`
+- `oo-formaloo` `1.0.5` — `skills/oomol/oo-formaloo/SKILL.md`
+- `oo-formbricks` `1.0.5` — `skills/oomol/oo-formbricks/SKILL.md`
+- `oo-formcarry` `1.0.5` — `skills/oomol/oo-formcarry/SKILL.md`
+- `oo-formsite` `1.0.5` — `skills/oomol/oo-formsite/SKILL.md`
+- `oo-formspree` `1.0.4` — `skills/oomol/oo-formspree/SKILL.md`
+- `oo-formstack` `1.0.5` — `skills/oomol/oo-formstack/SKILL.md`
+- `oo-formstack-documents` `1.0.4` — `skills/oomol/oo-formstack-documents/SKILL.md`
+- `oo-foursquare` `1.0.5` — `skills/oomol/oo-foursquare/SKILL.md`
+- `oo-framejet` `1.0.2` — `skills/oomol/oo-framejet/SKILL.md`
+- `oo-fraudlabspro` `1.0.6` — `skills/oomol/oo-fraudlabspro/SKILL.md`
+- `oo-freeastroapi` `1.0.2` — `skills/oomol/oo-freeastroapi/SKILL.md`
+- `oo-freepik` `1.0.5` — `skills/oomol/oo-freepik/SKILL.md`
+- `oo-freshdesk` `1.0.5` — `skills/oomol/oo-freshdesk/SKILL.md`
+- `oo-freshsales` `1.0.5` — `skills/oomol/oo-freshsales/SKILL.md`
+- `oo-freshservice` `1.0.5` — `skills/oomol/oo-freshservice/SKILL.md`
+- `oo-freshstatus` `1.0.4` — `skills/oomol/oo-freshstatus/SKILL.md`
+- `oo-freshteam` `1.0.5` — `skills/oomol/oo-freshteam/SKILL.md`
+- `oo-front` `1.0.4` — `skills/oomol/oo-front/SKILL.md`
+- `oo-ftshare` `1.0.2` — `skills/oomol/oo-ftshare/SKILL.md`
+- `oo-full-contact` `1.0.5` — `skills/oomol/oo-full-contact/SKILL.md`
+- `oo-fullenrich` `1.0.4` — `skills/oomol/oo-fullenrich/SKILL.md`
+- `oo-fundable` `1.0.2` — `skills/oomol/oo-fundable/SKILL.md`
+- `oo-fundzwatch` `1.0.4` — `skills/oomol/oo-fundzwatch/SKILL.md`
+- `oo-fusion-api` `1.0.11` — `skills/oomol/oo-fusion-api/SKILL.md`
+- `oo-futunn` `1.0.3` — `skills/oomol/oo-futunn/SKILL.md`
+- `oo-fuxin` `1.0.6` — `skills/oomol/oo-fuxin/SKILL.md`
+- `oo-fxbaogao` `1.0.2` — `skills/oomol/oo-fxbaogao/SKILL.md`
+- `oo-fxmacrodata` `1.0.2` — `skills/oomol/oo-fxmacrodata/SKILL.md`
+- `oo-g2` `1.0.2` — `skills/oomol/oo-g2/SKILL.md`
+- `oo-gagelist` `1.0.5` — `skills/oomol/oo-gagelist/SKILL.md`
+- `oo-gainsight-nxt` `1.0.5` — `skills/oomol/oo-gainsight-nxt/SKILL.md`
+- `oo-gamma` `1.0.5` — `skills/oomol/oo-gamma/SKILL.md`
+- `oo-gangtise` `1.0.4` — `skills/oomol/oo-gangtise/SKILL.md`
+- `oo-gatherup` `1.0.4` — `skills/oomol/oo-gatherup/SKILL.md`
+- `oo-gcloud-sts` `1.0.5` — `skills/oomol/oo-gcloud-sts/SKILL.md`
+- `oo-geckoboard` `1.0.5` — `skills/oomol/oo-geckoboard/SKILL.md`
+- `oo-gem` `1.0.4` — `skills/oomol/oo-gem/SKILL.md`
+- `oo-gemini` `1.0.6` — `skills/oomol/oo-gemini/SKILL.md`
+- `oo-gender-api` `1.0.5` — `skills/oomol/oo-gender-api/SKILL.md`
+- `oo-genderapi-io` `1.0.5` — `skills/oomol/oo-genderapi-io/SKILL.md`
+- `oo-genderize` `1.0.5` — `skills/oomol/oo-genderize/SKILL.md`
+- `oo-generic-imap` `1.0.5` — `skills/oomol/oo-generic-imap/SKILL.md`
+- `oo-genpage` `1.0.5` — `skills/oomol/oo-genpage/SKILL.md`
+- `oo-geoapify` `1.0.6` — `skills/oomol/oo-geoapify/SKILL.md`
+- `oo-geocodio` `1.0.5` — `skills/oomol/oo-geocodio/SKILL.md`
+- `oo-geokeo` `1.0.6` — `skills/oomol/oo-geokeo/SKILL.md`
+- `oo-getform` `1.0.5` — `skills/oomol/oo-getform/SKILL.md`
+- `oo-getnote` `1.0.7` — `skills/oomol/oo-getnote/SKILL.md`
+- `oo-getprospect` `1.0.4` — `skills/oomol/oo-getprospect/SKILL.md`
+- `oo-getresponse` `1.0.5` — `skills/oomol/oo-getresponse/SKILL.md`
+- `oo-getyoutubetranscript` `1.0.2` — `skills/oomol/oo-getyoutubetranscript/SKILL.md`
+- `oo-ghost` `1.0.5` — `skills/oomol/oo-ghost/SKILL.md`
+- `oo-gift-up` `1.0.6` — `skills/oomol/oo-gift-up/SKILL.md`
+- `oo-gigasheet` `1.0.5` — `skills/oomol/oo-gigasheet/SKILL.md`
+- `oo-gildata` `1.0.4` — `skills/oomol/oo-gildata/SKILL.md`
+- `oo-giphy` `1.0.5` — `skills/oomol/oo-giphy/SKILL.md`
+- `oo-gist` `1.0.6` — `skills/oomol/oo-gist/SKILL.md`
+- `oo-gitea` `1.0.7` — `skills/oomol/oo-gitea/SKILL.md`
+- `oo-gitee` `1.0.4` — `skills/oomol/oo-gitee/SKILL.md`
+- `oo-github` `1.0.12` — `skills/oomol/oo-github/SKILL.md`
+- `oo-gitlab` `1.0.8` — `skills/oomol/oo-gitlab/SKILL.md`
+- `oo-givebutter` `1.0.4` — `skills/oomol/oo-givebutter/SKILL.md`
+- `oo-gladia` `1.0.6` — `skills/oomol/oo-gladia/SKILL.md`
+- `oo-gleap` `1.0.4` — `skills/oomol/oo-gleap/SKILL.md`
+- `oo-globalping` `1.0.5` — `skills/oomol/oo-globalping/SKILL.md`
+- `oo-glyphic` `1.0.5` — `skills/oomol/oo-glyphic/SKILL.md`
+- `oo-gmail` `1.0.8` — `skills/oomol/oo-gmail/SKILL.md`
+- `oo-godial` `1.0.5` — `skills/oomol/oo-godial/SKILL.md`
+- `oo-gong` `1.0.4` — `skills/oomol/oo-gong/SKILL.md`
+- `oo-goody` `1.0.7` — `skills/oomol/oo-goody/SKILL.md`
+- `oo-google-address-validation` `1.0.6` — `skills/oomol/oo-google-address-validation/SKILL.md`
+- `oo-google-analytics` `1.0.6` — `skills/oomol/oo-google-analytics/SKILL.md`
+- `oo-google-bigquery` `1.0.6` — `skills/oomol/oo-google-bigquery/SKILL.md`
+- `oo-google-maps` `1.0.2` — `skills/oomol/oo-google-maps/SKILL.md`
+- `oo-google-search-console` `1.0.5` — `skills/oomol/oo-google-search-console/SKILL.md`
+- `oo-googleads` `1.0.6` — `skills/oomol/oo-googleads/SKILL.md`
+- `oo-googlecalendar` `1.0.7` — `skills/oomol/oo-googlecalendar/SKILL.md`
+- `oo-googlechat` `1.0.5` — `skills/oomol/oo-googlechat/SKILL.md`
+- `oo-googledocs` `1.0.6` — `skills/oomol/oo-googledocs/SKILL.md`
+- `oo-googledrive` `1.0.10` — `skills/oomol/oo-googledrive/SKILL.md`
+- `oo-googleforms` `1.0.6` — `skills/oomol/oo-googleforms/SKILL.md`
+- `oo-googlemeet` `1.0.5` — `skills/oomol/oo-googlemeet/SKILL.md`
+- `oo-googlephotos` `1.0.5` — `skills/oomol/oo-googlephotos/SKILL.md`
+- `oo-googlesheets` `1.0.6` — `skills/oomol/oo-googlesheets/SKILL.md`
+- `oo-googleslides` `1.0.6` — `skills/oomol/oo-googleslides/SKILL.md`
+- `oo-googletasks` `1.0.6` — `skills/oomol/oo-googletasks/SKILL.md`
+- `oo-gorgias` `1.0.4` — `skills/oomol/oo-gorgias/SKILL.md`
+- `oo-gosquared` `1.0.4` — `skills/oomol/oo-gosquared/SKILL.md`
+- `oo-gotify` `1.0.4` — `skills/oomol/oo-gotify/SKILL.md`
+- `oo-govee` `1.0.5` — `skills/oomol/oo-govee/SKILL.md`
+- `oo-gptzero` `1.0.4` — `skills/oomol/oo-gptzero/SKILL.md`
+- `oo-grafana` `1.0.6` — `skills/oomol/oo-grafana/SKILL.md`
+- `oo-grafana-cloud` `1.0.4` — `skills/oomol/oo-grafana-cloud/SKILL.md`
+- `oo-granola` `1.0.4` — `skills/oomol/oo-granola/SKILL.md`
+- `oo-graphhopper` `1.0.5` — `skills/oomol/oo-graphhopper/SKILL.md`
+- `oo-greenhouse` `1.0.4` — `skills/oomol/oo-greenhouse/SKILL.md`
+- `oo-greip` `1.0.2` — `skills/oomol/oo-greip/SKILL.md`
+- `oo-greynoise` `1.0.2` — `skills/oomol/oo-greynoise/SKILL.md`
+- `oo-griptape` `1.0.5` — `skills/oomol/oo-griptape/SKILL.md`
+- `oo-grist` `1.0.5` — `skills/oomol/oo-grist/SKILL.md`
+- `oo-groqcloud` `1.0.7` — `skills/oomol/oo-groqcloud/SKILL.md`
+- `oo-growsurf` `1.0.2` — `skills/oomol/oo-growsurf/SKILL.md`
+- `oo-gtmetrix` `1.0.5` — `skills/oomol/oo-gtmetrix/SKILL.md`
+- `oo-gumloop` `1.0.5` — `skills/oomol/oo-gumloop/SKILL.md`
+- `oo-gumroad` `1.0.7` — `skills/oomol/oo-gumroad/SKILL.md`
+- `oo-gupshup` `1.0.4` — `skills/oomol/oo-gupshup/SKILL.md`
+- `oo-guru` `1.0.5` — `skills/oomol/oo-guru/SKILL.md`
+- `oo-habitica` `1.0.5` — `skills/oomol/oo-habitica/SKILL.md`
+- `oo-hackernews` `1.0.5` — `skills/oomol/oo-hackernews/SKILL.md`
+- `oo-hackerrank-work` `1.0.5` — `skills/oomol/oo-hackerrank-work/SKILL.md`
+- `oo-hamsa` `1.0.5` — `skills/oomol/oo-hamsa/SKILL.md`
+- `oo-handelsregister-ai` `1.0.4` — `skills/oomol/oo-handelsregister-ai/SKILL.md`
+- `oo-happy-scribe` `1.0.6` — `skills/oomol/oo-happy-scribe/SKILL.md`
+- `oo-harmonic-ai` `1.0.4` — `skills/oomol/oo-harmonic-ai/SKILL.md`
+- `oo-harpa-ai` `1.0.2` — `skills/oomol/oo-harpa-ai/SKILL.md`
+- `oo-harvest` `1.0.7` — `skills/oomol/oo-harvest/SKILL.md`
+- `oo-hasdata` `1.0.4` — `skills/oomol/oo-hasdata/SKILL.md`
+- `oo-hashnode` `1.0.5` — `skills/oomol/oo-hashnode/SKILL.md`
+- `oo-haveibeenpwned` `1.0.5` — `skills/oomol/oo-haveibeenpwned/SKILL.md`
+- `oo-headout` `1.0.5` — `skills/oomol/oo-headout/SKILL.md`
+- `oo-healthchecks-io` `1.0.6` — `skills/oomol/oo-healthchecks-io/SKILL.md`
+- `oo-heartbeat` `1.0.4` — `skills/oomol/oo-heartbeat/SKILL.md`
+- `oo-helcim` `1.0.4` — `skills/oomol/oo-helcim/SKILL.md`
+- `oo-helium10` `1.0.4` — `skills/oomol/oo-helium10/SKILL.md`
+- `oo-helloleads` `1.0.5` — `skills/oomol/oo-helloleads/SKILL.md`
+- `oo-helpdesk` `1.0.5` — `skills/oomol/oo-helpdesk/SKILL.md`
+- `oo-helpscout` `1.0.5` — `skills/oomol/oo-helpscout/SKILL.md`
+- `oo-helpscout-docs` `1.0.4` — `skills/oomol/oo-helpscout-docs/SKILL.md`
+- `oo-here` `1.0.5` — `skills/oomol/oo-here/SKILL.md`
+- `oo-hex` `1.0.5` — `skills/oomol/oo-hex/SKILL.md`
+- `oo-heygen` `1.0.6` — `skills/oomol/oo-heygen/SKILL.md`
+- `oo-heyreach` `1.0.4` — `skills/oomol/oo-heyreach/SKILL.md`
+- `oo-heyy` `1.0.4` — `skills/oomol/oo-heyy/SKILL.md`
+- `oo-heyzine` `1.0.5` — `skills/oomol/oo-heyzine/SKILL.md`
+- `oo-hgj` `1.0.5` — `skills/oomol/oo-hgj/SKILL.md`
+- `oo-higgsfield-ai` `1.0.5` — `skills/oomol/oo-higgsfield-ai/SKILL.md`
+- `oo-high-level` `1.0.4` — `skills/oomol/oo-high-level/SKILL.md`
+- `oo-highergov` `1.0.4` — `skills/oomol/oo-highergov/SKILL.md`
+- `oo-hithink-finance` `1.0.4` — `skills/oomol/oo-hithink-finance/SKILL.md`
+- `oo-holded` `1.0.4` — `skills/oomol/oo-holded/SKILL.md`
+- `oo-home-assistant` `1.0.8` — `skills/oomol/oo-home-assistant/SKILL.md`
+- `oo-homebox` `1.0.2` — `skills/oomol/oo-homebox/SKILL.md`
+- `oo-honeybadger` `1.0.6` — `skills/oomol/oo-honeybadger/SKILL.md`
+- `oo-honeycomb` `1.0.4` — `skills/oomol/oo-honeycomb/SKILL.md`
+- `oo-honeyhive` `1.0.4` — `skills/oomol/oo-honeyhive/SKILL.md`
+- `oo-hookdeck` `1.0.4` — `skills/oomol/oo-hookdeck/SKILL.md`
+- `oo-hoop` `1.0.4` — `skills/oomol/oo-hoop/SKILL.md`
+- `oo-hotjar` `1.0.5` — `skills/oomol/oo-hotjar/SKILL.md`
+- `oo-hotspotsystem` `1.0.5` — `skills/oomol/oo-hotspotsystem/SKILL.md`
+- `oo-hr-partner` `1.0.4` — `skills/oomol/oo-hr-partner/SKILL.md`
+- `oo-hrmos-kintai` `1.0.2` — `skills/oomol/oo-hrmos-kintai/SKILL.md`
+- `oo-html-to-image` `1.0.5` — `skills/oomol/oo-html-to-image/SKILL.md`
+- `oo-htmlcsstoimage` `1.0.5` — `skills/oomol/oo-htmlcsstoimage/SKILL.md`
+- `oo-httpsms` `1.0.4` — `skills/oomol/oo-httpsms/SKILL.md`
+- `oo-hub-planner` `1.0.4` — `skills/oomol/oo-hub-planner/SKILL.md`
+- `oo-hubspot` `1.0.6` — `skills/oomol/oo-hubspot/SKILL.md`
+- `oo-huggingface` `1.0.5` — `skills/oomol/oo-huggingface/SKILL.md`
+- `oo-humaans` `1.0.4` — `skills/oomol/oo-humaans/SKILL.md`
+- `oo-humanitix` `1.0.5` — `skills/oomol/oo-humanitix/SKILL.md`
+- `oo-humor-api` `1.0.2` — `skills/oomol/oo-humor-api/SKILL.md`
+- `oo-hunter` `1.0.6` — `skills/oomol/oo-hunter/SKILL.md`
+- `oo-huodingdong-mcp` `1.0.2` — `skills/oomol/oo-huodingdong-mcp/SKILL.md`
+- `oo-hybrid-analysis` `1.0.4` — `skills/oomol/oo-hybrid-analysis/SKILL.md`
+- `oo-hyperbrowser` `1.0.5` — `skills/oomol/oo-hyperbrowser/SKILL.md`
+- `oo-icypeas` `1.0.5` — `skills/oomol/oo-icypeas/SKILL.md`
+- `oo-ilovepdf` `1.0.1` — `skills/oomol/oo-ilovepdf/SKILL.md`
+- `oo-ima` `1.0.7` — `skills/oomol/oo-ima/SKILL.md`
+- `oo-imagekit` `1.0.5` — `skills/oomol/oo-imagekit/SKILL.md`
+- `oo-imagetranslate-ai` `1.0.4` — `skills/oomol/oo-imagetranslate-ai/SKILL.md`
+- `oo-imgbb` `1.0.5` — `skills/oomol/oo-imgbb/SKILL.md`
+- `oo-imgix` `1.0.5` — `skills/oomol/oo-imgix/SKILL.md`
+- `oo-incident-io` `1.0.4` — `skills/oomol/oo-incident-io/SKILL.md`
+- `oo-indeed` `1.0.4` — `skills/oomol/oo-indeed/SKILL.md`
+- `oo-indexed` `1.0.2` — `skills/oomol/oo-indexed/SKILL.md`
+- `oo-indiegogo` `1.0.4` — `skills/oomol/oo-indiegogo/SKILL.md`
+- `oo-influxdb-cloud` `1.0.4` — `skills/oomol/oo-influxdb-cloud/SKILL.md`
+- `oo-infolobby` `1.0.4` — `skills/oomol/oo-infolobby/SKILL.md`
+- `oo-insites` `1.0.4` — `skills/oomol/oo-insites/SKILL.md`
+- `oo-instabot` `1.0.5` — `skills/oomol/oo-instabot/SKILL.md`
+- `oo-instantly-ai` `1.0.5` — `skills/oomol/oo-instantly-ai/SKILL.md`
+- `oo-instatus` `1.0.5` — `skills/oomol/oo-instatus/SKILL.md`
+- `oo-intelliprint` `1.0.5` — `skills/oomol/oo-intelliprint/SKILL.md`
+- `oo-intercom` `1.0.8` — `skills/oomol/oo-intercom/SKILL.md`
+- `oo-interzoid` `1.0.5` — `skills/oomol/oo-interzoid/SKILL.md`
+- `oo-intrinio` `1.0.4` — `skills/oomol/oo-intrinio/SKILL.md`
+- `oo-intuiface` `1.0.4` — `skills/oomol/oo-intuiface/SKILL.md`
+- `oo-investoday-mcp` `1.0.3` — `skills/oomol/oo-investoday-mcp/SKILL.md`
+- `oo-invoice-ninja` `1.0.5` — `skills/oomol/oo-invoice-ninja/SKILL.md`
+- `oo-ip2location` `1.0.5` — `skills/oomol/oo-ip2location/SKILL.md`
+- `oo-ip2proxy` `1.0.5` — `skills/oomol/oo-ip2proxy/SKILL.md`
+- `oo-ip2whois` `1.0.5` — `skills/oomol/oo-ip2whois/SKILL.md`
+- `oo-ipdata-co` `1.0.5` — `skills/oomol/oo-ipdata-co/SKILL.md`
+- `oo-ipgeolocation-io` `1.0.5` — `skills/oomol/oo-ipgeolocation-io/SKILL.md`
+- `oo-ipinfo-io` `1.0.6` — `skills/oomol/oo-ipinfo-io/SKILL.md`
+- `oo-iplocate` `1.0.5` — `skills/oomol/oo-iplocate/SKILL.md`
+- `oo-ipqualityscore` `1.0.6` — `skills/oomol/oo-ipqualityscore/SKILL.md`
+- `oo-ipregistry` `1.0.5` — `skills/oomol/oo-ipregistry/SKILL.md`
+- `oo-ipstack` `1.0.5` — `skills/oomol/oo-ipstack/SKILL.md`
+- `oo-iqair-airvisual` `1.0.5` — `skills/oomol/oo-iqair-airvisual/SKILL.md`
+- `oo-issue-badge` `1.0.2` — `skills/oomol/oo-issue-badge/SKILL.md`
+- `oo-it-glue` `1.0.5` — `skills/oomol/oo-it-glue/SKILL.md`
+- `oo-itunes-search` `1.0.4` — `skills/oomol/oo-itunes-search/SKILL.md`
+- `oo-ixspy` `1.0.2` — `skills/oomol/oo-ixspy/SKILL.md`
+- `oo-iyunbiao` `1.0.3` — `skills/oomol/oo-iyunbiao/SKILL.md`
+- `oo-jamie` `1.0.5` — `skills/oomol/oo-jamie/SKILL.md`
+- `oo-jazzhr` `1.0.4` — `skills/oomol/oo-jazzhr/SKILL.md`
+- `oo-jev` `1.0.2` — `skills/oomol/oo-jev/SKILL.md`
+- `oo-jibble` `1.0.5` — `skills/oomol/oo-jibble/SKILL.md`
+- `oo-jigsawstack` `1.0.5` — `skills/oomol/oo-jigsawstack/SKILL.md`
+- `oo-jimeng-ai` `1.0.5` — `skills/oomol/oo-jimeng-ai/SKILL.md`
+- `oo-jiminny` `1.0.5` — `skills/oomol/oo-jiminny/SKILL.md`
+- `oo-jin10` `1.0.4` — `skills/oomol/oo-jin10/SKILL.md`
+- `oo-jina-ai` `1.0.4` — `skills/oomol/oo-jina-ai/SKILL.md`
+- `oo-jira` `1.0.6` — `skills/oomol/oo-jira/SKILL.md`
+- `oo-jobnimbus` `1.0.6` — `skills/oomol/oo-jobnimbus/SKILL.md`
+- `oo-jotform` `1.0.5` — `skills/oomol/oo-jotform/SKILL.md`
+- `oo-jsonbin` `1.0.5` — `skills/oomol/oo-jsonbin/SKILL.md`
+- `oo-jumpcloud` `1.0.4` — `skills/oomol/oo-jumpcloud/SKILL.md`
+- `oo-jumpseller` `1.0.5` — `skills/oomol/oo-jumpseller/SKILL.md`
+- `oo-jumpserver` `1.0.4` — `skills/oomol/oo-jumpserver/SKILL.md`
+- `oo-junglescout` `1.0.5` — `skills/oomol/oo-junglescout/SKILL.md`
+- `oo-juniper-mist` `1.0.4` — `skills/oomol/oo-juniper-mist/SKILL.md`
+- `oo-jushuitan` `1.0.7` — `skills/oomol/oo-jushuitan/SKILL.md`
+- `oo-justcall` `1.0.3` — `skills/oomol/oo-justcall/SKILL.md`
+- `oo-justoneapi` `1.0.2` — `skills/oomol/oo-justoneapi/SKILL.md`
+- `oo-kadoa` `1.0.4` — `skills/oomol/oo-kadoa/SKILL.md`
+- `oo-kaggle` `1.0.4` — `skills/oomol/oo-kaggle/SKILL.md`
+- `oo-kagi` `1.0.2` — `skills/oomol/oo-kagi/SKILL.md`
+- `oo-kaleido` `1.0.4` — `skills/oomol/oo-kaleido/SKILL.md`
+- `oo-kalodata` `1.0.5` — `skills/oomol/oo-kalodata/SKILL.md`
+- `oo-kandji` `1.0.4` — `skills/oomol/oo-kandji/SKILL.md`
+- `oo-kaonavi` `1.0.2` — `skills/oomol/oo-kaonavi/SKILL.md`
+- `oo-karakeep` `1.0.5` — `skills/oomol/oo-karakeep/SKILL.md`
+- `oo-keen-io` `1.0.4` — `skills/oomol/oo-keen-io/SKILL.md`
+- `oo-keenable` `1.0.2` — `skills/oomol/oo-keenable/SKILL.md`
+- `oo-keepa` `1.0.6` — `skills/oomol/oo-keepa/SKILL.md`
+- `oo-keeper-scim` `1.0.5` — `skills/oomol/oo-keeper-scim/SKILL.md`
+- `oo-kenjo` `1.0.2` — `skills/oomol/oo-kenjo/SKILL.md`
+- `oo-kernel` `1.0.5` — `skills/oomol/oo-kernel/SKILL.md`
+- `oo-keygen` `1.0.6` — `skills/oomol/oo-keygen/SKILL.md`
+- `oo-keyword` `1.0.6` — `skills/oomol/oo-keyword/SKILL.md`
+- `oo-keyzy` `1.0.2` — `skills/oomol/oo-keyzy/SKILL.md`
+- `oo-kickbox` `1.0.5` — `skills/oomol/oo-kickbox/SKILL.md`
+- `oo-kickofflabs` `1.0.2` — `skills/oomol/oo-kickofflabs/SKILL.md`
+- `oo-kie-ai` `1.0.4` — `skills/oomol/oo-kie-ai/SKILL.md`
+- `oo-kingdee` `1.1.3` — `skills/oomol/oo-kingdee/SKILL.md`
+- `oo-kintone` `1.0.5` — `skills/oomol/oo-kintone/SKILL.md`
+- `oo-kit` `1.0.5` — `skills/oomol/oo-kit/SKILL.md`
+- `oo-klangio` `1.0.5` — `skills/oomol/oo-klangio/SKILL.md`
+- `oo-klaviyo` `1.0.5` — `skills/oomol/oo-klaviyo/SKILL.md`
+- `oo-klazify` `1.0.5` — `skills/oomol/oo-klazify/SKILL.md`
+- `oo-klicktipp` `1.0.6` — `skills/oomol/oo-klicktipp/SKILL.md`
+- `oo-kling` `1.0.4` — `skills/oomol/oo-kling/SKILL.md`
+- `oo-klipfolio` `1.0.4` — `skills/oomol/oo-klipfolio/SKILL.md`
+- `oo-knack` `1.0.5` — `skills/oomol/oo-knack/SKILL.md`
+- `oo-knock` `1.0.5` — `skills/oomol/oo-knock/SKILL.md`
+- `oo-knowbe4` `1.0.5` — `skills/oomol/oo-knowbe4/SKILL.md`
+- `oo-kobotoolbox` `1.0.6` — `skills/oomol/oo-kobotoolbox/SKILL.md`
+- `oo-kolsprite-mcp` `1.0.2` — `skills/oomol/oo-kolsprite-mcp/SKILL.md`
+- `oo-komari` `1.0.5` — `skills/oomol/oo-komari/SKILL.md`
+- `oo-kommo` `1.0.4` — `skills/oomol/oo-kommo/SKILL.md`
+- `oo-komos` `1.0.1` — `skills/oomol/oo-komos/SKILL.md`
+- `oo-kontent-ai` `1.0.5` — `skills/oomol/oo-kontent-ai/SKILL.md`
+- `oo-kraken-io` `1.0.6` — `skills/oomol/oo-kraken-io/SKILL.md`
+- `oo-krispcall` `1.0.4` — `skills/oomol/oo-krispcall/SKILL.md`
+- `oo-kuaidi100` `1.0.6` — `skills/oomol/oo-kuaidi100/SKILL.md`
+- `oo-kuaimai` `1.0.5` — `skills/oomol/oo-kuaimai/SKILL.md`
+- `oo-kustomer` `1.0.5` — `skills/oomol/oo-kustomer/SKILL.md`
+- `oo-l2s` `1.0.6` — `skills/oomol/oo-l2s/SKILL.md`
+- `oo-la-growth-machine` `1.0.5` — `skills/oomol/oo-la-growth-machine/SKILL.md`
+- `oo-label-studio` `1.0.4` — `skills/oomol/oo-label-studio/SKILL.md`
+- `oo-lacuna` `1.0.4` — `skills/oomol/oo-lacuna/SKILL.md`
+- `oo-landbot` `1.0.4` — `skills/oomol/oo-landbot/SKILL.md`
+- `oo-langbase` `1.0.5` — `skills/oomol/oo-langbase/SKILL.md`
+- `oo-langsmith` `1.0.4` — `skills/oomol/oo-langsmith/SKILL.md`
+- `oo-laposta` `1.0.4` — `skills/oomol/oo-laposta/SKILL.md`
+- `oo-laravel-cloud` `1.0.4` — `skills/oomol/oo-laravel-cloud/SKILL.md`
+- `oo-latchshot` `1.0.5` — `skills/oomol/oo-latchshot/SKILL.md`
+- `oo-lattice` `1.0.4` — `skills/oomol/oo-lattice/SKILL.md`
+- `oo-launch-darkly` `1.0.5` — `skills/oomol/oo-launch-darkly/SKILL.md`
+- `oo-leadboxer` `1.0.4` — `skills/oomol/oo-leadboxer/SKILL.md`
+- `oo-leadfeeder` `1.0.5` — `skills/oomol/oo-leadfeeder/SKILL.md`
+- `oo-leadiq` `1.0.4` — `skills/oomol/oo-leadiq/SKILL.md`
+- `oo-leadmagic` `1.0.5` — `skills/oomol/oo-leadmagic/SKILL.md`
+- `oo-leexi` `1.0.5` — `skills/oomol/oo-leexi/SKILL.md`
+- `oo-leiga` `1.0.5` — `skills/oomol/oo-leiga/SKILL.md`
+- `oo-leina` `1.0.1` — `skills/oomol/oo-leina/SKILL.md`
+- `oo-lemlist` `1.0.5` — `skills/oomol/oo-lemlist/SKILL.md`
+- `oo-lemon-squeezy` `1.0.5` — `skills/oomol/oo-lemon-squeezy/SKILL.md`
+- `oo-leonardo-ai` `1.0.4` — `skills/oomol/oo-leonardo-ai/SKILL.md`
+- `oo-lessonspace` `1.0.5` — `skills/oomol/oo-lessonspace/SKILL.md`
+- `oo-lever` `1.0.4` — `skills/oomol/oo-lever/SKILL.md`
+- `oo-lexoffice` `1.0.5` — `skills/oomol/oo-lexoffice/SKILL.md`
+- `oo-lifx` `1.0.5` — `skills/oomol/oo-lifx/SKILL.md`
+- `oo-lightfield` `1.0.5` — `skills/oomol/oo-lightfield/SKILL.md`
+- `oo-lightspeed-vt` `1.0.4` — `skills/oomol/oo-lightspeed-vt/SKILL.md`
+- `oo-line` `1.0.4` — `skills/oomol/oo-line/SKILL.md`
+- `oo-linear` `1.0.6` — `skills/oomol/oo-linear/SKILL.md`
+- `oo-linear-mcp` `1.0.3` — `skills/oomol/oo-linear-mcp/SKILL.md`
+- `oo-linguapop` `1.0.5` — `skills/oomol/oo-linguapop/SKILL.md`
+- `oo-lingvanex-translation-api` `1.0.4` — `skills/oomol/oo-lingvanex-translation-api/SKILL.md`
+- `oo-lingxing` `1.0.6` — `skills/oomol/oo-lingxing/SKILL.md`
+- `oo-lingxing-mcp` `1.0.5` — `skills/oomol/oo-lingxing-mcp/SKILL.md`
+- `oo-linkedin` `1.0.6` — `skills/oomol/oo-linkedin/SKILL.md`
+- `oo-linkfox` `1.0.5` — `skills/oomol/oo-linkfox/SKILL.md`
+- `oo-linkhut` `1.0.5` — `skills/oomol/oo-linkhut/SKILL.md`
+- `oo-linkly` `1.0.5` — `skills/oomol/oo-linkly/SKILL.md`
+- `oo-linkup` `1.0.5` — `skills/oomol/oo-linkup/SKILL.md`
+- `oo-linux-do` `1.0.5` — `skills/oomol/oo-linux-do/SKILL.md`
+- `oo-listennotes` `1.0.6` — `skills/oomol/oo-listennotes/SKILL.md`
+- `oo-listinggood` `1.0.2` — `skills/oomol/oo-listinggood/SKILL.md`
+- `oo-listmonk` `1.0.2` — `skills/oomol/oo-listmonk/SKILL.md`
+- `oo-litellm` `1.0.2` — `skills/oomol/oo-litellm/SKILL.md`
+- `oo-litescrape` `1.0.2` — `skills/oomol/oo-litescrape/SKILL.md`
+- `oo-liveagent` `1.0.4` — `skills/oomol/oo-liveagent/SKILL.md`
+- `oo-livesession` `1.0.4` — `skills/oomol/oo-livesession/SKILL.md`
+- `oo-livespace` `1.0.4` — `skills/oomol/oo-livespace/SKILL.md`
+- `oo-lob` `1.0.6` — `skills/oomol/oo-lob/SKILL.md`
+- `oo-lodgify` `1.0.4` — `skills/oomol/oo-lodgify/SKILL.md`
+- `oo-logo-dev` `1.0.6` — `skills/oomol/oo-logo-dev/SKILL.md`
+- `oo-logsnag` `1.0.6` — `skills/oomol/oo-logsnag/SKILL.md`
+- `oo-lokalise` `1.0.5` — `skills/oomol/oo-lokalise/SKILL.md`
+- `oo-longbridge` `1.0.7` — `skills/oomol/oo-longbridge/SKILL.md`
+- `oo-loomio` `1.0.5` — `skills/oomol/oo-loomio/SKILL.md`
+- `oo-loop-returns` `1.0.4` — `skills/oomol/oo-loop-returns/SKILL.md`
+- `oo-loops` `1.0.6` — `skills/oomol/oo-loops/SKILL.md`
+- `oo-loyjoy` `1.0.4` — `skills/oomol/oo-loyjoy/SKILL.md`
+- `oo-loyverse` `1.0.5` — `skills/oomol/oo-loyverse/SKILL.md`
+- `oo-lucid-scim` `1.0.5` — `skills/oomol/oo-lucid-scim/SKILL.md`
+- `oo-luckin-coffee` `1.0.5` — `skills/oomol/oo-luckin-coffee/SKILL.md`
+- `oo-luma` `1.0.4` — `skills/oomol/oo-luma/SKILL.md`
+- `oo-lumos` `1.0.4` — `skills/oomol/oo-lumos/SKILL.md`
+- `oo-luno` `1.0.5` — `skills/oomol/oo-luno/SKILL.md`
+- `oo-lusha` `1.0.5` — `skills/oomol/oo-lusha/SKILL.md`
+- `oo-magichour` `1.0.2` — `skills/oomol/oo-magichour/SKILL.md`
+- `oo-magileads` `1.0.4` — `skills/oomol/oo-magileads/SKILL.md`
+- `oo-mailbluster` `1.0.5` — `skills/oomol/oo-mailbluster/SKILL.md`
+- `oo-mailbox-validator` `1.0.6` — `skills/oomol/oo-mailbox-validator/SKILL.md`
+- `oo-mailboxlayer` `1.0.5` — `skills/oomol/oo-mailboxlayer/SKILL.md`
+- `oo-mailcheck` `1.0.5` — `skills/oomol/oo-mailcheck/SKILL.md`
+- `oo-mailchimp` `1.0.6` — `skills/oomol/oo-mailchimp/SKILL.md`
+- `oo-mailcoach` `1.0.5` — `skills/oomol/oo-mailcoach/SKILL.md`
+- `oo-mailercloud` `1.0.4` — `skills/oomol/oo-mailercloud/SKILL.md`
+- `oo-mailerlite` `1.0.5` — `skills/oomol/oo-mailerlite/SKILL.md`
+- `oo-mailersend` `1.0.5` — `skills/oomol/oo-mailersend/SKILL.md`
+- `oo-mailgenius` `1.0.4` — `skills/oomol/oo-mailgenius/SKILL.md`
+- `oo-mailgun` `1.0.5` — `skills/oomol/oo-mailgun/SKILL.md`
+- `oo-mailjet` `1.0.5` — `skills/oomol/oo-mailjet/SKILL.md`
+- `oo-mailosaur` `1.0.4` — `skills/oomol/oo-mailosaur/SKILL.md`
+- `oo-mails-so` `1.0.5` — `skills/oomol/oo-mails-so/SKILL.md`
+- `oo-mailsoftly` `1.0.4` — `skills/oomol/oo-mailsoftly/SKILL.md`
+- `oo-mailtrap` `1.0.6` — `skills/oomol/oo-mailtrap/SKILL.md`
+- `oo-mailwizz` `1.0.4` — `skills/oomol/oo-mailwizz/SKILL.md`
+- `oo-maintainx` `1.0.5` — `skills/oomol/oo-maintainx/SKILL.md`
+- `oo-make` `1.0.5` — `skills/oomol/oo-make/SKILL.md`
+- `oo-mamo-business` `1.0.0` — `skills/oomol/oo-mamo-business/SKILL.md`
+- `oo-manatal` `1.0.4` — `skills/oomol/oo-manatal/SKILL.md`
+- `oo-manus` `1.0.6` — `skills/oomol/oo-manus/SKILL.md`
+- `oo-mapbox` `1.0.6` — `skills/oomol/oo-mapbox/SKILL.md`
+- `oo-maple-billing` `1.0.5` — `skills/oomol/oo-maple-billing/SKILL.md`
+- `oo-marketstack` `1.0.5` — `skills/oomol/oo-marketstack/SKILL.md`
+- `oo-markettime` `1.0.5` — `skills/oomol/oo-markettime/SKILL.md`
+- `oo-mattermost` `1.0.5` — `skills/oomol/oo-mattermost/SKILL.md`
+- `oo-mautic` `1.0.4` — `skills/oomol/oo-mautic/SKILL.md`
+- `oo-mcdonalds-cn` `1.0.4` — `skills/oomol/oo-mcdonalds-cn/SKILL.md`
+- `oo-mcdonalds-cn-mcp` `1.0.5` — `skills/oomol/oo-mcdonalds-cn-mcp/SKILL.md`
+- `oo-mediastack` `1.0.5` — `skills/oomol/oo-mediastack/SKILL.md`
+- `oo-meet-geek` `1.0.4` — `skills/oomol/oo-meet-geek/SKILL.md`
+- `oo-megaventory` `1.0.4` — `skills/oomol/oo-megaventory/SKILL.md`
+- `oo-meituan` `1.0.5` — `skills/oomol/oo-meituan/SKILL.md`
+- `oo-mem` `1.0.5` — `skills/oomol/oo-mem/SKILL.md`
+- `oo-mem0` `1.0.6` — `skills/oomol/oo-mem0/SKILL.md`
+- `oo-memberstack` `1.0.6` — `skills/oomol/oo-memberstack/SKILL.md`
+- `oo-membervault` `1.0.4` — `skills/oomol/oo-membervault/SKILL.md`
+- `oo-memento-database` `1.0.2` — `skills/oomol/oo-memento-database/SKILL.md`
+- `oo-memos` `1.0.5` — `skills/oomol/oo-memos/SKILL.md`
+- `oo-mendeley` `1.0.4` — `skills/oomol/oo-mendeley/SKILL.md`
+- `oo-menglar-ozon` `1.0.2` — `skills/oomol/oo-menglar-ozon/SKILL.md`
+- `oo-meta` `1.0.4` — `skills/oomol/oo-meta/SKILL.md`
+- `oo-metabase` `1.0.6` — `skills/oomol/oo-metabase/SKILL.md`
+- `oo-metaso` `1.0.6` — `skills/oomol/oo-metaso/SKILL.md`
+- `oo-metatextai` `1.0.7` — `skills/oomol/oo-metatextai/SKILL.md`
+- `oo-metatraderapi` `1.0.2` — `skills/oomol/oo-metatraderapi/SKILL.md`
+- `oo-metronome` `1.0.4` — `skills/oomol/oo-metronome/SKILL.md`
+- `oo-mezmo` `1.0.5` — `skills/oomol/oo-mezmo/SKILL.md`
+- `oo-microsoft-clarity` `1.0.6` — `skills/oomol/oo-microsoft-clarity/SKILL.md`
+- `oo-microsoft-teams` `1.0.2` — `skills/oomol/oo-microsoft-teams/SKILL.md`
+- `oo-microsoft-teams-bot` `1.0.1` — `skills/oomol/oo-microsoft-teams-bot/SKILL.md`
+- `oo-microsoft-text-translate` `1.0.4` — `skills/oomol/oo-microsoft-text-translate/SKILL.md`
+- `oo-microsoft-todo` `1.0.4` — `skills/oomol/oo-microsoft-todo/SKILL.md`
+- `oo-mindbody` `1.0.5` — `skills/oomol/oo-mindbody/SKILL.md`
+- `oo-minerstat` `1.0.5` — `skills/oomol/oo-minerstat/SKILL.md`
+- `oo-mineru` `1.0.5` — `skills/oomol/oo-mineru/SKILL.md`
+- `oo-mingdao` `1.0.3` — `skills/oomol/oo-mingdao/SKILL.md`
+- `oo-minimax` `1.0.7` — `skills/oomol/oo-minimax/SKILL.md`
+- `oo-mintlify` `1.0.5` — `skills/oomol/oo-mintlify/SKILL.md`
+- `oo-miro` `1.0.6` — `skills/oomol/oo-miro/SKILL.md`
+- `oo-missive` `1.0.4` — `skills/oomol/oo-missive/SKILL.md`
+- `oo-mistral-ai` `1.0.6` — `skills/oomol/oo-mistral-ai/SKILL.md`
+- `oo-mixmax` `1.0.4` — `skills/oomol/oo-mixmax/SKILL.md`
+- `oo-mixpanel` `1.0.7` — `skills/oomol/oo-mixpanel/SKILL.md`
+- `oo-mktindex` `1.0.2` — `skills/oomol/oo-mktindex/SKILL.md`
+- `oo-mobile-text-alerts` `1.0.4` — `skills/oomol/oo-mobile-text-alerts/SKILL.md`
+- `oo-mocean` `1.0.5` — `skills/oomol/oo-mocean/SKILL.md`
+- `oo-moco` `1.0.4` — `skills/oomol/oo-moco/SKILL.md`
+- `oo-modjo-ai` `1.0.5` — `skills/oomol/oo-modjo-ai/SKILL.md`
+- `oo-moesif` `1.0.4` — `skills/oomol/oo-moesif/SKILL.md`
+- `oo-mojo-helpdesk` `1.0.2` — `skills/oomol/oo-mojo-helpdesk/SKILL.md`
+- `oo-momentum-io` `1.0.5` — `skills/oomol/oo-momentum-io/SKILL.md`
+- `oo-monday` `1.0.9` — `skills/oomol/oo-monday/SKILL.md`
+- `oo-moneyforward-mcp` `1.0.2` — `skills/oomol/oo-moneyforward-mcp/SKILL.md`
+- `oo-mongo-db-atlas-administration` `1.0.4` — `skills/oomol/oo-mongo-db-atlas-administration/SKILL.md`
+- `oo-monica-crm` `1.0.5` — `skills/oomol/oo-monica-crm/SKILL.md`
+- `oo-moonclerk` `1.0.5` — `skills/oomol/oo-moonclerk/SKILL.md`
+- `oo-moorcheh` `1.0.4` — `skills/oomol/oo-moorcheh/SKILL.md`
+- `oo-moosend` `1.0.5` — `skills/oomol/oo-moosend/SKILL.md`
+- `oo-mopinion` `1.0.5` — `skills/oomol/oo-mopinion/SKILL.md`
+- `oo-more-trees` `1.0.5` — `skills/oomol/oo-more-trees/SKILL.md`
+- `oo-mother-duck` `1.0.4` — `skills/oomol/oo-mother-duck/SKILL.md`
+- `oo-motion` `1.0.6` — `skills/oomol/oo-motion/SKILL.md`
+- `oo-moxie` `1.0.4` — `skills/oomol/oo-moxie/SKILL.md`
+- `oo-mqtt` `1.0.4` — `skills/oomol/oo-mqtt/SKILL.md`
+- `oo-mrscraper` `1.0.2` — `skills/oomol/oo-mrscraper/SKILL.md`
+- `oo-msg91` `1.0.6` — `skills/oomol/oo-msg91/SKILL.md`
+- `oo-mumble` `1.0.3` — `skills/oomol/oo-mumble/SKILL.md`
+- `oo-mux` `1.0.6` — `skills/oomol/oo-mux/SKILL.md`
+- `oo-mx` `1.0.4` — `skills/oomol/oo-mx/SKILL.md`
+- `oo-mx-toolbox` `1.0.6` — `skills/oomol/oo-mx-toolbox/SKILL.md`
+- `oo-mymind` `1.0.6` — `skills/oomol/oo-mymind/SKILL.md`
+- `oo-myotp-app` `1.0.5` — `skills/oomol/oo-myotp-app/SKILL.md`
+- `oo-n8n` `1.0.5` — `skills/oomol/oo-n8n/SKILL.md`
+- `oo-namely` `1.0.5` — `skills/oomol/oo-namely/SKILL.md`
+- `oo-nango` `1.0.6` — `skills/oomol/oo-nango/SKILL.md`
+- `oo-nasa` `1.0.5` — `skills/oomol/oo-nasa/SKILL.md`
+- `oo-nasdaq` `1.0.5` — `skills/oomol/oo-nasdaq/SKILL.md`
+- `oo-nationalize` `1.0.2` — `skills/oomol/oo-nationalize/SKILL.md`
+- `oo-navigatr` `1.0.2` — `skills/oomol/oo-navigatr/SKILL.md`
+- `oo-needle` `1.0.5` — `skills/oomol/oo-needle/SKILL.md`
+- `oo-neetocal` `1.0.4` — `skills/oomol/oo-neetocal/SKILL.md`
+- `oo-neetodesk` `1.0.4` — `skills/oomol/oo-neetodesk/SKILL.md`
+- `oo-neon` `1.0.5` — `skills/oomol/oo-neon/SKILL.md`
+- `oo-neon-ai-gateway` `1.0.0` — `skills/oomol/oo-neon-ai-gateway/SKILL.md`
+- `oo-neon-object-storage` `1.0.0` — `skills/oomol/oo-neon-object-storage/SKILL.md`
+- `oo-netease-enterprise-mail` `1.0.5` — `skills/oomol/oo-netease-enterprise-mail/SKILL.md`
+- `oo-netease-mail` `1.0.5` — `skills/oomol/oo-netease-mail/SKILL.md`
+- `oo-nethunt` `1.0.4` — `skills/oomol/oo-nethunt/SKILL.md`
+- `oo-netlify` `1.0.6` — `skills/oomol/oo-netlify/SKILL.md`
+- `oo-netsuite` `1.0.5` — `skills/oomol/oo-netsuite/SKILL.md`
+- `oo-neutrino` `1.0.5` — `skills/oomol/oo-neutrino/SKILL.md`
+- `oo-neverbounce` `1.0.5` — `skills/oomol/oo-neverbounce/SKILL.md`
+- `oo-new-relic` `1.0.5` — `skills/oomol/oo-new-relic/SKILL.md`
+- `oo-news-api` `1.0.5` — `skills/oomol/oo-news-api/SKILL.md`
+- `oo-newscatcher` `1.0.4` — `skills/oomol/oo-newscatcher/SKILL.md`
+- `oo-newsdata-io` `1.0.7` — `skills/oomol/oo-newsdata-io/SKILL.md`
+- `oo-next-dns` `1.0.6` — `skills/oomol/oo-next-dns/SKILL.md`
+- `oo-ngrok` `1.0.5` — `skills/oomol/oo-ngrok/SKILL.md`
+- `oo-niftyimages` `1.0.5` — `skills/oomol/oo-niftyimages/SKILL.md`
+- `oo-nightfall-ai` `1.0.2` — `skills/oomol/oo-nightfall-ai/SKILL.md`
+- `oo-nimble` `1.0.4` — `skills/oomol/oo-nimble/SKILL.md`
+- `oo-ninjapear` `1.0.4` — `skills/oomol/oo-ninjapear/SKILL.md`
+- `oo-ninox` `1.0.5` — `skills/oomol/oo-ninox/SKILL.md`
+- `oo-nocodb` `1.0.6` — `skills/oomol/oo-nocodb/SKILL.md`
+- `oo-nocrm-io` `1.0.6` — `skills/oomol/oo-nocrm-io/SKILL.md`
+- `oo-northbeam` `1.0.4` — `skills/oomol/oo-northbeam/SKILL.md`
+- `oo-northflank` `1.0.5` — `skills/oomol/oo-northflank/SKILL.md`
+- `oo-notion` `1.0.7` — `skills/oomol/oo-notion/SKILL.md`
+- `oo-notion-mcp` `1.0.3` — `skills/oomol/oo-notion-mcp/SKILL.md`
+- `oo-novu` `1.0.4` — `skills/oomol/oo-novu/SKILL.md`
+- `oo-nozbe-teams` `1.0.5` — `skills/oomol/oo-nozbe-teams/SKILL.md`
+- `oo-npm` `1.0.4` — `skills/oomol/oo-npm/SKILL.md`
+- `oo-ntfy` `1.0.5` — `skills/oomol/oo-ntfy/SKILL.md`
+- `oo-numverify` `1.0.2` — `skills/oomol/oo-numverify/SKILL.md`
+- `oo-nusii-proposals` `1.0.5` — `skills/oomol/oo-nusii-proposals/SKILL.md`
+- `oo-nutrient-document-web-services-api` `1.0.4` — `skills/oomol/oo-nutrient-document-web-services-api/SKILL.md`
+- `oo-nylas` `1.0.4` — `skills/oomol/oo-nylas/SKILL.md`
+- `oo-nyne-ai` `1.0.5` — `skills/oomol/oo-nyne-ai/SKILL.md`
+- `oo-ocr-web-service` `1.0.5` — `skills/oomol/oo-ocr-web-service/SKILL.md`
+- `oo-ocrspace` `1.0.5` — `skills/oomol/oo-ocrspace/SKILL.md`
+- `oo-octave` `1.0.5` — `skills/oomol/oo-octave/SKILL.md`
+- `oo-octen` `1.0.2` — `skills/oomol/oo-octen/SKILL.md`
+- `oo-octopus-deploy` `1.0.5` — `skills/oomol/oo-octopus-deploy/SKILL.md`
+- `oo-odoo` `1.0.2` — `skills/oomol/oo-odoo/SKILL.md`
+- `oo-oksign` `1.0.5` — `skills/oomol/oo-oksign/SKILL.md`
+- `oo-okta` `1.0.5` — `skills/oomol/oo-okta/SKILL.md`
+- `oo-omise` `1.0.3` — `skills/oomol/oo-omise/SKILL.md`
+- `oo-omnisend` `1.0.5` — `skills/oomol/oo-omnisend/SKILL.md`
+- `oo-oncehub` `1.0.4` — `skills/oomol/oo-oncehub/SKILL.md`
+- `oo-one-drive` `1.0.7` — `skills/oomol/oo-one-drive/SKILL.md`
+- `oo-one-page-crm` `1.0.4` — `skills/oomol/oo-one-page-crm/SKILL.md`
+- `oo-one-password` `1.0.4` — `skills/oomol/oo-one-password/SKILL.md`
+- `oo-one-password-events` `1.0.4` — `skills/oomol/oo-one-password-events/SKILL.md`
+- `oo-onedesk` `1.0.4` — `skills/oomol/oo-onedesk/SKILL.md`
+- `oo-onesignal-rest-api` `1.0.6` — `skills/oomol/oo-onesignal-rest-api/SKILL.md`
+- `oo-onfleet` `1.0.5` — `skills/oomol/oo-onfleet/SKILL.md`
+- `oo-ongage` `1.0.5` — `skills/oomol/oo-ongage/SKILL.md`
+- `oo-onlyoffice-docspace` `1.0.4` — `skills/oomol/oo-onlyoffice-docspace/SKILL.md`
+- `oo-oomnitza` `1.0.5` — `skills/oomol/oo-oomnitza/SKILL.md`
+- `oo-oomol-console` `1.0.6` — `skills/oomol/oo-oomol-console/SKILL.md`
+- `oo-oomol-rag` `1.0.4` — `skills/oomol/oo-oomol-rag/SKILL.md`
+- `oo-open-exchange-rates` `1.0.5` — `skills/oomol/oo-open-exchange-rates/SKILL.md`
+- `oo-open-hands` `1.0.6` — `skills/oomol/oo-open-hands/SKILL.md`
+- `oo-openai` `1.0.6` — `skills/oomol/oo-openai/SKILL.md`
+- `oo-openalex` `1.0.5` — `skills/oomol/oo-openalex/SKILL.md`
+- `oo-openalex-mcp` `1.0.0` — `skills/oomol/oo-openalex-mcp/SKILL.md`
+- `oo-opencage` `1.0.6` — `skills/oomol/oo-opencage/SKILL.md`
+- `oo-openfda` `1.0.4` — `skills/oomol/oo-openfda/SKILL.md`
+- `oo-openfootball-worldcup` `1.0.4` — `skills/oomol/oo-openfootball-worldcup/SKILL.md`
+- `oo-opengraph-io` `1.0.5` — `skills/oomol/oo-opengraph-io/SKILL.md`
+- `oo-openpagerank` `1.0.5` — `skills/oomol/oo-openpagerank/SKILL.md`
+- `oo-openrouter` `1.0.6` — `skills/oomol/oo-openrouter/SKILL.md`
+- `oo-opensea` `1.0.5` — `skills/oomol/oo-opensea/SKILL.md`
+- `oo-openseo-mcp` `1.0.1` — `skills/oomol/oo-openseo-mcp/SKILL.md`
+- `oo-openstatus` `1.0.4` — `skills/oomol/oo-openstatus/SKILL.md`
+- `oo-openweather-api` `1.0.5` — `skills/oomol/oo-openweather-api/SKILL.md`
+- `oo-opper` `1.0.2` — `skills/oomol/oo-opper/SKILL.md`
+- `oo-opsgenie` `1.0.5` — `skills/oomol/oo-opsgenie/SKILL.md`
+- `oo-optimoroute` `1.0.5` — `skills/oomol/oo-optimoroute/SKILL.md`
+- `oo-oracle-cloud` `1.0.5` — `skills/oomol/oo-oracle-cloud/SKILL.md`
+- `oo-orbit` `1.0.2` — `skills/oomol/oo-orbit/SKILL.md`
+- `oo-orcarouter` `1.0.5` — `skills/oomol/oo-orcarouter/SKILL.md`
+- `oo-orcid` `1.0.4` — `skills/oomol/oo-orcid/SKILL.md`
+- `oo-ordinal` `1.0.5` — `skills/oomol/oo-ordinal/SKILL.md`
+- `oo-orimon` `1.0.2` — `skills/oomol/oo-orimon/SKILL.md`
+- `oo-ortto` `1.0.4` — `skills/oomol/oo-ortto/SKILL.md`
+- `oo-ossinsight` `1.0.6` — `skills/oomol/oo-ossinsight/SKILL.md`
+- `oo-osv` `1.0.3` — `skills/oomol/oo-osv/SKILL.md`
+- `oo-otter-ai` `1.0.4` — `skills/oomol/oo-otter-ai/SKILL.md`
+- `oo-oura` `1.0.4` — `skills/oomol/oo-oura/SKILL.md`
+- `oo-outline` `1.0.5` — `skills/oomol/oo-outline/SKILL.md`
+- `oo-outlook` `1.0.6` — `skills/oomol/oo-outlook/SKILL.md`
+- `oo-outlook-calendar` `1.0.2` — `skills/oomol/oo-outlook-calendar/SKILL.md`
+- `oo-owl-protocol` `1.0.5` — `skills/oomol/oo-owl-protocol/SKILL.md`
+- `oo-ozon` `1.0.4` — `skills/oomol/oo-ozon/SKILL.md`
+- `oo-paddle` `1.0.5` — `skills/oomol/oo-paddle/SKILL.md`
+- `oo-pagerduty` `1.0.5` — `skills/oomol/oo-pagerduty/SKILL.md`
+- `oo-pandadoc` `1.0.5` — `skills/oomol/oo-pandadoc/SKILL.md`
+- `oo-panjiva` `1.0.2` — `skills/oomol/oo-panjiva/SKILL.md`
+- `oo-paperform` `1.0.5` — `skills/oomol/oo-paperform/SKILL.md`
+- `oo-paperless-ngx` `1.0.3` — `skills/oomol/oo-paperless-ngx/SKILL.md`
+- `oo-papertrail` `1.0.2` — `skills/oomol/oo-papertrail/SKILL.md`
+- `oo-paradym` `1.0.5` — `skills/oomol/oo-paradym/SKILL.md`
+- `oo-parallel` `1.0.4` — `skills/oomol/oo-parallel/SKILL.md`
+- `oo-parma` `1.0.5` — `skills/oomol/oo-parma/SKILL.md`
+- `oo-parsehub` `1.0.5` — `skills/oomol/oo-parsehub/SKILL.md`
+- `oo-parsera` `1.0.6` — `skills/oomol/oo-parsera/SKILL.md`
+- `oo-parseur` `1.0.4` — `skills/oomol/oo-parseur/SKILL.md`
+- `oo-partner-stack-partner` `1.0.4` — `skills/oomol/oo-partner-stack-partner/SKILL.md`
+- `oo-partnerstack` `1.0.4` — `skills/oomol/oo-partnerstack/SKILL.md`
+- `oo-passcreator` `1.0.4` — `skills/oomol/oo-passcreator/SKILL.md`
+- `oo-passslot` `1.0.4` — `skills/oomol/oo-passslot/SKILL.md`
+- `oo-patsnap-mcp` `1.0.3` — `skills/oomol/oo-patsnap-mcp/SKILL.md`
+- `oo-payhip` `1.0.6` — `skills/oomol/oo-payhip/SKILL.md`
+- `oo-paymo` `1.0.4` — `skills/oomol/oo-paymo/SKILL.md`
+- `oo-paypal` `1.0.5` — `skills/oomol/oo-paypal/SKILL.md`
+- `oo-payrexx` `1.0.4` — `skills/oomol/oo-payrexx/SKILL.md`
+- `oo-paystack` `1.0.5` — `skills/oomol/oo-paystack/SKILL.md`
+- `oo-pdf-api-io` `1.0.5` — `skills/oomol/oo-pdf-api-io/SKILL.md`
+- `oo-pdf-co` `1.0.6` — `skills/oomol/oo-pdf-co/SKILL.md`
+- `oo-pdf-vector` `1.0.3` — `skills/oomol/oo-pdf-vector/SKILL.md`
+- `oo-pdfless` `1.0.5` — `skills/oomol/oo-pdfless/SKILL.md`
+- `oo-pdfmonkey` `1.0.5` — `skills/oomol/oo-pdfmonkey/SKILL.md`
+- `oo-peec` `1.0.2` — `skills/oomol/oo-peec/SKILL.md`
+- `oo-pendo` `1.0.4` — `skills/oomol/oo-pendo/SKILL.md`
+- `oo-peopledatalabs` `1.0.5` — `skills/oomol/oo-peopledatalabs/SKILL.md`
+- `oo-perdoo` `1.0.6` — `skills/oomol/oo-perdoo/SKILL.md`
+- `oo-perigon` `1.0.5` — `skills/oomol/oo-perigon/SKILL.md`
+- `oo-permit-io` `1.0.5` — `skills/oomol/oo-permit-io/SKILL.md`
+- `oo-perplexity` `1.0.6` — `skills/oomol/oo-perplexity/SKILL.md`
+- `oo-persona` `1.0.4` — `skills/oomol/oo-persona/SKILL.md`
+- `oo-personal-ai` `1.0.6` — `skills/oomol/oo-personal-ai/SKILL.md`
+- `oo-pexels` `1.0.5` — `skills/oomol/oo-pexels/SKILL.md`
+- `oo-phantombuster` `1.0.5` — `skills/oomol/oo-phantombuster/SKILL.md`
+- `oo-phonely` `1.0.4` — `skills/oomol/oo-phonely/SKILL.md`
+- `oo-photoroom` `1.0.4` — `skills/oomol/oo-photoroom/SKILL.md`
+- `oo-pi-hole` `1.0.5` — `skills/oomol/oo-pi-hole/SKILL.md`
+- `oo-picky-assist` `1.0.2` — `skills/oomol/oo-picky-assist/SKILL.md`
+- `oo-pilvio` `1.0.4` — `skills/oomol/oo-pilvio/SKILL.md`
+- `oo-pinata` `1.0.5` — `skills/oomol/oo-pinata/SKILL.md`
+- `oo-pinboard` `1.0.5` — `skills/oomol/oo-pinboard/SKILL.md`
+- `oo-pinecone` `1.0.7` — `skills/oomol/oo-pinecone/SKILL.md`
+- `oo-pingback` `1.0.1` — `skills/oomol/oo-pingback/SKILL.md`
+- `oo-pingbell` `1.0.5` — `skills/oomol/oo-pingbell/SKILL.md`
+- `oo-pingdom` `1.0.5` — `skills/oomol/oo-pingdom/SKILL.md`
+- `oo-pinpoint` `1.0.4` — `skills/oomol/oo-pinpoint/SKILL.md`
+- `oo-pipedream` `1.0.4` — `skills/oomol/oo-pipedream/SKILL.md`
+- `oo-pipedrive` `1.0.6` — `skills/oomol/oo-pipedrive/SKILL.md`
+- `oo-pivotal-tracker` `1.0.4` — `skills/oomol/oo-pivotal-tracker/SKILL.md`
+- `oo-pixellab` `1.0.5` — `skills/oomol/oo-pixellab/SKILL.md`
+- `oo-pkulaw` `1.0.4` — `skills/oomol/oo-pkulaw/SKILL.md`
+- `oo-placekey` `1.0.5` — `skills/oomol/oo-placekey/SKILL.md`
+- `oo-placid` `1.0.5` — `skills/oomol/oo-placid/SKILL.md`
+- `oo-plain` `1.0.5` — `skills/oomol/oo-plain/SKILL.md`
+- `oo-plane` `1.0.4` — `skills/oomol/oo-plane/SKILL.md`
+- `oo-planetscale` `1.0.5` — `skills/oomol/oo-planetscale/SKILL.md`
+- `oo-planhat` `1.0.5` — `skills/oomol/oo-planhat/SKILL.md`
+- `oo-planly` `1.0.2` — `skills/oomol/oo-planly/SKILL.md`
+- `oo-planyo` `1.0.1` — `skills/oomol/oo-planyo/SKILL.md`
+- `oo-plasmic` `1.0.4` — `skills/oomol/oo-plasmic/SKILL.md`
+- `oo-platerecognizer` `1.0.5` — `skills/oomol/oo-platerecognizer/SKILL.md`
+- `oo-plausible-analytics` `1.0.6` — `skills/oomol/oo-plausible-analytics/SKILL.md`
+- `oo-plisio` `1.0.5` — `skills/oomol/oo-plisio/SKILL.md`
+- `oo-ploid` `1.0.2` — `skills/oomol/oo-ploid/SKILL.md`
+- `oo-plunk` `1.0.5` — `skills/oomol/oo-plunk/SKILL.md`
+- `oo-pod-ai` `1.0.4` — `skills/oomol/oo-pod-ai/SKILL.md`
+- `oo-podscribe` `1.0.5` — `skills/oomol/oo-podscribe/SKILL.md`
+- `oo-pointagram` `1.0.2` — `skills/oomol/oo-pointagram/SKILL.md`
+- `oo-polar` `1.0.5` — `skills/oomol/oo-polar/SKILL.md`
+- `oo-polygon-io` `1.0.6` — `skills/oomol/oo-polygon-io/SKILL.md`
+- `oo-poper` `1.0.4` — `skills/oomol/oo-poper/SKILL.md`
+- `oo-porteden` `1.0.2` — `skills/oomol/oo-porteden/SKILL.md`
+- `oo-positionstack` `1.0.5` — `skills/oomol/oo-positionstack/SKILL.md`
+- `oo-postalytics` `1.0.4` — `skills/oomol/oo-postalytics/SKILL.md`
+- `oo-postgrid` `1.0.5` — `skills/oomol/oo-postgrid/SKILL.md`
+- `oo-postgrid-verify` `1.0.5` — `skills/oomol/oo-postgrid-verify/SKILL.md`
+- `oo-posthog` `1.0.6` — `skills/oomol/oo-posthog/SKILL.md`
+- `oo-postiz` `1.0.3` — `skills/oomol/oo-postiz/SKILL.md`
+- `oo-postman` `1.0.6` — `skills/oomol/oo-postman/SKILL.md`
+- `oo-postmark` `1.0.5` — `skills/oomol/oo-postmark/SKILL.md`
+- `oo-practitest` `1.0.5` — `skills/oomol/oo-practitest/SKILL.md`
+- `oo-precoro` `1.0.5` — `skills/oomol/oo-precoro/SKILL.md`
+- `oo-predictleads` `1.0.2` — `skills/oomol/oo-predictleads/SKILL.md`
+- `oo-predis-ai` `1.0.5` — `skills/oomol/oo-predis-ai/SKILL.md`
+- `oo-prerender` `1.0.6` — `skills/oomol/oo-prerender/SKILL.md`
+- `oo-pretix` `1.0.5` — `skills/oomol/oo-pretix/SKILL.md`
+- `oo-printavo` `1.0.4` — `skills/oomol/oo-printavo/SKILL.md`
+- `oo-printify` `1.0.5` — `skills/oomol/oo-printify/SKILL.md`
+- `oo-process-street` `1.0.5` — `skills/oomol/oo-process-street/SKILL.md`
+- `oo-processplan` `1.0.4` — `skills/oomol/oo-processplan/SKILL.md`
+- `oo-product-fruits` `1.0.2` — `skills/oomol/oo-product-fruits/SKILL.md`
+- `oo-productboard` `1.0.5` — `skills/oomol/oo-productboard/SKILL.md`
+- `oo-productive` `1.0.5` — `skills/oomol/oo-productive/SKILL.md`
+- `oo-productlane` `1.0.4` — `skills/oomol/oo-productlane/SKILL.md`
+- `oo-profileapi` `1.0.4` — `skills/oomol/oo-profileapi/SKILL.md`
+- `oo-projectmanager` `1.0.4` — `skills/oomol/oo-projectmanager/SKILL.md`
+- `oo-promptlayer` `1.0.4` — `skills/oomol/oo-promptlayer/SKILL.md`
+- `oo-prospeo` `1.0.5` — `skills/oomol/oo-prospeo/SKILL.md`
+- `oo-proworkflow` `1.0.2` — `skills/oomol/oo-proworkflow/SKILL.md`
+- `oo-proxiedmail` `1.0.5` — `skills/oomol/oo-proxiedmail/SKILL.md`
+- `oo-prtg-classic` `1.0.5` — `skills/oomol/oo-prtg-classic/SKILL.md`
+- `oo-pubmed` `1.0.4` — `skills/oomol/oo-pubmed/SKILL.md`
+- `oo-pulsetic` `1.0.2` — `skills/oomol/oo-pulsetic/SKILL.md`
+- `oo-push-by-techulus` `1.0.5` — `skills/oomol/oo-push-by-techulus/SKILL.md`
+- `oo-pushbullet` `1.0.6` — `skills/oomol/oo-pushbullet/SKILL.md`
+- `oo-pushinator` `1.0.2` — `skills/oomol/oo-pushinator/SKILL.md`
+- `oo-pushover` `1.0.6` — `skills/oomol/oo-pushover/SKILL.md`
+- `oo-pushsafer` `1.0.4` — `skills/oomol/oo-pushsafer/SKILL.md`
+- `oo-pylon` `1.0.5` — `skills/oomol/oo-pylon/SKILL.md`
+- `oo-qase` `1.0.5` — `skills/oomol/oo-qase/SKILL.md`
+- `oo-qdrant` `1.0.5` — `skills/oomol/oo-qdrant/SKILL.md`
+- `oo-qianfan` `1.0.6` — `skills/oomol/oo-qianfan/SKILL.md`
+- `oo-qichacha` `1.0.4` — `skills/oomol/oo-qichacha/SKILL.md`
+- `oo-qingflow` `1.0.6` — `skills/oomol/oo-qingflow/SKILL.md`
+- `oo-qiuxiaoce` `1.0.2` — `skills/oomol/oo-qiuxiaoce/SKILL.md`
+- `oo-qlty` `1.0.5` — `skills/oomol/oo-qlty/SKILL.md`
+- `oo-qq-mail` `1.0.5` — `skills/oomol/oo-qq-mail/SKILL.md`
+- `oo-qqmusic` `1.0.2` — `skills/oomol/oo-qqmusic/SKILL.md`
+- `oo-quaderno` `1.0.4` — `skills/oomol/oo-quaderno/SKILL.md`
+- `oo-quant-data` `1.0.2` — `skills/oomol/oo-quant-data/SKILL.md`
+- `oo-quentn` `1.0.5` — `skills/oomol/oo-quentn/SKILL.md`
+- `oo-quickbase` `1.0.4` — `skills/oomol/oo-quickbase/SKILL.md`
+- `oo-quickbooks` `1.0.2` — `skills/oomol/oo-quickbooks/SKILL.md`
+- `oo-quickchart` `1.0.7` — `skills/oomol/oo-quickchart/SKILL.md`
+- `oo-quintadb` `1.0.4` — `skills/oomol/oo-quintadb/SKILL.md`
+- `oo-quipteams` `1.0.5` — `skills/oomol/oo-quipteams/SKILL.md`
+- `oo-quo` `1.0.6` — `skills/oomol/oo-quo/SKILL.md`
+- `oo-quriiri` `1.0.4` — `skills/oomol/oo-quriiri/SKILL.md`
+- `oo-qwen` `1.0.6` — `skills/oomol/oo-qwen/SKILL.md`
+- `oo-radar` `1.0.6` — `skills/oomol/oo-radar/SKILL.md`
+- `oo-ragie` `1.0.5` — `skills/oomol/oo-ragie/SKILL.md`
+- `oo-railway` `1.0.4` — `skills/oomol/oo-railway/SKILL.md`
+- `oo-raindrop` `1.0.4` — `skills/oomol/oo-raindrop/SKILL.md`
+- `oo-raisely` `1.0.4` — `skills/oomol/oo-raisely/SKILL.md`
+- `oo-rakuraku-seisan` `1.0.2` — `skills/oomol/oo-rakuraku-seisan/SKILL.md`
+- `oo-rapid-url-indexer` `1.0.1` — `skills/oomol/oo-rapid-url-indexer/SKILL.md`
+- `oo-rawg` `1.0.5` — `skills/oomol/oo-rawg/SKILL.md`
+- `oo-raygun` `1.0.4` — `skills/oomol/oo-raygun/SKILL.md`
+- `oo-razorpay` `1.0.6` — `skills/oomol/oo-razorpay/SKILL.md`
+- `oo-readme` `1.0.5` — `skills/oomol/oo-readme/SKILL.md`
+- `oo-readwise` `1.0.5` — `skills/oomol/oo-readwise/SKILL.md`
+- `oo-realphonevalidation` `1.0.5` — `skills/oomol/oo-realphonevalidation/SKILL.md`
+- `oo-rebrandly` `1.0.4` — `skills/oomol/oo-rebrandly/SKILL.md`
+- `oo-recallai` `1.0.5` — `skills/oomol/oo-recallai/SKILL.md`
+- `oo-recharge` `1.0.5` — `skills/oomol/oo-recharge/SKILL.md`
+- `oo-recruitcrm` `1.0.4` — `skills/oomol/oo-recruitcrm/SKILL.md`
+- `oo-recruitee` `1.0.4` — `skills/oomol/oo-recruitee/SKILL.md`
+- `oo-recruiterflow` `1.0.4` — `skills/oomol/oo-recruiterflow/SKILL.md`
+- `oo-recurly` `1.0.4` — `skills/oomol/oo-recurly/SKILL.md`
+- `oo-reddit` `1.0.5` — `skills/oomol/oo-reddit/SKILL.md`
+- `oo-redfox` `1.0.8` — `skills/oomol/oo-redfox/SKILL.md`
+- `oo-reducto` `1.0.5` — `skills/oomol/oo-reducto/SKILL.md`
+- `oo-referralhero` `1.0.5` — `skills/oomol/oo-referralhero/SKILL.md`
+- `oo-referralrock` `1.0.4` — `skills/oomol/oo-referralrock/SKILL.md`
+- `oo-refiner` `1.0.6` — `skills/oomol/oo-refiner/SKILL.md`
+- `oo-remove-bg` `1.0.6` — `skills/oomol/oo-remove-bg/SKILL.md`
+- `oo-render` `1.0.7` — `skills/oomol/oo-render/SKILL.md`
+- `oo-renderform` `1.0.5` — `skills/oomol/oo-renderform/SKILL.md`
+- `oo-rentman` `1.0.4` — `skills/oomol/oo-rentman/SKILL.md`
+- `oo-repairshopr` `1.0.5` — `skills/oomol/oo-repairshopr/SKILL.md`
+- `oo-replicate` `1.0.6` — `skills/oomol/oo-replicate/SKILL.md`
+- `oo-reply-io` `1.0.5` — `skills/oomol/oo-reply-io/SKILL.md`
+- `oo-resend` `1.0.7` — `skills/oomol/oo-resend/SKILL.md`
+- `oo-respond-io` `1.0.5` — `skills/oomol/oo-respond-io/SKILL.md`
+- `oo-retable` `1.0.2` — `skills/oomol/oo-retable/SKILL.md`
+- `oo-retell-ai` `1.0.5` — `skills/oomol/oo-retell-ai/SKILL.md`
+- `oo-retently` `1.0.5` — `skills/oomol/oo-retently/SKILL.md`
+- `oo-revenuecat` `1.0.4` — `skills/oomol/oo-revenuecat/SKILL.md`
+- `oo-reversecontact` `1.0.4` — `skills/oomol/oo-reversecontact/SKILL.md`
+- `oo-rewiser` `1.0.4` — `skills/oomol/oo-rewiser/SKILL.md`
+- `oo-riddle-quiz-maker` `1.0.2` — `skills/oomol/oo-riddle-quiz-maker/SKILL.md`
+- `oo-ringba` `1.0.4` — `skills/oomol/oo-ringba/SKILL.md`
+- `oo-ringg-ai` `1.0.5` — `skills/oomol/oo-ringg-ai/SKILL.md`
+- `oo-ringover` `1.0.4` — `skills/oomol/oo-ringover/SKILL.md`
+- `oo-rippling` `1.0.5` — `skills/oomol/oo-rippling/SKILL.md`
+- `oo-ritekit` `1.0.6` — `skills/oomol/oo-ritekit/SKILL.md`
+- `oo-riveter` `1.0.4` — `skills/oomol/oo-riveter/SKILL.md`
+- `oo-roam` `1.0.5` — `skills/oomol/oo-roam/SKILL.md`
+- `oo-roam-scim` `1.0.6` — `skills/oomol/oo-roam-scim/SKILL.md`
+- `oo-roboflow` `1.0.6` — `skills/oomol/oo-roboflow/SKILL.md`
+- `oo-rocket-chat` `1.0.4` — `skills/oomol/oo-rocket-chat/SKILL.md`
+- `oo-rocket-reach` `1.0.5` — `skills/oomol/oo-rocket-reach/SKILL.md`
+- `oo-rocketlane` `1.0.5` — `skills/oomol/oo-rocketlane/SKILL.md`
+- `oo-rollbar` `1.0.6` — `skills/oomol/oo-rollbar/SKILL.md`
+- `oo-rootly` `1.0.4` — `skills/oomol/oo-rootly/SKILL.md`
+- `oo-rosette-text-analytics` `1.0.5` — `skills/oomol/oo-rosette-text-analytics/SKILL.md`
+- `oo-route4me` `1.0.5` — `skills/oomol/oo-route4me/SKILL.md`
+- `oo-roxyapi` `1.0.2` — `skills/oomol/oo-roxyapi/SKILL.md`
+- `oo-runcrate` `1.0.0` — `skills/oomol/oo-runcrate/SKILL.md`
+- `oo-runpod` `1.0.6` — `skills/oomol/oo-runpod/SKILL.md`
+- `oo-runscope` `1.0.4` — `skills/oomol/oo-runscope/SKILL.md`
+- `oo-saas-custom-domains` `1.0.5` — `skills/oomol/oo-saas-custom-domains/SKILL.md`
+- `oo-safetyculture` `1.0.4` — `skills/oomol/oo-safetyculture/SKILL.md`
+- `oo-sage-hr` `1.0.4` — `skills/oomol/oo-sage-hr/SKILL.md`
+- `oo-sage-sales-management` `1.0.4` — `skills/oomol/oo-sage-sales-management/SKILL.md`
+- `oo-salesflare` `1.0.4` — `skills/oomol/oo-salesflare/SKILL.md`
+- `oo-salesforce` `1.0.2` — `skills/oomol/oo-salesforce/SKILL.md`
+- `oo-salesloft` `1.0.4` — `skills/oomol/oo-salesloft/SKILL.md`
+- `oo-salesmate` `1.0.4` — `skills/oomol/oo-salesmate/SKILL.md`
+- `oo-samcart` `1.0.5` — `skills/oomol/oo-samcart/SKILL.md`
+- `oo-sanity` `1.0.3` — `skills/oomol/oo-sanity/SKILL.md`
+- `oo-sansan` `1.0.2` — `skills/oomol/oo-sansan/SKILL.md`
+- `oo-saperly` `1.0.2` — `skills/oomol/oo-saperly/SKILL.md`
+- `oo-satismeter` `1.0.5` — `skills/oomol/oo-satismeter/SKILL.md`
+- `oo-saucelabs` `1.0.4` — `skills/oomol/oo-saucelabs/SKILL.md`
+- `oo-scanmalware` `1.0.2` — `skills/oomol/oo-scanmalware/SKILL.md`
+- `oo-scopus` `1.0.4` — `skills/oomol/oo-scopus/SKILL.md`
+- `oo-scrape-creators` `1.0.5` — `skills/oomol/oo-scrape-creators/SKILL.md`
+- `oo-scrape-do` `1.0.6` — `skills/oomol/oo-scrape-do/SKILL.md`
+- `oo-scrape-graph-ai` `1.0.4` — `skills/oomol/oo-scrape-graph-ai/SKILL.md`
+- `oo-scraperapi` `1.0.4` — `skills/oomol/oo-scraperapi/SKILL.md`
+- `oo-scrapfly` `1.0.5` — `skills/oomol/oo-scrapfly/SKILL.md`
+- `oo-scrapingant` `1.0.5` — `skills/oomol/oo-scrapingant/SKILL.md`
+- `oo-scrapingbee` `1.0.5` — `skills/oomol/oo-scrapingbee/SKILL.md`
+- `oo-scrapingdog` `1.0.5` — `skills/oomol/oo-scrapingdog/SKILL.md`
+- `oo-screendesk` `1.0.4` — `skills/oomol/oo-screendesk/SKILL.md`
+- `oo-screenshot-fyi` `1.0.5` — `skills/oomol/oo-screenshot-fyi/SKILL.md`
+- `oo-screenshotbase` `1.0.4` — `skills/oomol/oo-screenshotbase/SKILL.md`
+- `oo-screenshotone` `1.0.6` — `skills/oomol/oo-screenshotone/SKILL.md`
+- `oo-search-api` `1.0.5` — `skills/oomol/oo-search-api/SKILL.md`
+- `oo-search1api` `1.0.2` — `skills/oomol/oo-search1api/SKILL.md`
+- `oo-seatable` `1.0.5` — `skills/oomol/oo-seatable/SKILL.md`
+- `oo-securityscorecard` `1.0.2` — `skills/oomol/oo-securityscorecard/SKILL.md`
+- `oo-securitytrails` `1.0.5` — `skills/oomol/oo-securitytrails/SKILL.md`
+- `oo-seedance` `1.0.4` — `skills/oomol/oo-seedance/SKILL.md`
+- `oo-segment` `1.0.6` — `skills/oomol/oo-segment/SKILL.md`
+- `oo-sellerspace` `1.0.4` — `skills/oomol/oo-sellerspace/SKILL.md`
+- `oo-sellersprite` `1.0.5` — `skills/oomol/oo-sellersprite/SKILL.md`
+- `oo-sellersprite-mcp` `1.0.5` — `skills/oomol/oo-sellersprite-mcp/SKILL.md`
+- `oo-semantic-scholar` `1.0.5` — `skills/oomol/oo-semantic-scholar/SKILL.md`
+- `oo-semrush` `1.0.4` — `skills/oomol/oo-semrush/SKILL.md`
+- `oo-sendbird` `1.0.6` — `skills/oomol/oo-sendbird/SKILL.md`
+- `oo-sendblue` `1.0.2` — `skills/oomol/oo-sendblue/SKILL.md`
+- `oo-sendcloud` `1.0.0` — `skills/oomol/oo-sendcloud/SKILL.md`
+- `oo-sender` `1.0.5` — `skills/oomol/oo-sender/SKILL.md`
+- `oo-sendfox` `1.0.5` — `skills/oomol/oo-sendfox/SKILL.md`
+- `oo-sendgrid` `1.0.5` — `skills/oomol/oo-sendgrid/SKILL.md`
+- `oo-sendlane` `1.0.4` — `skills/oomol/oo-sendlane/SKILL.md`
+- `oo-sendmator` `1.0.4` — `skills/oomol/oo-sendmator/SKILL.md`
+- `oo-sendspark` `1.0.5` — `skills/oomol/oo-sendspark/SKILL.md`
+- `oo-sensibo` `1.0.5` — `skills/oomol/oo-sensibo/SKILL.md`
+- `oo-sentry` `1.0.6` — `skills/oomol/oo-sentry/SKILL.md`
+- `oo-seqera` `1.0.6` — `skills/oomol/oo-seqera/SKILL.md`
+- `oo-serpapi` `1.0.5` — `skills/oomol/oo-serpapi/SKILL.md`
+- `oo-serpdog` `1.0.5` — `skills/oomol/oo-serpdog/SKILL.md`
+- `oo-serphouse` `1.0.5` — `skills/oomol/oo-serphouse/SKILL.md`
+- `oo-serply` `1.0.5` — `skills/oomol/oo-serply/SKILL.md`
+- `oo-serveravatar` `1.0.5` — `skills/oomol/oo-serveravatar/SKILL.md`
+- `oo-serwersms-pl` `1.0.2` — `skills/oomol/oo-serwersms-pl/SKILL.md`
+- `oo-sevdesk` `1.0.5` — `skills/oomol/oo-sevdesk/SKILL.md`
+- `oo-sf-express` `1.0.5` — `skills/oomol/oo-sf-express/SKILL.md`
+- `oo-sheetdb` `1.0.5` — `skills/oomol/oo-sheetdb/SKILL.md`
+- `oo-sherpa` `1.0.5` — `skills/oomol/oo-sherpa/SKILL.md`
+- `oo-ship-bob` `1.0.4` — `skills/oomol/oo-ship-bob/SKILL.md`
+- `oo-ship-station` `1.0.5` — `skills/oomol/oo-ship-station/SKILL.md`
+- `oo-shipday` `1.0.7` — `skills/oomol/oo-shipday/SKILL.md`
+- `oo-shipengine` `1.0.6` — `skills/oomol/oo-shipengine/SKILL.md`
+- `oo-shippo` `1.0.4` — `skills/oomol/oo-shippo/SKILL.md`
+- `oo-shodan` `1.0.5` — `skills/oomol/oo-shodan/SKILL.md`
+- `oo-shopee` `1.0.2` — `skills/oomol/oo-shopee/SKILL.md`
+- `oo-shopify` `1.0.6` — `skills/oomol/oo-shopify/SKILL.md`
+- `oo-shopify-partner` `1.0.6` — `skills/oomol/oo-shopify-partner/SKILL.md`
+- `oo-shopify-storefront` `1.0.4` — `skills/oomol/oo-shopify-storefront/SKILL.md`
+- `oo-short-io` `1.0.5` — `skills/oomol/oo-short-io/SKILL.md`
+- `oo-short-menu` `1.0.6` — `skills/oomol/oo-short-menu/SKILL.md`
+- `oo-shortcut` `1.0.5` — `skills/oomol/oo-shortcut/SKILL.md`
+- `oo-shorten-rest` `1.0.5` — `skills/oomol/oo-shorten-rest/SKILL.md`
+- `oo-shortpixel` `1.0.5` — `skills/oomol/oo-shortpixel/SKILL.md`
+- `oo-shotstack` `1.0.4` — `skills/oomol/oo-shotstack/SKILL.md`
+- `oo-sif` `1.0.4` — `skills/oomol/oo-sif/SKILL.md`
+- `oo-signalbase` `1.0.6` — `skills/oomol/oo-signalbase/SKILL.md`
+- `oo-signaturely` `1.0.4` — `skills/oomol/oo-signaturely/SKILL.md`
+- `oo-signpath` `1.0.6` — `skills/oomol/oo-signpath/SKILL.md`
+- `oo-signwell` `1.0.5` — `skills/oomol/oo-signwell/SKILL.md`
+- `oo-similarweb-digitalrank-api` `1.0.5` — `skills/oomol/oo-similarweb-digitalrank-api/SKILL.md`
+- `oo-simla` `1.0.6` — `skills/oomol/oo-simla/SKILL.md`
+- `oo-simple-analytics` `1.0.6` — `skills/oomol/oo-simple-analytics/SKILL.md`
+- `oo-simplelocalize` `1.0.4` — `skills/oomol/oo-simplelocalize/SKILL.md`
+- `oo-simplesat` `1.0.5` — `skills/oomol/oo-simplesat/SKILL.md`
+- `oo-simpletexting` `1.0.2` — `skills/oomol/oo-simpletexting/SKILL.md`
+- `oo-simplybook-me` `1.0.5` — `skills/oomol/oo-simplybook-me/SKILL.md`
+- `oo-sitespeakai` `1.0.5` — `skills/oomol/oo-sitespeakai/SKILL.md`
+- `oo-skio` `1.0.5` — `skills/oomol/oo-skio/SKILL.md`
+- `oo-skyfire` `1.0.5` — `skills/oomol/oo-skyfire/SKILL.md`
+- `oo-skyvern` `1.0.6` — `skills/oomol/oo-skyvern/SKILL.md`
+- `oo-slab` `1.0.6` — `skills/oomol/oo-slab/SKILL.md`
+- `oo-slack` `1.0.13` — `skills/oomol/oo-slack/SKILL.md`
+- `oo-slackbot` `1.0.8` — `skills/oomol/oo-slackbot/SKILL.md`
+- `oo-slickdeals` `1.0.4` — `skills/oomol/oo-slickdeals/SKILL.md`
+- `oo-slicktext` `1.0.4` — `skills/oomol/oo-slicktext/SKILL.md`
+- `oo-sling` `1.0.4` — `skills/oomol/oo-sling/SKILL.md`
+- `oo-slite` `1.0.5` — `skills/oomol/oo-slite/SKILL.md`
+- `oo-smarthr` `1.0.2` — `skills/oomol/oo-smarthr/SKILL.md`
+- `oo-smartlead-ai` `1.0.4` — `skills/oomol/oo-smartlead-ai/SKILL.md`
+- `oo-smartrecruiters` `1.0.4` — `skills/oomol/oo-smartrecruiters/SKILL.md`
+- `oo-smartsheet` `1.0.4` — `skills/oomol/oo-smartsheet/SKILL.md`
+- `oo-smartsuite` `1.0.5` — `skills/oomol/oo-smartsuite/SKILL.md`
+- `oo-smooth` `1.0.2` — `skills/oomol/oo-smooth/SKILL.md`
+- `oo-sms-alert` `1.0.6` — `skills/oomol/oo-sms-alert/SKILL.md`
+- `oo-smtp2go` `1.0.5` — `skills/oomol/oo-smtp2go/SKILL.md`
+- `oo-smugmug` `1.0.5` — `skills/oomol/oo-smugmug/SKILL.md`
+- `oo-snappy` `1.0.2` — `skills/oomol/oo-snappy/SKILL.md`
+- `oo-snipcart` `1.0.6` — `skills/oomol/oo-snipcart/SKILL.md`
+- `oo-snipe-it` `1.0.4` — `skills/oomol/oo-snipe-it/SKILL.md`
+- `oo-snyk` `1.0.4` — `skills/oomol/oo-snyk/SKILL.md`
+- `oo-social-fetch` `1.0.4` — `skills/oomol/oo-social-fetch/SKILL.md`
+- `oo-softr` `1.0.4` — `skills/oomol/oo-softr/SKILL.md`
+- `oo-solarwinds-service-desk` `1.0.2` — `skills/oomol/oo-solarwinds-service-desk/SKILL.md`
+- `oo-solcast` `1.0.5` — `skills/oomol/oo-solcast/SKILL.md`
+- `oo-sonarcloud` `1.0.5` — `skills/oomol/oo-sonarcloud/SKILL.md`
+- `oo-sorftime` `1.0.5` — `skills/oomol/oo-sorftime/SKILL.md`
+- `oo-sorftime-mcp` `1.0.6` — `skills/oomol/oo-sorftime-mcp/SKILL.md`
+- `oo-speak-ai` `1.0.2` — `skills/oomol/oo-speak-ai/SKILL.md`
+- `oo-speechmatics` `1.0.4` — `skills/oomol/oo-speechmatics/SKILL.md`
+- `oo-speedtest-tracker` `1.0.3` — `skills/oomol/oo-speedtest-tracker/SKILL.md`
+- `oo-spider` `1.0.4` — `skills/oomol/oo-spider/SKILL.md`
+- `oo-splunk-http-event-collector` `1.0.4` — `skills/oomol/oo-splunk-http-event-collector/SKILL.md`
+- `oo-sportsdata` `1.0.5` — `skills/oomol/oo-sportsdata/SKILL.md`
+- `oo-spotify` `1.0.6` — `skills/oomol/oo-spotify/SKILL.md`
+- `oo-spyfu` `1.0.4` — `skills/oomol/oo-spyfu/SKILL.md`
+- `oo-square` `1.0.4` — `skills/oomol/oo-square/SKILL.md`
+- `oo-sslmate-cert-spotter-api` `1.0.5` — `skills/oomol/oo-sslmate-cert-spotter-api/SKILL.md`
+- `oo-stabilityai` `1.0.6` — `skills/oomol/oo-stabilityai/SKILL.md`
+- `oo-stack-ai` `1.0.6` — `skills/oomol/oo-stack-ai/SKILL.md`
+- `oo-stack-overflow-for-teams` `1.0.4` — `skills/oomol/oo-stack-overflow-for-teams/SKILL.md`
+- `oo-stannp` `1.0.5` — `skills/oomol/oo-stannp/SKILL.md`
+- `oo-starton` `1.0.7` — `skills/oomol/oo-starton/SKILL.md`
+- `oo-statamic` `1.0.6` — `skills/oomol/oo-statamic/SKILL.md`
+- `oo-statista` `1.0.4` — `skills/oomol/oo-statista/SKILL.md`
+- `oo-statsig` `1.0.4` — `skills/oomol/oo-statsig/SKILL.md`
+- `oo-statuscake` `1.0.5` — `skills/oomol/oo-statuscake/SKILL.md`
+- `oo-statuspage` `1.0.4` — `skills/oomol/oo-statuspage/SKILL.md`
+- `oo-statuspal` `1.0.4` — `skills/oomol/oo-statuspal/SKILL.md`
+- `oo-stay-ai` `1.0.5` — `skills/oomol/oo-stay-ai/SKILL.md`
+- `oo-stealthgpt` `1.0.3` — `skills/oomol/oo-stealthgpt/SKILL.md`
+- `oo-store-leads` `1.0.4` — `skills/oomol/oo-store-leads/SKILL.md`
+- `oo-storecensus` `1.0.5` — `skills/oomol/oo-storecensus/SKILL.md`
+- `oo-storerocket` `1.0.1` — `skills/oomol/oo-storerocket/SKILL.md`
+- `oo-stormboard` `1.0.4` — `skills/oomol/oo-stormboard/SKILL.md`
+- `oo-stormglass-io` `1.0.4` — `skills/oomol/oo-stormglass-io/SKILL.md`
+- `oo-storyblok` `1.0.5` — `skills/oomol/oo-storyblok/SKILL.md`
+- `oo-strava` `1.0.6` — `skills/oomol/oo-strava/SKILL.md`
+- `oo-streak` `1.0.5` — `skills/oomol/oo-streak/SKILL.md`
+- `oo-stream-estate` `1.0.2` — `skills/oomol/oo-stream-estate/SKILL.md`
+- `oo-streamtime` `1.0.5` — `skills/oomol/oo-streamtime/SKILL.md`
+- `oo-streamwish` `1.0.2` — `skills/oomol/oo-streamwish/SKILL.md`
+- `oo-stripe` `1.0.7` — `skills/oomol/oo-stripe/SKILL.md`
+- `oo-subvisory` `1.0.4` — `skills/oomol/oo-subvisory/SKILL.md`
+- `oo-sumup` `1.0.5` — `skills/oomol/oo-sumup/SKILL.md`
+- `oo-sunoapi` `1.0.6` — `skills/oomol/oo-sunoapi/SKILL.md`
+- `oo-sunsama-mcp` `1.0.5` — `skills/oomol/oo-sunsama-mcp/SKILL.md`
+- `oo-supabase` `1.0.8` — `skills/oomol/oo-supabase/SKILL.md`
+- `oo-supadata` `1.0.6` — `skills/oomol/oo-supadata/SKILL.md`
+- `oo-super-saas` `1.0.5` — `skills/oomol/oo-super-saas/SKILL.md`
+- `oo-superchat` `1.0.5` — `skills/oomol/oo-superchat/SKILL.md`
+- `oo-supermemory` `1.0.5` — `skills/oomol/oo-supermemory/SKILL.md`
+- `oo-supervisely` `1.0.4` — `skills/oomol/oo-supervisely/SKILL.md`
+- `oo-supportbee` `1.0.6` — `skills/oomol/oo-supportbee/SKILL.md`
+- `oo-surecontact` `1.0.5` — `skills/oomol/oo-surecontact/SKILL.md`
+- `oo-surf` `1.0.2` — `skills/oomol/oo-surf/SKILL.md`
+- `oo-survey-monkey` `1.0.4` — `skills/oomol/oo-survey-monkey/SKILL.md`
+- `oo-surveymethods` `1.0.4` — `skills/oomol/oo-surveymethods/SKILL.md`
+- `oo-svix` `1.0.5` — `skills/oomol/oo-svix/SKILL.md`
+- `oo-swaggerhub` `1.0.5` — `skills/oomol/oo-swaggerhub/SKILL.md`
+- `oo-systeme-io` `1.0.6` — `skills/oomol/oo-systeme-io/SKILL.md`
+- `oo-tabapi` `1.0.4` — `skills/oomol/oo-tabapi/SKILL.md`
+- `oo-taggun` `1.0.5` — `skills/oomol/oo-taggun/SKILL.md`
+- `oo-taiga` `1.0.5` — `skills/oomol/oo-taiga/SKILL.md`
+- `oo-tailscale` `1.0.5` — `skills/oomol/oo-tailscale/SKILL.md`
+- `oo-talenox` `1.0.4` — `skills/oomol/oo-talenox/SKILL.md`
+- `oo-talenthr` `1.0.6` — `skills/oomol/oo-talenthr/SKILL.md`
+- `oo-talentlms` `1.0.4` — `skills/oomol/oo-talentlms/SKILL.md`
+- `oo-tally` `1.0.6` — `skills/oomol/oo-tally/SKILL.md`
+- `oo-tanium` `1.0.6` — `skills/oomol/oo-tanium/SKILL.md`
+- `oo-tapd` `1.0.2` — `skills/oomol/oo-tapd/SKILL.md`
+- `oo-tapfiliate` `1.0.5` — `skills/oomol/oo-tapfiliate/SKILL.md`
+- `oo-tave` `1.0.5` — `skills/oomol/oo-tave/SKILL.md`
+- `oo-tavily` `1.0.6` — `skills/oomol/oo-tavily/SKILL.md`
+- `oo-taxjar` `1.0.6` — `skills/oomol/oo-taxjar/SKILL.md`
+- `oo-teable` `1.0.4` — `skills/oomol/oo-teable/SKILL.md`
+- `oo-teamcamp` `1.0.4` — `skills/oomol/oo-teamcamp/SKILL.md`
+- `oo-teamtailor` `1.0.4` — `skills/oomol/oo-teamtailor/SKILL.md`
+- `oo-teamup` `1.0.5` — `skills/oomol/oo-teamup/SKILL.md`
+- `oo-telegram` `1.0.7` — `skills/oomol/oo-telegram/SKILL.md`
+- `oo-telnyx` `1.0.5` — `skills/oomol/oo-telnyx/SKILL.md`
+- `oo-teltel` `1.0.5` — `skills/oomol/oo-teltel/SKILL.md`
+- `oo-templated` `1.0.5` — `skills/oomol/oo-templated/SKILL.md`
+- `oo-templatedocs` `1.0.2` — `skills/oomol/oo-templatedocs/SKILL.md`
+- `oo-templatefox` `1.0.4` — `skills/oomol/oo-templatefox/SKILL.md`
+- `oo-tencent-docs` `1.0.4` — `skills/oomol/oo-tencent-docs/SKILL.md`
+- `oo-tencent-maps` `1.0.5` — `skills/oomol/oo-tencent-maps/SKILL.md`
+- `oo-tencent-meeting-mcp` `1.0.2` — `skills/oomol/oo-tencent-meeting-mcp/SKILL.md`
+- `oo-tendata` `1.0.2` — `skills/oomol/oo-tendata/SKILL.md`
+- `oo-terminus-app` `1.0.2` — `skills/oomol/oo-terminus-app/SKILL.md`
+- `oo-terraform` `1.0.4` — `skills/oomol/oo-terraform/SKILL.md`
+- `oo-textcortex` `1.0.7` — `skills/oomol/oo-textcortex/SKILL.md`
+- `oo-textit` `1.0.5` — `skills/oomol/oo-textit/SKILL.md`
+- `oo-textmagic` `1.0.4` — `skills/oomol/oo-textmagic/SKILL.md`
+- `oo-textrazor` `1.0.6` — `skills/oomol/oo-textrazor/SKILL.md`
+- `oo-the-cat-api` `1.0.6` — `skills/oomol/oo-the-cat-api/SKILL.md`
+- `oo-the-colony` `1.0.5` — `skills/oomol/oo-the-colony/SKILL.md`
+- `oo-the-companies-api` `1.0.2` — `skills/oomol/oo-the-companies-api/SKILL.md`
+- `oo-the-dog-api` `1.0.6` — `skills/oomol/oo-the-dog-api/SKILL.md`
+- `oo-the-odds-api` `1.0.5` — `skills/oomol/oo-the-odds-api/SKILL.md`
+- `oo-the-official-board` `1.0.4` — `skills/oomol/oo-the-official-board/SKILL.md`
+- `oo-the-swarm` `1.0.5` — `skills/oomol/oo-the-swarm/SKILL.md`
+- `oo-thehive` `1.0.4` — `skills/oomol/oo-thehive/SKILL.md`
+- `oo-thehive5` `1.0.4` — `skills/oomol/oo-thehive5/SKILL.md`
+- `oo-theirstack` `1.0.5` — `skills/oomol/oo-theirstack/SKILL.md`
+- `oo-thesportsdb` `1.0.2` — `skills/oomol/oo-thesportsdb/SKILL.md`
+- `oo-threatfox` `1.0.2` — `skills/oomol/oo-threatfox/SKILL.md`
+- `oo-tianapi` `1.0.2` — `skills/oomol/oo-tianapi/SKILL.md`
+- `oo-tianyancha` `1.0.5` — `skills/oomol/oo-tianyancha/SKILL.md`
+- `oo-tick` `1.0.2` — `skills/oomol/oo-tick/SKILL.md`
+- `oo-ticket-source` `1.0.4` — `skills/oomol/oo-ticket-source/SKILL.md`
+- `oo-ticket-tailor` `1.0.2` — `skills/oomol/oo-ticket-tailor/SKILL.md`
+- `oo-ticketmaster` `1.0.6` — `skills/oomol/oo-ticketmaster/SKILL.md`
+- `oo-ticktick` `1.0.6` — `skills/oomol/oo-ticktick/SKILL.md`
+- `oo-tidb` `1.0.6` — `skills/oomol/oo-tidb/SKILL.md`
+- `oo-tikhub` `1.0.8` — `skills/oomol/oo-tikhub/SKILL.md`
+- `oo-tiktok-business` `1.0.5` — `skills/oomol/oo-tiktok-business/SKILL.md`
+- `oo-tiktok-business-mcp` `1.0.5` — `skills/oomol/oo-tiktok-business-mcp/SKILL.md`
+- `oo-timebuzzer` `1.0.5` — `skills/oomol/oo-timebuzzer/SKILL.md`
+- `oo-timecamp` `1.0.6` — `skills/oomol/oo-timecamp/SKILL.md`
+- `oo-timelinesai` `1.0.4` — `skills/oomol/oo-timelinesai/SKILL.md`
+- `oo-timelink` `1.0.5` — `skills/oomol/oo-timelink/SKILL.md`
+- `oo-timem-space` `1.0.2` — `skills/oomol/oo-timem-space/SKILL.md`
+- `oo-tinybird` `1.0.4` — `skills/oomol/oo-tinybird/SKILL.md`
+- `oo-tinyfish` `1.0.2` — `skills/oomol/oo-tinyfish/SKILL.md`
+- `oo-tinypng` `1.0.6` — `skills/oomol/oo-tinypng/SKILL.md`
+- `oo-tinyurl` `1.0.5` — `skills/oomol/oo-tinyurl/SKILL.md`
+- `oo-tisane` `1.0.5` — `skills/oomol/oo-tisane/SKILL.md`
+- `oo-tldv` `1.0.4` — `skills/oomol/oo-tldv/SKILL.md`
+- `oo-tmdb` `1.0.4` — `skills/oomol/oo-tmdb/SKILL.md`
+- `oo-todoist` `1.0.6` — `skills/oomol/oo-todoist/SKILL.md`
+- `oo-together-ai` `1.0.5` — `skills/oomol/oo-together-ai/SKILL.md`
+- `oo-toggl` `1.0.6` — `skills/oomol/oo-toggl/SKILL.md`
+- `oo-token-metrics` `1.0.4` — `skills/oomol/oo-token-metrics/SKILL.md`
+- `oo-tomba` `1.0.6` — `skills/oomol/oo-tomba/SKILL.md`
+- `oo-tomtom` `1.0.5` — `skills/oomol/oo-tomtom/SKILL.md`
+- `oo-tongdaxin` `1.0.5` — `skills/oomol/oo-tongdaxin/SKILL.md`
+- `oo-topaz` `1.0.1` — `skills/oomol/oo-topaz/SKILL.md`
+- `oo-torii` `1.0.4` — `skills/oomol/oo-torii/SKILL.md`
+- `oo-torii-image-translator` `1.0.5` — `skills/oomol/oo-torii-image-translator/SKILL.md`
+- `oo-totp` `1.0.4` — `skills/oomol/oo-totp/SKILL.md`
+- `oo-tpscheck` `1.0.6` — `skills/oomol/oo-tpscheck/SKILL.md`
+- `oo-tradebee` `1.0.2` — `skills/oomol/oo-tradebee/SKILL.md`
+- `oo-trawlingweb` `1.0.4` — `skills/oomol/oo-trawlingweb/SKILL.md`
+- `oo-trello` `1.0.6` — `skills/oomol/oo-trello/SKILL.md`
+- `oo-tremendous` `1.0.5` — `skills/oomol/oo-tremendous/SKILL.md`
+- `oo-trendshift` `1.0.4` — `skills/oomol/oo-trendshift/SKILL.md`
+- `oo-trent` `1.0.4` — `skills/oomol/oo-trent/SKILL.md`
+- `oo-trigger-dev` `1.0.5` — `skills/oomol/oo-trigger-dev/SKILL.md`
+- `oo-triggercmd` `1.0.4` — `skills/oomol/oo-triggercmd/SKILL.md`
+- `oo-trilium` `1.0.5` — `skills/oomol/oo-trilium/SKILL.md`
+- `oo-tripadvisor` `1.0.5` — `skills/oomol/oo-tripadvisor/SKILL.md`
+- `oo-triple-whale` `1.0.5` — `skills/oomol/oo-triple-whale/SKILL.md`
+- `oo-truvera` `1.0.5` — `skills/oomol/oo-truvera/SKILL.md`
+- `oo-turbot-pipes` `1.0.4` — `skills/oomol/oo-turbot-pipes/SKILL.md`
+- `oo-turso` `1.0.5` — `skills/oomol/oo-turso/SKILL.md`
+- `oo-tushare` `1.0.5` — `skills/oomol/oo-tushare/SKILL.md`
+- `oo-tuskr` `1.0.4` — `skills/oomol/oo-tuskr/SKILL.md`
+- `oo-twelve-data` `1.0.5` — `skills/oomol/oo-twelve-data/SKILL.md`
+- `oo-twenty-crm` `1.0.4` — `skills/oomol/oo-twenty-crm/SKILL.md`
+- `oo-twilio` `1.0.6` — `skills/oomol/oo-twilio/SKILL.md`
+- `oo-twitter` `1.0.7` — `skills/oomol/oo-twitter/SKILL.md`
+- `oo-twitterapi-io` `1.0.6` — `skills/oomol/oo-twitterapi-io/SKILL.md`
+- `oo-twittrapi` `1.0.2` — `skills/oomol/oo-twittrapi/SKILL.md`
+- `oo-twochat` `1.0.5` — `skills/oomol/oo-twochat/SKILL.md`
+- `oo-typebot` `1.0.4` — `skills/oomol/oo-typebot/SKILL.md`
+- `oo-typeform` `1.0.5` — `skills/oomol/oo-typeform/SKILL.md`
+- `oo-typefully` `1.0.7` — `skills/oomol/oo-typefully/SKILL.md`
+- `oo-typesafe-ai` `1.0.3` — `skills/oomol/oo-typesafe-ai/SKILL.md`
+- `oo-u301` `1.0.6` — `skills/oomol/oo-u301/SKILL.md`
+- `oo-umami` `1.0.4` — `skills/oomol/oo-umami/SKILL.md`
+- `oo-unifapi` `1.0.5` — `skills/oomol/oo-unifapi/SKILL.md`
+- `oo-unione` `1.0.4` — `skills/oomol/oo-unione/SKILL.md`
+- `oo-unipile` `1.0.4` — `skills/oomol/oo-unipile/SKILL.md`
+- `oo-unirateapi` `1.0.2` — `skills/oomol/oo-unirateapi/SKILL.md`
+- `oo-uniswap-api` `1.0.5` — `skills/oomol/oo-uniswap-api/SKILL.md`
+- `oo-unpaywall` `1.0.4` — `skills/oomol/oo-unpaywall/SKILL.md`
+- `oo-unsplash` `1.0.5` — `skills/oomol/oo-unsplash/SKILL.md`
+- `oo-unthread` `1.0.5` — `skills/oomol/oo-unthread/SKILL.md`
+- `oo-updown-io` `1.0.5` — `skills/oomol/oo-updown-io/SKILL.md`
+- `oo-uploadcare` `1.0.6` — `skills/oomol/oo-uploadcare/SKILL.md`
+- `oo-upsales` `1.0.4` — `skills/oomol/oo-upsales/SKILL.md`
+- `oo-upstash-redis` `1.0.4` — `skills/oomol/oo-upstash-redis/SKILL.md`
+- `oo-uptimerobot` `1.0.5` — `skills/oomol/oo-uptimerobot/SKILL.md`
+- `oo-urlhaus` `1.0.2` — `skills/oomol/oo-urlhaus/SKILL.md`
+- `oo-urlscan` `1.0.5` — `skills/oomol/oo-urlscan/SKILL.md`
+- `oo-userflow` `1.0.7` — `skills/oomol/oo-userflow/SKILL.md`
+- `oo-userlist` `1.0.6` — `skills/oomol/oo-userlist/SKILL.md`
+- `oo-uspto` `1.0.5` — `skills/oomol/oo-uspto/SKILL.md`
+- `oo-v0` `1.0.6` — `skills/oomol/oo-v0/SKILL.md`
+- `oo-v2ex` `1.0.6` — `skills/oomol/oo-v2ex/SKILL.md`
+- `oo-validemail` `1.0.2` — `skills/oomol/oo-validemail/SKILL.md`
+- `oo-valyu` `1.0.6` — `skills/oomol/oo-valyu/SKILL.md`
+- `oo-vapi` `1.0.7` — `skills/oomol/oo-vapi/SKILL.md`
+- `oo-vaquill` `1.0.2` — `skills/oomol/oo-vaquill/SKILL.md`
+- `oo-vatlayer` `1.0.5` — `skills/oomol/oo-vatlayer/SKILL.md`
+- `oo-vbout` `1.0.4` — `skills/oomol/oo-vbout/SKILL.md`
+- `oo-vectera` `1.0.4` — `skills/oomol/oo-vectera/SKILL.md`
+- `oo-vectorshift` `1.0.6` — `skills/oomol/oo-vectorshift/SKILL.md`
+- `oo-venafitlsprotectcloud` `1.0.4` — `skills/oomol/oo-venafitlsprotectcloud/SKILL.md`
+- `oo-venafitlsprotectdatacenter` `1.0.4` — `skills/oomol/oo-venafitlsprotectdatacenter/SKILL.md`
+- `oo-vercel` `1.0.7` — `skills/oomol/oo-vercel/SKILL.md`
+- `oo-veremark` `1.0.3` — `skills/oomol/oo-veremark/SKILL.md`
+- `oo-verifiedemail` `1.0.5` — `skills/oomol/oo-verifiedemail/SKILL.md`
+- `oo-veriphone` `1.0.5` — `skills/oomol/oo-veriphone/SKILL.md`
+- `oo-vestaboard` `1.0.5` — `skills/oomol/oo-vestaboard/SKILL.md`
+- `oo-vida` `1.0.4` — `skills/oomol/oo-vida/SKILL.md`
+- `oo-viggle` `1.0.4` — `skills/oomol/oo-viggle/SKILL.md`
+- `oo-vimeo` `1.0.5` — `skills/oomol/oo-vimeo/SKILL.md`
+- `oo-vincario` `1.0.2` — `skills/oomol/oo-vincario/SKILL.md`
+- `oo-viral-loops` `1.0.2` — `skills/oomol/oo-viral-loops/SKILL.md`
+- `oo-virustotal` `1.0.6` — `skills/oomol/oo-virustotal/SKILL.md`
+- `oo-vitally` `1.0.4` — `skills/oomol/oo-vitally/SKILL.md`
+- `oo-voiceflow` `1.0.5` — `skills/oomol/oo-voiceflow/SKILL.md`
+- `oo-voicemaker` `1.0.5` — `skills/oomol/oo-voicemaker/SKILL.md`
+- `oo-vonage` `1.0.5` — `skills/oomol/oo-vonage/SKILL.md`
+- `oo-vtex` `1.0.5` — `skills/oomol/oo-vtex/SKILL.md`
+- `oo-vultr` `1.0.5` — `skills/oomol/oo-vultr/SKILL.md`
+- `oo-waboxapp` `1.0.5` — `skills/oomol/oo-waboxapp/SKILL.md`
+- `oo-wachete` `1.0.5` — `skills/oomol/oo-wachete/SKILL.md`
+- `oo-waffo` `1.0.5` — `skills/oomol/oo-waffo/SKILL.md`
+- `oo-waitwhile` `1.0.2` — `skills/oomol/oo-waitwhile/SKILL.md`
+- `oo-waiverfile` `1.0.4` — `skills/oomol/oo-waiverfile/SKILL.md`
+- `oo-waiverforever` `1.0.4` — `skills/oomol/oo-waiverforever/SKILL.md`
+- `oo-wakatime` `1.0.5` — `skills/oomol/oo-wakatime/SKILL.md`
+- `oo-walletap` `1.0.2` — `skills/oomol/oo-walletap/SKILL.md`
+- `oo-walmart-marketplace` `1.0.5` — `skills/oomol/oo-walmart-marketplace/SKILL.md`
+- `oo-wandb` `1.0.5` — `skills/oomol/oo-wandb/SKILL.md`
+- `oo-wangdian` `1.0.4` — `skills/oomol/oo-wangdian/SKILL.md`
+- `oo-wanx` `1.0.5` — `skills/oomol/oo-wanx/SKILL.md`
+- `oo-wappalyzer` `1.0.4` — `skills/oomol/oo-wappalyzer/SKILL.md`
+- `oo-waterfall` `1.0.5` — `skills/oomol/oo-waterfall/SKILL.md`
+- `oo-wbiztool` `1.0.2` — `skills/oomol/oo-wbiztool/SKILL.md`
+- `oo-weatherapi` `1.0.5` — `skills/oomol/oo-weatherapi/SKILL.md`
+- `oo-weatherbit` `1.0.5` — `skills/oomol/oo-weatherbit/SKILL.md`
+- `oo-weaviate` `1.0.4` — `skills/oomol/oo-weaviate/SKILL.md`
+- `oo-web-of-science` `1.0.4` — `skills/oomol/oo-web-of-science/SKILL.md`
+- `oo-web-of-science-expanded` `1.0.4` — `skills/oomol/oo-web-of-science-expanded/SKILL.md`
+- `oo-webex` `1.0.4` — `skills/oomol/oo-webex/SKILL.md`
+- `oo-webflow` `1.0.4` — `skills/oomol/oo-webflow/SKILL.md`
+- `oo-webinarjam` `1.0.4` — `skills/oomol/oo-webinarjam/SKILL.md`
+- `oo-webscraper-io` `1.0.5` — `skills/oomol/oo-webscraper-io/SKILL.md`
+- `oo-webscraping-ai` `1.0.5` — `skills/oomol/oo-webscraping-ai/SKILL.md`
+- `oo-webshare` `1.0.5` — `skills/oomol/oo-webshare/SKILL.md`
+- `oo-webvizio` `1.0.5` — `skills/oomol/oo-webvizio/SKILL.md`
+- `oo-wecom-bot` `1.0.7` — `skills/oomol/oo-wecom-bot/SKILL.md`
+- `oo-wecom-mcp` `1.0.5` — `skills/oomol/oo-wecom-mcp/SKILL.md`
+- `oo-weixin-bot` `1.0.2` — `skills/oomol/oo-weixin-bot/SKILL.md`
+- `oo-weixin-official-account` `1.0.2` — `skills/oomol/oo-weixin-official-account/SKILL.md`
+- `oo-weixin-store` `1.0.4` — `skills/oomol/oo-weixin-store/SKILL.md`
+- `oo-wejam-ai` `1.0.5` — `skills/oomol/oo-wejam-ai/SKILL.md`
+- `oo-weread` `1.0.2` — `skills/oomol/oo-weread/SKILL.md`
+- `oo-what3words` `1.0.4` — `skills/oomol/oo-what3words/SKILL.md`
+- `oo-whatsable` `1.0.4` — `skills/oomol/oo-whatsable/SKILL.md`
+- `oo-whatsapp` `1.0.6` — `skills/oomol/oo-whatsapp/SKILL.md`
+- `oo-who-gho` `1.0.4` — `skills/oomol/oo-who-gho/SKILL.md`
+- `oo-whoisfreaks` `1.0.6` — `skills/oomol/oo-whoisfreaks/SKILL.md`
+- `oo-whop` `1.0.5` — `skills/oomol/oo-whop/SKILL.md`
+- `oo-wind` `1.0.3` — `skills/oomol/oo-wind/SKILL.md`
+- `oo-winston-ai` `1.0.4` — `skills/oomol/oo-winston-ai/SKILL.md`
+- `oo-wire2air` `1.0.2` — `skills/oomol/oo-wire2air/SKILL.md`
+- `oo-wisburg` `1.0.2` — `skills/oomol/oo-wisburg/SKILL.md`
+- `oo-wise` `1.0.4` — `skills/oomol/oo-wise/SKILL.md`
+- `oo-wit-ai` `1.0.5` — `skills/oomol/oo-wit-ai/SKILL.md`
+- `oo-wiza` `1.0.6` — `skills/oomol/oo-wiza/SKILL.md`
+- `oo-wolfram-alpha-api` `1.0.5` — `skills/oomol/oo-wolfram-alpha-api/SKILL.md`
+- `oo-woocommerce` `1.0.6` — `skills/oomol/oo-woocommerce/SKILL.md`
+- `oo-woodpecker-co` `1.0.5` — `skills/oomol/oo-woodpecker-co/SKILL.md`
+- `oo-woot` `1.0.4` — `skills/oomol/oo-woot/SKILL.md`
+- `oo-wordpress` `1.0.6` — `skills/oomol/oo-wordpress/SKILL.md`
+- `oo-workable` `1.0.6` — `skills/oomol/oo-workable/SKILL.md`
+- `oo-workast` `1.0.4` — `skills/oomol/oo-workast/SKILL.md`
+- `oo-workiom` `1.0.4` — `skills/oomol/oo-workiom/SKILL.md`
+- `oo-workiz` `1.0.4` — `skills/oomol/oo-workiz/SKILL.md`
+- `oo-workos` `1.0.5` — `skills/oomol/oo-workos/SKILL.md`
+- `oo-workpath` `1.0.5` — `skills/oomol/oo-workpath/SKILL.md`
+- `oo-worksnaps` `1.0.5` — `skills/oomol/oo-worksnaps/SKILL.md`
+- `oo-world-news-api` `1.0.5` — `skills/oomol/oo-world-news-api/SKILL.md`
+- `oo-wp-maps` `1.0.4` — `skills/oomol/oo-wp-maps/SKILL.md`
+- `oo-wps-mcp` `1.0.5` — `skills/oomol/oo-wps-mcp/SKILL.md`
+- `oo-wrike` `1.0.4` — `skills/oomol/oo-wrike/SKILL.md`
+- `oo-writer` `1.0.6` — `skills/oomol/oo-writer/SKILL.md`
+- `oo-wttr-in` `1.0.4` — `skills/oomol/oo-wttr-in/SKILL.md`
+- `oo-wufoo` `1.0.4` — `skills/oomol/oo-wufoo/SKILL.md`
+- `oo-x-ai` `1.0.7` — `skills/oomol/oo-x-ai/SKILL.md`
+- `oo-xata` `1.0.5` — `skills/oomol/oo-xata/SKILL.md`
+- `oo-xero` `1.0.5` — `skills/oomol/oo-xero/SKILL.md`
+- `oo-xiaohongshu-store` `1.0.2` — `skills/oomol/oo-xiaohongshu-store/SKILL.md`
+- `oo-xingpan` `1.0.2` — `skills/oomol/oo-xingpan/SKILL.md`
+- `oo-xydc-mcp` `1.0.3` — `skills/oomol/oo-xydc-mcp/SKILL.md`
+- `oo-y-gy` `1.0.4` — `skills/oomol/oo-y-gy/SKILL.md`
+- `oo-yelp` `1.0.5` — `skills/oomol/oo-yelp/SKILL.md`
+- `oo-yingmi-mcp` `1.0.5` — `skills/oomol/oo-yingmi-mcp/SKILL.md`
+- `oo-ynab` `1.0.6` — `skills/oomol/oo-ynab/SKILL.md`
+- `oo-yoplanning` `1.0.4` — `skills/oomol/oo-yoplanning/SKILL.md`
+- `oo-you` `1.0.7` — `skills/oomol/oo-you/SKILL.md`
+- `oo-youtube` `1.0.7` — `skills/oomol/oo-youtube/SKILL.md`
+- `oo-youzan` `1.0.5` — `skills/oomol/oo-youzan/SKILL.md`
+- `oo-yuandian` `1.0.5` — `skills/oomol/oo-yuandian/SKILL.md`
+- `oo-yuanfenju` `1.0.2` — `skills/oomol/oo-yuanfenju/SKILL.md`
+- `oo-z-api` `1.0.4` — `skills/oomol/oo-z-api/SKILL.md`
+- `oo-zammad` `1.0.4` — `skills/oomol/oo-zammad/SKILL.md`
+- `oo-zendesk` `1.0.5` — `skills/oomol/oo-zendesk/SKILL.md`
+- `oo-zenkit` `1.0.2` — `skills/oomol/oo-zenkit/SKILL.md`
+- `oo-zenrows` `1.0.5` — `skills/oomol/oo-zenrows/SKILL.md`
+- `oo-zenscrape` `1.0.5` — `skills/oomol/oo-zenscrape/SKILL.md`
+- `oo-zenserp` `1.0.5` — `skills/oomol/oo-zenserp/SKILL.md`
+- `oo-zenventory` `1.0.5` — `skills/oomol/oo-zenventory/SKILL.md`
+- `oo-zep` `1.0.4` — `skills/oomol/oo-zep/SKILL.md`
+- `oo-zeplin` `1.0.5` — `skills/oomol/oo-zeplin/SKILL.md`
+- `oo-zerobounce` `1.0.5` — `skills/oomol/oo-zerobounce/SKILL.md`
+- `oo-zerotier` `1.0.2` — `skills/oomol/oo-zerotier/SKILL.md`
+- `oo-zhihu` `1.0.6` — `skills/oomol/oo-zhihu/SKILL.md`
+- `oo-zhiliaobiaoxun` `1.0.2` — `skills/oomol/oo-zhiliaobiaoxun/SKILL.md`
+- `oo-zigpoll` `1.0.5` — `skills/oomol/oo-zigpoll/SKILL.md`
+- `oo-zip-archive-api` `1.0.5` — `skills/oomol/oo-zip-archive-api/SKILL.md`
+- `oo-zipcodebase` `1.0.4` — `skills/oomol/oo-zipcodebase/SKILL.md`
+- `oo-zixflow` `1.0.4` — `skills/oomol/oo-zixflow/SKILL.md`
+- `oo-zlibrary` `1.0.4` — `skills/oomol/oo-zlibrary/SKILL.md`
+- `oo-zoom` `1.0.7` — `skills/oomol/oo-zoom/SKILL.md`
+- `oo-zorus` `1.0.5` — `skills/oomol/oo-zorus/SKILL.md`
+- `oo-zotero` `1.0.5` — `skills/oomol/oo-zotero/SKILL.md`
+- `oo-zyhub` `1.0.2` — `skills/oomol/oo-zyhub/SKILL.md`
+- `oo-zylvie` `1.0.5` — `skills/oomol/oo-zylvie/SKILL.md`
+- `oo-zyte-api` `1.0.5` — `skills/oomol/oo-zyte-api/SKILL.md`
+
+## local
+
+Local skills, not vendored. 1 skills
+
+- `openconnector` — `skills/other/openconnector/SKILL.md`
+
+## Skipped duplicates
+
+- `openmontage/video_toolkit` dropped; kept `video-toolkit` (identical copy of the same skill)

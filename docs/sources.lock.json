@@ -1,0 +1,187 @@
+{
+  "fetched_at": "2026-11-12",
+  "sources": [
+    {
+      "id": "taste-skill",
+      "url": "https://github.com/leonxlnx/taste-skill",
+      "tag_or_version": "v2.5.1",
+      "commit": "f6b76575f949707b4e3c37cd86cb44b0b98643e8",
+      "license": "MIT",
+      "local_path": "skills/other",
+      "upstream_paths": [
+        "skills/taste-skill"
+      ]
+    },
+    {
+      "id": "impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "tag_or_version": "skill-v4.8.2",
+      "commit": "b4bff1626c344067788c2679f048a20057c7cc5a",
+      "license": "Apache-2.0",
+      "local_path": "skills/other",
+      "upstream_paths": [
+        "plugin/skills/impeccable"
+      ]
+    },
+    {
+      "id": "playwright-cli",
+      "url": "https://github.com/microsoft/playwright-cli",
+      "tag_or_version": "v0.180.0",
+      "commit": "b21724888b8100b05ef8dee3a92f2bb03bf4dcde",
+      "license": "Apache-2.0",
+      "local_path": "skills/other",
+      "upstream_paths": [
+        "skills/playwright-cli"
+      ]
+    },
+    {
+      "id": "obscura",
+      "url": "https://github.com/h4ckf0r0day/obscura",
+      "tag_or_version": "v0.2.6",
+      "commit": "3bae60909615ed5a2ca263a12c300a4a545ed3ce",
+      "license": "Apache-2.0",
+      "local_path": "skills/other",
+      "upstream_paths": [
+        "skills/obscura"
+      ]
+    },
+    {
+      "id": "openmontage",
+      "url": "https://github.com/OpenMontageInc/OpenMontage",
+      "tag_or_version": null,
+      "commit": "fecb9a1e3cc23ef84de30b272059457a427f16f8",
+      "license": "AGPL-3.0",
+      "local_path": "skills/openmontage",
+      "upstream_paths": [
+        ".agents/skills",
+        "skills",
+        ".claude/skills/video_toolkit"
+      ]
+    },
+    {
+      "id": "ecc",
+      "url": "https://github.com/affaan-m/ECC",
+      "tag_or_version": "v2.2.3",
+      "commit": "d2ef2680594f9a17526a6e1a2e18b3d242c5d17b",
+      "license": "MIT",
+      "local_path": "skills/ecc",
+      "upstream_paths": [
+        "skills"
+      ]
+    },
+    {
+      "id": "karpathy-guidelines",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "tag_or_version": "1.0.0",
+      "commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+      "license": "MIT (plugin.json; no LICENSE file)",
+      "local_path": "skills/other",
+      "upstream_paths": [
+        "skills/karpathy-guidelines"
+      ]
+    },
+    {
+      "id": "ponytail",
+      "url": "https://github.com/dietrichgebert/ponytail",
+      "tag_or_version": "v5.3.3",
+      "commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+      "license": "MIT",
+      "local_path": "skills/ponytail",
+      "upstream_paths": [
+        "skills"
+      ]
+    },
+    {
+      "id": "agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "tag_or_version": "0.6.15",
+      "commit": "301b02b12bff98e4688e6984af6556802322bbde",
+      "license": "MIT",
+      "local_path": "skills/agent-skills",
+      "upstream_paths": [
+        "skills"
+      ]
+    },
+    {
+      "id": "ui-ux-pro-max",
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "tag_or_version": "v2.15.0",
+      "commit": "6ae86f61f520d6ca229d2f40e070410638c908c5",
+      "license": "MIT",
+      "local_path": "skills/ui-ux-pro-max",
+      "upstream_paths": [
+        ".claude/skills"
+      ]
+    },
+    {
+      "id": "anthropics",
+      "url": "https://github.com/anthropics/skills",
+      "tag_or_version": null,
+      "commit": "2c5958ecac7cee2b583967a2c4981d0f4a75c579",
+      "license": "per-skill (mostly Apache-2.0); see THIRD_PARTY_NOTICES.md",
+      "local_path": "skills/anthropics",
+      "upstream_paths": [
+        "skills",
+        "template",
+        "spec"
+      ]
+    },
+    {
+      "id": "humanizer",
+      "url": "https://github.com/blader/humanizer",
+      "tag_or_version": "v4.0.0",
+      "commit": "b48c832f0f809c1b5658edbb838c2521b72f2413",
+      "license": "MIT",
+      "local_path": "skills/other",
+      "upstream_paths": [
+        "SKILL.md",
+        "scripts",
+        "agents"
+      ]
+    },
+    {
+      "id": "i-have-adhd",
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "tag_or_version": "v0.4.1",
+      "commit": "1ecea1993b7fce257ffbd686c070948b5e07eda6",
+      "license": "MIT",
+      "local_path": "skills/other",
+      "upstream_paths": [
+        "skills/i-have-adhd"
+      ]
+    },
+    {
+      "id": "marketingskills",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "tag_or_version": "v2.14.12",
+      "commit": "1f837447b20bb6f0e72d87b80ece1c221c362c7d",
+      "license": "MIT",
+      "local_path": "skills/marketingskills",
+      "upstream_paths": [
+        "skills"
+      ]
+    },
+    {
+      "id": "oomol",
+      "url": "https://github.com/oomol-lab/skills",
+      "tag_or_version": null,
+      "commit": "136cef67a41ac27ace0af9b20a9bd96accfb50cd",
+      "license": "MIT",
+      "local_path": "skills/oomol",
+      "upstream_paths": [
+        "app-skills"
+      ]
+    },
+    {
+      "id": "dokploy-mcp",
+      "url": "https://github.com/Dokploy/mcp",
+      "tag_or_version": "v0.30.7",
+      "commit": "ea58c7af033f56f730aad1167a3d8070b256e8c8",
+      "license": "Apache-2.0",
+      "local_path": "mcp/dokploy",
+      "upstream_paths": [
+        "."
+      ]
+    }
+  ]
+}

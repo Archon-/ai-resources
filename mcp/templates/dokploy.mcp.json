@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "dokploy": {
+      "command": "node",
+      "args": ["/ABSOLUTE/PATH/TO/ai-resources/mcp/dokploy/build/index.js"],
+      "env": {
+        "DOKPLOY_URL": "https://dokploy.example.com",
+        "DOKPLOY_API_KEY": "YOUR_DOKPLOY_API_KEY"
+      }
+    }
+  }
+}

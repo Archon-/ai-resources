@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "openconnector": {
+      "url": "https://openconnector.example.com/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_RUNTIME_TOKEN"
+      }
+    }
+  }
+}
