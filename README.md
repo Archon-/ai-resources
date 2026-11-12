@@ -83,4 +83,8 @@ Connect each client to the same server. Templates with placeholders, not real to
 - Symlinks are a macOS and Linux mechanism. Windows needs Developer Mode or a different link type. Not set up here.
 - Nothing here was executed inside Claude Code, Codex, or Cursor. The linker was tested in a temporary home directory.
 
-More: [docs/architecture.md](docs/architecture.md), [docs/sources.md](docs/sources.md), [docs/skills-index.md](docs/skills-index.md).
+More: [docs/architecture.md](docs/architecture.md), [docs/sources.md](docs/sources.md), [docs/skills-index.md](docs/skills-index.md), [docs/pipelines.md](docs/pipelines.md).
+
+## Pipelines
+
+Pull requests, pushes to `main`, and a Monday 07:00 UTC run all execute `python3 scripts/scan_skills.py`. That fails if a skill contains a live secret or a URL piped into a shell. Monday at 08:00 UTC, `python3 scripts/check_updates.py` compares the pins in `docs/sources.lock.json` with GitHub and opens a "Skills to update" issue when a newer same-prefix tag exists, or an untagged branch tip has moved. Details: [docs/pipelines.md](docs/pipelines.md).

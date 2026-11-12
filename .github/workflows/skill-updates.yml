@@ -1,0 +1,52 @@
+name: Skill updates
+
+on:
+  schedule:
+    # Monday 08:00 UTC.
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: skill-updates
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Compare pins with upstream
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/check_updates.py --md "$RUNNER_TEMP/skill-updates.md"
+      - name: Flag skills that moved
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          report="$RUNNER_TEMP/skill-updates.md"
+          if [ ! -f "$report" ]; then
+            echo "update check did not write a report" >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          cat "$report" >> "$GITHUB_STEP_SUMMARY"
+          gh label create skill-updates --color B60205 --description "Pinned upstream skill has a newer release or commit" || true
+          number=$(gh issue list --label skill-updates --state open --json number --jq '.[0].number')
+          if grep -q '^Status: updates-found' "$report"; then
+            if [ -n "$number" ]; then
+              gh issue edit "$number" --title "Skills to update" --body-file "$report"
+            else
+              gh issue create --title "Skills to update" --label skill-updates --body-file "$report"
+            fi
+          elif grep -q '^Status: up-to-date' "$report"; then
+            if [ -n "$number" ]; then
+              gh issue close "$number" --comment "All pinned sources match upstream."
+            fi
+          else
+            echo "update check did not finish cleanly"
+            exit 1
+          fi
