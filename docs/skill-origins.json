@@ -531,7 +531,7 @@
     },
     "chrome-extensions": {
       "source": "modern-web-guidance",
-      "group": "modern-web-guidance",
+      "group": "other",
       "upstream_dir": "chrome-extensions",
       "managed": "upstream",
       "version": null,
@@ -2459,7 +2459,7 @@
     },
     "modern-web-guidance": {
       "source": "modern-web-guidance",
-      "group": "modern-web-guidance",
+      "group": "other",
       "upstream_dir": "modern-web-guidance",
       "managed": "upstream",
       "version": null,

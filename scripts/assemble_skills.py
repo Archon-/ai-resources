@@ -11,7 +11,7 @@ A nested tree looks like the upstream checkout:
 Output:
 
     <repo>/skills/<source>/<skill>/SKILL.md
-    <repo>/skills/other/<skill>/SKILL.md   # a source with only one skill
+    <repo>/skills/other/<skill>/SKILL.md   # a one-skill source, or a source in OTHER_GROUPS
     <repo>/playbooks/<source>/
     <repo>/upstream/<source>/
     <repo>/docs/skill-origins.json
@@ -30,10 +30,14 @@ from collections import Counter
 from pathlib import Path
 
 
+# Two skills from one repo, kept beside the one-skill sources.
+OTHER_GROUPS = {"modern-web-guidance"}
+
+
 def group_name(source, counts):
     """Multi-skill catalogs keep their source id. A lone skill goes in other/."""
     source = source or "local"
-    if source == "local" or counts.get(source, 0) < 2:
+    if source == "local" or source in OTHER_GROUPS or counts.get(source, 0) < 2:
         return "other"
     return source
 

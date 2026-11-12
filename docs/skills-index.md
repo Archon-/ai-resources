@@ -2475,8 +2475,8 @@ Playbooks (not skills): 158
 
 [https://github.com/GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) · `v1.0.0` · `4dd968349e54` · 2 skills
 
-- `chrome-extensions` — `skills/modern-web-guidance/chrome-extensions/SKILL.md`
-- `modern-web-guidance` — `skills/modern-web-guidance/modern-web-guidance/SKILL.md`
+- `chrome-extensions` — `skills/other/chrome-extensions/SKILL.md`
+- `modern-web-guidance` — `skills/other/modern-web-guidance/SKILL.md`
 
 ## local
 

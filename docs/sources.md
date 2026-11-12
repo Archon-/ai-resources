@@ -105,13 +105,13 @@ No release tag. Pinned to commit `136cef67a41a`. MIT. Copied `app-skills/` (1707
 
 ### modern-web-guidance
 
-`v1.0.0`, Apache-2.0. Pinned to commit `4dd968349e54`. Two skills. Copied `skills/chrome-extensions` (Manifest V3 and Chrome Web Store references) and `skills/modern-web-guidance` (the guide corpus and the skill that searches it). Left the host plugin wrappers, `policies/`, and `assets/`. The `modern-web-guidance` skill searches through `npx -y modern-web-guidance@latest`. The same guides are in the vendored folder.
+`v1.0.0`, Apache-2.0. Pinned to commit `4dd968349e54`. Two skills, both under `skills/other/`: `chrome-extensions` (Manifest V3 and Chrome Web Store references) and `modern-web-guidance` (the guide corpus and the skill that searches it). Left the host plugin wrappers, `policies/`, and `assets/`. The `modern-web-guidance` skill searches through `npx -y modern-web-guidance@latest`. The same guides are in the vendored folder.
 
 ## Layout
 
 ```
 skills/<source>/<name>/SKILL.md   one catalog, many skills
-skills/other/<name>/SKILL.md      a source that shipped one skill
+skills/other/<name>/SKILL.md      one-skill sources, plus both Chrome skills
 playbooks/openmontage/            OpenMontage notes that are not SKILL.md packages
 upstream/<source>/                license and bundle files that are not skills
 mcp/dokploy/                      Dokploy MCP server source

@@ -55,7 +55,7 @@ Do not combine `--skill` and `--skip-source` in one command. `--dry-run` prints 
 
 ## Catalog
 
-2,234 skills in 10 groups, fetched 2026-11-12. Pins, licenses, and commits are in [docs/versions.md](docs/versions.md). Every skill is listed in [docs/skills-index.md](docs/skills-index.md).
+2,234 skills in 9 groups, fetched 2026-11-12. Pins, licenses, and commits are in [docs/versions.md](docs/versions.md). Every skill is listed in [docs/skills-index.md](docs/skills-index.md).
 
 | Group | Skills | Upstream |
 | --- | ---: | --- |
@@ -65,12 +65,11 @@ Do not combine `--skill` and `--skip-source` in one command. `--dry-run` prints 
 | `marketingskills` | 53 | [marketingskills](https://github.com/coreyhaines31/marketingskills) |
 | `agent-skills` | 25 | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) |
 | `anthropics` | 20 | [anthropics/skills](https://github.com/anthropics/skills) |
-| `other` | 8 | One skill per source, including local `openconnector` |
+| `other` | 10 | One-skill sources, both Chrome skills, and local `openconnector` |
 | `ui-ux-pro-max` | 7 | [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) |
 | `ponytail` | 6 | [dietrichgebert/ponytail](https://github.com/dietrichgebert/ponytail) |
-| `modern-web-guidance` | 2 | [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) |
 
-A source with one skill lives in `skills/other/<name>/`. The other groups are `skills/<source>/<name>/`.
+`skills/other/<name>/` holds each one-skill source, plus both Chrome skills. The other groups are `skills/<source>/<name>/`.
 
 ## Clients
 
