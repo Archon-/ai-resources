@@ -7,3 +7,5 @@ mcp/dokploy/build/
 mcp/dokploy/dist/
 *.tsbuildinfo
 .skills-nested-aside/
+__pycache__/
+*.pyc
