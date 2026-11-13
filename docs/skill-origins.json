@@ -529,6 +529,14 @@
       "version": null,
       "renamed_from": null
     },
+    "chrome-extensions": {
+      "source": "modern-web-guidance",
+      "group": "other",
+      "upstream_dir": "chrome-extensions",
+      "managed": "upstream",
+      "version": null,
+      "renamed_from": null
+    },
     "churn-prevention": {
       "source": "marketingskills",
       "group": "marketingskills",
@@ -2445,6 +2453,14 @@
       "source": "ecc",
       "group": "ecc",
       "upstream_dir": "mle-workflow",
+      "managed": "upstream",
+      "version": null,
+      "renamed_from": null
+    },
+    "modern-web-guidance": {
+      "source": "modern-web-guidance",
+      "group": "other",
+      "upstream_dir": "modern-web-guidance",
       "managed": "upstream",
       "version": null,
       "renamed_from": null

@@ -1,7 +1,7 @@
 # Skills index
 
 Generated from `skills/<group>/<name>/`. A one-skill source is in `skills/other/`. Fetched 2026-11-12.
-2232 skills.
+2234 skills.
 Bundle version and commit: [versions.md](versions.md). Folder origin: [skill-origins.json](skill-origins.json).
 
 ## taste-skill
@@ -2470,6 +2470,13 @@ Playbooks (not skills): 158
 - `oo-zyhub` `1.0.2` — `skills/oomol/oo-zyhub/SKILL.md`
 - `oo-zylvie` `1.0.5` — `skills/oomol/oo-zylvie/SKILL.md`
 - `oo-zyte-api` `1.0.5` — `skills/oomol/oo-zyte-api/SKILL.md`
+
+## modern-web-guidance
+
+[https://github.com/GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) · `v1.0.0` · `4dd968349e54` · 2 skills
+
+- `chrome-extensions` — `skills/other/chrome-extensions/SKILL.md`
+- `modern-web-guidance` — `skills/other/modern-web-guidance/SKILL.md`
 
 ## local
 

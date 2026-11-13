@@ -27,6 +27,7 @@ One copy of each skill. Host mirrors (`.cursor`, `.claude`, `.agents`, translati
 | 13 | https://github.com/ayghri/i-have-adhd | `i-have-adhd` |
 | 14 | https://github.com/coreyhaines31/marketingskills | `marketingskills` |
 | 15 | https://github.com/oomol-lab/skills?utm_source=chatgpt.com | `oomol` |
+| 16 | https://github.com/GoogleChrome/modern-web-guidance/tree/main/skills | `modern-web-guidance` |
 
 Extra, not in that list: official Dokploy MCP at https://github.com/Dokploy/mcp tag `v0.30.7`, copied to `mcp/dokploy`. See [mcp/README.md](../mcp/README.md).
 
@@ -102,11 +103,15 @@ No release tag. Pinned to commit `2c5958ecac7c`. Copied `skills/` plus the root 
 
 No release tag. Pinned to commit `136cef67a41a`. MIT. Copied `app-skills/` (1707 skills). Each has `metadata.version`. These are instructions for the [`oo` CLI](https://github.com/oomol-lab/oo-cli). They do not include credentials or connector code. Names that end in `-mcp` are still oo-cli skills, not MCP servers. Registry publish tooling (`contrib/`, package manifests) was not copied.
 
+### modern-web-guidance
+
+`v1.0.0`, Apache-2.0. Pinned to commit `4dd968349e54`. Two skills, both under `skills/other/`: `chrome-extensions` (Manifest V3 and Chrome Web Store references) and `modern-web-guidance` (the guide corpus and the skill that searches it). Left the host plugin wrappers, `policies/`, and `assets/`. The `modern-web-guidance` skill searches through `npx -y modern-web-guidance@latest`. The same guides are in the vendored folder.
+
 ## Layout
 
 ```
 skills/<source>/<name>/SKILL.md   one catalog, many skills
-skills/other/<name>/SKILL.md      a source that shipped one skill
+skills/other/<name>/SKILL.md      one-skill sources, plus both Chrome skills
 playbooks/openmontage/            OpenMontage notes that are not SKILL.md packages
 upstream/<source>/                license and bundle files that are not skills
 mcp/dokploy/                      Dokploy MCP server source

@@ -69,6 +69,7 @@ clone_sparse marketingskills https://github.com/coreyhaines31/marketingskills.gi
   skills & pids+=($!)
 clone_sparse oomol https://github.com/oomol-lab/skills.git \
   app-skills & pids+=($!)
+clone_tag modern-web-guidance https://github.com/GoogleChrome/modern-web-guidance.git v1.0.0 & pids+=($!)
 clone_tag dokploy https://github.com/Dokploy/mcp.git v0.30.7 & pids+=($!)
 
 fail=0
@@ -167,6 +168,9 @@ copy_license marketingskills "$STAGE/marketingskills"
 copy_dir "$SRC/oomol/app-skills" "$STAGE/oomol"
 copy_license oomol "$STAGE/oomol"
 
+copy_dir "$SRC/modern-web-guidance/skills" "$STAGE/modern-web-guidance"
+copy_license modern-web-guidance "$STAGE/modern-web-guidance"
+
 python3 "$ROOT/scripts/assemble_skills.py" --nested "$STAGE" --repo "$ROOT"
 
 # --- mcp ---
@@ -223,6 +227,7 @@ sources = [
     ("i-have-adhd", "https://github.com/ayghri/i-have-adhd", "v0.4.1", "MIT", "skills/", ["skills/i-have-adhd"]),
     ("marketingskills", "https://github.com/coreyhaines31/marketingskills", "v2.14.12", "MIT", "skills/", ["skills"]),
     ("oomol", "https://github.com/oomol-lab/skills", None, "MIT", "skills/", ["app-skills"]),
+    ("modern-web-guidance", "https://github.com/GoogleChrome/modern-web-guidance", "v1.0.0", "Apache-2.0", "skills/", ["skills"]),
     ("dokploy-mcp", "https://github.com/Dokploy/mcp", "v0.30.7", "see mcp/dokploy/LICENSE", "mcp/dokploy", ["."]),
 ]
 lock = {

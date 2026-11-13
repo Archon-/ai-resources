@@ -9,8 +9,8 @@ It replaces hand-copied skills under `~/.claude`, `~/.agents`, `~/.cursor`, and 
 [![Security scan](https://img.shields.io/github/actions/workflow/status/Archon-/ai-resources/skill-security.yml?branch=main&style=flat-square&label=security%20scan)](https://github.com/Archon-/ai-resources/actions/workflows/skill-security.yml)
 [![Upstream pins](https://img.shields.io/badge/upstream%20pins-weekly-1d4e4a?style=flat-square)](https://github.com/Archon-/ai-resources/actions/workflows/skill-updates.yml)
 [![Last update](https://img.shields.io/github/last-commit/Archon-/ai-resources?style=flat-square&label=last%20update)](https://github.com/Archon-/ai-resources/commits/main)
-[![Skills](https://img.shields.io/badge/skills-2232-0f6e56?style=flat-square)](docs/skills-index.md)
-[![Skill sources](https://img.shields.io/badge/skill%20sources-15-1d4e4a?style=flat-square)](docs/sources.md)
+[![Skills](https://img.shields.io/badge/skills-2234-0f6e56?style=flat-square)](docs/skills-index.md)
+[![Skill sources](https://img.shields.io/badge/skill%20sources-16-1d4e4a?style=flat-square)](docs/sources.md)
 [![MCP](https://img.shields.io/badge/MCP-templates%20%2B%20Dokploy-5c4a2a?style=flat-square)](mcp/README.md)
 [![Clients](https://img.shields.io/badge/clients-Claude%20%C2%B7%20Codex%20%C2%B7%20Cursor-243040?style=flat-square)](docs/architecture.md)
 
@@ -55,7 +55,7 @@ Do not combine `--skill` and `--skip-source` in one command. `--dry-run` prints 
 
 ## Catalog
 
-2,232 skills in 9 groups, fetched 2026-11-12. Pins, licenses, and commits are in [docs/versions.md](docs/versions.md). Every skill is listed in [docs/skills-index.md](docs/skills-index.md).
+2,234 skills in 9 groups, fetched 2026-11-12. Pins, licenses, and commits are in [docs/versions.md](docs/versions.md). Every skill is listed in [docs/skills-index.md](docs/skills-index.md).
 
 | Group | Skills | Upstream |
 | --- | ---: | --- |
@@ -65,11 +65,11 @@ Do not combine `--skill` and `--skip-source` in one command. `--dry-run` prints 
 | `marketingskills` | 53 | [marketingskills](https://github.com/coreyhaines31/marketingskills) |
 | `agent-skills` | 25 | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) |
 | `anthropics` | 20 | [anthropics/skills](https://github.com/anthropics/skills) |
-| `other` | 8 | One skill per source, including local `openconnector` |
+| `other` | 10 | One-skill sources, both Chrome skills, and local `openconnector` |
 | `ui-ux-pro-max` | 7 | [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) |
 | `ponytail` | 6 | [dietrichgebert/ponytail](https://github.com/dietrichgebert/ponytail) |
 
-A source with one skill lives in `skills/other/<name>/`. The other groups are `skills/<source>/<name>/`.
+`skills/other/<name>/` holds each one-skill source, plus both Chrome skills. The other groups are `skills/<source>/<name>/`.
 
 ## Clients
 
@@ -143,7 +143,7 @@ The security badge above is the latest run on `main`. The upstream-pins badge is
 | [Proposed architecture](docs/architecture.md) | How the symlinks and the gateway fit together |
 | [Installation and sync](docs/installation.md) | Flags, conflicts, vendoring, another machine |
 | [Sources](docs/sources.md) | What was copied, and what was left upstream |
-| [Skills index](docs/skills-index.md) | All 2,232 skills |
+| [Skills index](docs/skills-index.md) | All 2,234 skills |
 | [Versions](docs/versions.md) | Tag, commit, and license for each pin |
 | [Pipelines](docs/pipelines.md) | What the scanners match |
 | [MCP](mcp/README.md) | Templates, catalogs, and the Dokploy server |
