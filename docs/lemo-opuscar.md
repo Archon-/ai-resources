@@ -67,7 +67,7 @@ claude plugin uninstall lemo-opuscar@lemolab
 
 `~/lemo-my-styles/` stays. Delete that folder yourself when you want those styles gone.
 
-Another agent can use the same skill by copying `plugin/skills/lemo-opuscar/` into that agent’s skills folder. The skill still expects the toolbox on disk. This hub does not install that copy.
+Another agent can use the same skill by copying `plugin/skills/lemo-opuscar/` into that agent’s skills folder. `scripts/setup.sh` clones the library into `~/lemo-opuscar` on first run. This hub does not copy that skill.
 
 A clone is the other path. Films then go in `films/<name>/` inside the clone:
 
@@ -79,9 +79,11 @@ claude
 
 After `git pull` in that clone, run `sh plugin/skills/lemo-opuscar/scripts/setup.sh deps` once. If you installed the voice or music packages, run `sh plugin/skills/lemo-opuscar/scripts/setup.sh deps voice music` instead.
 
-## Why it is not a skill in this repo
+## Why it stays upstream
 
-This hub links one directory that contains `SKILL.md`. Lemo-Opuscar’s install is a Claude Code plugin. First use downloads the renderer, the guides, and the 99 style prompts to `~/lemo-opuscar`. The skill folder on its own does not contain that toolbox, so linking it from `skills/` would advertise a film command this repo cannot run.
+`plugin/skills/lemo-opuscar/` is `SKILL.md` plus `scripts/setup.sh`. With no arguments, `setup.sh` picks a library path: `$LEMO_OPUSCAR_HOME` if set, otherwise the git checkout you are standing in when it already has `AGENTS.md` and `core/render`, otherwise `~/lemo-opuscar`. When that path is not a library, the script clones `main` (`git clone --depth 1 --sparse`). The sparse checkout keeps the guides, `core/`, `tools/`, and each `STYLE.md`. A clone the script created is marked `lemo.managed`. The next run of that clone fetches `origin main` and hard-resets to that tip.
+
+A linked copy can make a film, because that script downloads the library. It stays out of `skills/` because the download follows upstream `main`. This hub pins vendored trees to commits in `docs/sources.lock.json`, and `scripts/check_updates.py` compares those pins. A copy here would not be the tree the next film runs.
 
 Upstream also splits the licence. Code (`core/`, `tools/`, `styleboard/`, plugin scripts, demo code) is MIT. Markdown, including each `STYLE.md` and the guides, is CC BY-NC 4.0, with an extra permission to read and adapt those docs while making a film, including a commercial or client film, and to ship the adapted docs inside that film’s project files. Selling the docs, or putting them into another product, needs a commercial licence from the author. Demo films and stills are CC BY 4.0, with exclusions called out in the upstream `LICENSE` (Clawd, some third-party interfaces, and six narration tracks). Films you make with the library are yours.
 
