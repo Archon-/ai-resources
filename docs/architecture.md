@@ -27,6 +27,7 @@ This repo is files in Git. OpenConnector is the integration gateway: OAuth, conn
 | `docs/skill-origins.json` | Folder, upstream source, version, and whether fetch may replace it. |
 | `docs/sources.md` | URLs that were vendored, and what was left behind. |
 | `playbooks/openmontage/` | Notes that are not skills. Kept out of `skills/` so clients do not scan them. |
+| `docs/lemo-opuscar.md` | Pointer to the Lemo-Opuscar film-style plugin. Not fetched, not linked. |
 | `upstream/<source>/` | License and bundle files that are not part of a skill. |
 | `mcp/templates/` | Client snippets for the suggested OpenConnector setup. Placeholders only. |
 | `mcp/catalogs/` | MCP *client* configs found inside vendored repos. Not servers. |

@@ -113,6 +113,7 @@ No release tag. Pinned to commit `136cef67a41a`. MIT. Copied `app-skills/` (1707
 skills/<source>/<name>/SKILL.md   one catalog, many skills
 skills/other/<name>/SKILL.md      one-skill sources, plus both Chrome skills
 playbooks/openmontage/            OpenMontage notes that are not SKILL.md packages
+docs/lemo-opuscar.md              pointer only; the toolbox stays upstream
 upstream/<source>/                license and bundle files that are not skills
 mcp/dokploy/                      Dokploy MCP server source
 mcp/templates/                    client config templates, no secrets
@@ -124,5 +125,9 @@ Two name clashes were resolved when the trees were merged:
 
 - `design-system` exists in both ECC and UI/UX Pro Max. ECC kept `skills/ecc/design-system`. The UI/UX copy is `skills/ui-ux-pro-max/design-system-ui-ux-pro-max` and its frontmatter `name` was changed to match. Install still uses the directory name, so the two skills do not share one symlink.
 - OpenMontage shipped `video-toolkit` twice (`video-toolkit` and `video_toolkit`) with the same files. The extra copy was not kept.
+
+## Outside the catalog
+
+[Lemo-Opuscar](lemo-opuscar.md) is a Claude Code plugin and a library of 99 film styles. The useful install downloads guides, tools, and style prompts to `~/lemo-opuscar`. It is documented in this repo and installed from upstream. It is not under `skills/`, and `fetch-sources.sh` does not refresh it.
 
 Individual skill versions, when upstream set them, are in the index. The commit in the lock is what you compare on the next update. `./scripts/fetch-sources.sh` vendors upstream again and regroups. Skills with `"managed": "local"` in the origins file, including `openconnector`, are kept under `skills/other/`.
