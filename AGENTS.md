@@ -8,3 +8,4 @@ This repository is the canonical copy of shared agent skills.
 - OpenConnector is an optional MCP gateway. `skills/other/openconnector` only documents how to call it. The `oo-*` skills are a different interface. Suggested client setup is `docs/architecture.md`. Dokploy is not part of that setup.
 - Do not run `scripts/install.sh` against the real home directory while experimenting. Set `AI_RESOURCES_HOME` to a temp directory.
 - `scripts/scan_skills.py` is the security check. `scripts/check_updates.py` compares lock pins with upstream. See `docs/pipelines.md`.
+- Lemo-Opuscar is an external film-style plugin, described in `docs/lemo-opuscar.md`. Do not vendor it into `skills/`.

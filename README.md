@@ -147,3 +147,4 @@ The security badge above is the latest run on `main`. The upstream-pins badge is
 | [Versions](docs/versions.md) | Tag, commit, and license for each pin |
 | [Pipelines](docs/pipelines.md) | What the scanners match |
 | [MCP](mcp/README.md) | Templates, catalogs, and the Dokploy server |
+| [Lemo-Opuscar](docs/lemo-opuscar.md) | Film-style toolbox. Installed from upstream, not linked as a skill |
