@@ -1257,6 +1257,15 @@
       "version": null,
       "renamed_from": null
     },
+    "draw-better-svg": {
+      "source": "local",
+      "group": "other",
+      "upstream_dir": null,
+      "managed": "local",
+      "version": "1.3.0",
+      "renamed_from": null,
+      "notes": "Vendored from https://github.com/arlinamid/draw-better-svg. Not in the fetch catalogs."
+    },
     "dynamic-workflow-mode": {
       "source": "ecc",
       "group": "ecc",
@@ -2248,6 +2257,15 @@
       "managed": "upstream",
       "version": "1.0.0",
       "renamed_from": null
+    },
+    "logo-design": {
+      "source": "local",
+      "group": "other",
+      "upstream_dir": null,
+      "managed": "local",
+      "version": null,
+      "renamed_from": null,
+      "notes": "Vendored from https://github.com/kaankiziltug/logo-design-skill. Not in the fetch catalogs."
     },
     "loop-design-check": {
       "source": "ecc",
@@ -17696,6 +17714,15 @@
       "managed": "upstream",
       "version": "1.0.0",
       "renamed_from": null
+    },
+    "vercel-web-design-guidelines": {
+      "source": "local",
+      "group": "other",
+      "upstream_dir": null,
+      "managed": "local",
+      "version": "1.0.0",
+      "renamed_from": null,
+      "notes": "Vendored from vercel-labs/web-interface-guidelines. Not in the fetch catalogs."
     },
     "verification-loop": {
       "source": "ecc",
