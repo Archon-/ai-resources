@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "contabo": {
+      "command": "npx",
+      "args": ["-y", "@kieksme/contabo-mcp"],
+      "env": {
+        "CONTABO_CLIENT_ID": "YOUR_CONTABO_CLIENT_ID",
+        "CONTABO_CLIENT_SECRET": "YOUR_CONTABO_CLIENT_SECRET",
+        "CONTABO_API_USER": "YOUR_CONTABO_LOGIN_EMAIL",
+        "CONTABO_API_PASSWORD": "YOUR_CONTABO_API_PASSWORD"
+      }
+    }
+  }
+}
