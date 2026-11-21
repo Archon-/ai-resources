@@ -29,48 +29,49 @@ The API password is not a Secrets Manager entry. Secrets store credentials for i
 
 **Register it (user-level config, outside this repo).**
 
-Read the values into shell variables first. `read -rs` keeps them out of shell history, hides them on screen, and does not expand `$`, quotes, or backslashes in what you type. Run these in a shell session you close afterwards. Use `read` with the same flags for each variable.
+Edit each client's config file by hand. Do not pass the credentials on a command line (`claude mcp add -e ...`, `codex mcp add --env ...`). Command-line arguments land in shell history and are visible in the process list to other local users while the command runs. Typing the values into a file in your editor avoids both.
+
+Restrict each file to your own user first, then add the entry below to it. Check the current mode with `ls -l`. `~/.claude.json` is often created world-readable (`644`).
 
 ```bash
-read -rp  'Client ID: '     CONTABO_CLIENT_ID
-read -rsp 'Client secret: ' CONTABO_CLIENT_SECRET; echo
-read -rp  'API user: '      CONTABO_API_USER
-read -rsp 'API password: '  CONTABO_API_PASSWORD; echo
+chmod 600 ~/.claude.json ~/.codex/config.toml ~/.cursor/mcp.json
 ```
 
-In zsh, `read -rp` means something else (`-p` reads from a coprocess). Use `vared -p 'Client ID: ' -c CONTABO_CLIENT_ID`, or `read -r "CONTABO_CLIENT_ID?Client ID: "` and `read -rs "CONTABO_CLIENT_SECRET?Client secret: "`.
+Each client keeps the values in plain text. Replace the placeholders. Escape `"` and `\` inside JSON and TOML strings. A password with `$` is safe, because no shell reads these files.
 
-Then register the server. Always wrap the variables in double quotes, so a password such as `P$word` or one with spaces reaches the client unchanged:
+**Claude Code** (`~/.claude.json`): add the entry under the top-level `mcpServers` object. Quit Claude Code first, since it rewrites this file.
 
-```bash
-# Claude Code
-claude mcp add -s user contabo \
-  -e CONTABO_CLIENT_ID="$CONTABO_CLIENT_ID" -e CONTABO_CLIENT_SECRET="$CONTABO_CLIENT_SECRET" \
-  -e CONTABO_API_USER="$CONTABO_API_USER" -e CONTABO_API_PASSWORD="$CONTABO_API_PASSWORD" \
-  -- npx -y @kieksme/contabo-mcp
-
-# Codex
-codex mcp add contabo \
-  --env CONTABO_CLIENT_ID="$CONTABO_CLIENT_ID" --env CONTABO_CLIENT_SECRET="$CONTABO_CLIENT_SECRET" \
-  --env CONTABO_API_USER="$CONTABO_API_USER" --env CONTABO_API_PASSWORD="$CONTABO_API_PASSWORD" \
-  -- npx -y @kieksme/contabo-mcp
-
-unset CONTABO_CLIENT_ID CONTABO_CLIENT_SECRET CONTABO_API_USER CONTABO_API_PASSWORD
+```json
+"contabo": {
+  "type": "stdio",
+  "command": "npx",
+  "args": ["-y", "@kieksme/contabo-mcp"],
+  "env": {
+    "CONTABO_CLIENT_ID": "YOUR_CONTABO_CLIENT_ID",
+    "CONTABO_CLIENT_SECRET": "YOUR_CONTABO_CLIENT_SECRET",
+    "CONTABO_API_USER": "YOUR_CONTABO_LOGIN_EMAIL",
+    "CONTABO_API_PASSWORD": "YOUR_CONTABO_API_PASSWORD"
+  }
+}
 ```
 
-The values never enter shell history this way. The shell expands them into the client's arguments, so other local users could see them in the process list for the second or two the command runs. On a shared machine, edit the config file by hand instead.
+**Codex** (`~/.codex/config.toml`): append these tables.
 
-Where each client stores the values, in plain text. Restrict each file to your own user:
+```toml
+[mcp_servers.contabo]
+command = "npx"
+args = ["-y", "@kieksme/contabo-mcp"]
 
-| Client | File | Command |
-|---|---|---|
-| Claude Code (user scope) | `~/.claude.json` | `chmod 600 ~/.claude.json` |
-| Codex | `~/.codex/config.toml` | `chmod 600 ~/.codex/config.toml` |
-| Cursor | `~/.cursor/mcp.json` | `chmod 600 ~/.cursor/mcp.json` |
+[mcp_servers.contabo.env]
+CONTABO_CLIENT_ID = "YOUR_CONTABO_CLIENT_ID"
+CONTABO_CLIENT_SECRET = "YOUR_CONTABO_CLIENT_SECRET"
+CONTABO_API_USER = "YOUR_CONTABO_LOGIN_EMAIL"
+CONTABO_API_PASSWORD = "YOUR_CONTABO_API_PASSWORD"
+```
 
-Check the current mode with `ls -l`. `~/.claude.json` is often created world-readable (`644`).
+**Cursor** (`~/.cursor/mcp.json`): merge the `contabo` entry from `templates/contabo.mcp.json` into `mcpServers`.
 
-Cursor: merge the `contabo` entry from the template into `~/.cursor/mcp.json` and type the values in by hand. Escape `"` and `\` inside JSON strings. The API password can reach the whole account.
+Then restart the client and confirm with `claude mcp list` or `codex mcp list`. The API password can reach the whole account, so never commit these files.
 
 ## Catalogs, not servers
 
