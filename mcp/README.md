@@ -15,6 +15,36 @@ pnpm build
 pnpm start:stdio
 ```
 
+## Contabo MCP (template only)
+
+[kieksme/mcp-contabo](https://github.com/kieksme/mcp-contabo) (`@kieksme/contabo-mcp` on npm) manages Contabo VPS/VDS, snapshots, object storage, secrets, and domains. It is a stdio server started with `npx`, so nothing is vendored. The template is `templates/contabo.mcp.json`. It has placeholders only. Fill it in on your machine and keep real values out of Git.
+
+It needs four values: client ID, client secret, API user (your Contabo login email), and API password.
+
+**Where to get them.** The Client ID, Client Secret, and Username are in the API section of the new panel (`my.contabo.com/account/security`). The new panel has **no way to create the API password**. Its "Send Link" button resets your control-panel login password, which is not the API password. Set the API password in the **old Contabo UI**: <https://dedicatedserver.contabo.com/api/details>. The panel never shows it again, so store it in a password manager.
+
+The API password is not a Secrets Manager entry. Secrets store credentials for instances.
+
+**Check it before wiring clients.** Request a token with the password grant at `https://auth.contabo.com/auth/realms/contabo/protocol/openid-connect/token`. HTTP 200 means the four values are valid. Do not print the token.
+
+**Register it (user-level config, outside this repo).**
+
+```bash
+# Claude Code
+claude mcp add -s user contabo \
+  -e CONTABO_CLIENT_ID=... -e CONTABO_CLIENT_SECRET=... \
+  -e CONTABO_API_USER=... -e CONTABO_API_PASSWORD=... \
+  -- npx -y @kieksme/contabo-mcp
+
+# Codex
+codex mcp add contabo \
+  --env CONTABO_CLIENT_ID=... --env CONTABO_CLIENT_SECRET=... \
+  --env CONTABO_API_USER=... --env CONTABO_API_PASSWORD=... \
+  -- npx -y @kieksme/contabo-mcp
+```
+
+Cursor: merge the `contabo` entry from the template into `~/.cursor/mcp.json`. The API password can reach the whole account, so keep that file readable only by you (`chmod 600`).
+
 ## Catalogs, not servers
 
 `catalogs/` holds MCP *client configs* found inside the linked repos. They name commands (`npx`, hosted servers). They are not the server source.
