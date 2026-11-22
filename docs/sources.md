@@ -1,6 +1,6 @@
 # Sources
 
-Fetched 2026-11-12. Pins (version, full commit, license) are in [versions.md](versions.md) and [sources.lock.json](sources.lock.json). Every skill is listed in [skills-index.md](skills-index.md). Which folder came from which upstream repo is in [skill-origins.json](skill-origins.json).
+Fetched 2026-11-22. Pins (version, full commit, license) are in [versions.md](versions.md) and [sources.lock.json](sources.lock.json). Every skill is listed in [skills-index.md](skills-index.md). Which folder came from which upstream repo is in [skill-origins.json](skill-origins.json).
 
 Skills are grouped: `skills/<source>/<name>/SKILL.md`. A source that contains one skill lives in `skills/other/<name>/` (humanizer, taste-skill, impeccable, and the local `openconnector` skill). `scripts/install.sh --skill <name>` symlinks that one skill directory into the client. It does not symlink the group. The saved set is `enabled-skills.txt`.
 
@@ -41,7 +41,7 @@ Upstream tools stayed upstream. Only skill folders (and, for Dokploy, the MCP se
 
 ### impeccable
 
-Release `skill-v4.8.2`, Apache-2.0. Skill frontmatter version is `4.8.2`. `scripts/VERSION` inside the skill is `0.1.22` (launcher), which is not the skill release. Copied the canonical skill at `plugin/skills/impeccable`. The same skill is mirrored into about twenty host folders (`.cursor`, `.claude`, `.agents`, and others); those copies were skipped. The rest of the repo is the design tool and was not copied.
+Release `skill-v4.10.0`, Apache-2.0. Skill frontmatter version is `4.10.0`. `scripts/VERSION` inside the skill is `0.1.22` (launcher), which is not the skill release. Copied the canonical skill at `plugin/skills/impeccable`. The same skill is mirrored into about twenty host folders (`.cursor`, `.claude`, `.agents`, and others); those copies were skipped. The rest of the repo is the design tool and was not copied.
 
 ### playwright-cli
 
@@ -49,11 +49,11 @@ Release `skill-v4.8.2`, Apache-2.0. Skill frontmatter version is `4.8.2`. `scrip
 
 ### obscura
 
-`v0.2.6`, Apache-2.0. Copied `skills/obscura/SKILL.md`. The headless browser (Rust crates, vendor trees) was not copied.
+`v0.2.7`, Apache-2.0. Copied `skills/obscura/SKILL.md`. The headless browser (Rust crates, vendor trees) was not copied.
 
 ### OpenMontage
 
-No release tag. Pinned to commit `fecb9a1e3cc2`. **AGPL-3.0.** If you distribute this catalog, that license applies to `skills/openmontage`.
+No release tag. Pinned to commit `2e003e65fa99`. **AGPL-3.0.** If you distribute this catalog, that license applies to `skills/openmontage`.
 
 Copied:
 
@@ -77,7 +77,7 @@ Plugin version `1.0.0`. No `LICENSE` file in the repo; `plugin.json` says MIT, a
 
 ### agent-skills
 
-`0.6.15`, MIT. Addy Osmani’s engineering skills. Copied `skills/` (25 skills).
+`0.6.17`, MIT. Addy Osmani’s engineering skills. Copied `skills/` (26 skills).
 
 ### ui-ux-pro-max
 
@@ -85,7 +85,7 @@ Plugin version `1.0.0`. No `LICENSE` file in the repo; `plugin.json` says MIT, a
 
 ### anthropics/skills
 
-No release tag. Pinned to commit `2c5958ecac7c`. Copied `skills/` plus the root `template/` skill (20 `SKILL.md` files, including document skills and `mcp-builder`). Licenses are per skill; start at `skills/anthropics/THIRD_PARTY_NOTICES.md`. Upstream `spec/agent-skills-spec.md` is only a pointer. It is at `specs/agent-skills/agent-skills-spec.md`. The live spec is https://agentskills.io/specification.
+No release tag. Pinned to commit `e4bb5d960d87`. Copied `skills/` plus the root `template/` skill (20 `SKILL.md` files, including document skills and `mcp-builder`). Licenses are per skill; start at `skills/anthropics/THIRD_PARTY_NOTICES.md`. Upstream `spec/agent-skills-spec.md` is only a pointer. It is at `specs/agent-skills/agent-skills-spec.md`. The live spec is https://agentskills.io/specification.
 
 ### humanizer
 
@@ -105,7 +105,7 @@ No release tag. Pinned to commit `136cef67a41a`. MIT. Copied `app-skills/` (1707
 
 ### modern-web-guidance
 
-`v1.0.0`, Apache-2.0. Pinned to commit `4dd968349e54`. Two skills, both under `skills/other/`: `chrome-extensions` (Manifest V3 and Chrome Web Store references) and `modern-web-guidance` (the guide corpus and the skill that searches it). Left the host plugin wrappers, `policies/`, and `assets/`. The `modern-web-guidance` skill searches through `npx -y modern-web-guidance@latest`. The same guides are in the vendored folder.
+`v1.0.1`, Apache-2.0. Pinned to commit `64a6d708f5a4`. Two skills, both under `skills/other/`: `chrome-extensions` (Manifest V3 and Chrome Web Store references) and `modern-web-guidance` (the guide corpus and the skill that searches it). Left the host plugin wrappers, `policies/`, and `assets/`. The `modern-web-guidance` skill searches through `npx -y modern-web-guidance@latest`. The same guides are in the vendored folder.
 
 ## Layout
 
