@@ -10,13 +10,29 @@ mkdir -p "$SRC"
 cleanup() { rm -rf "$SRC"; }
 trap cleanup EXIT
 
+# clone_sparse NAME URL REF PATH...
+# REF is a tag, a full 40-character commit, or "-" for the default branch tip.
+# Pinning every source keeps a refresh reproducible: only a source whose REF
+# was bumped here changes. Bump the REF and the matching lock entry below
+# together. A tag is used only where the vendored files match that tag; the
+# others are pinned to the commit recorded in docs/sources.lock.json.
 clone_sparse() {
-  local name="$1" url="$2"
-  shift 2
+  local name="$1" url="$2" ref="$3"
+  shift 3
   local dest="$SRC/$name"
-  echo ">> clone $name"
-  git clone --depth 1 --filter=blob:none --sparse "$url" "$dest" >/dev/null
+  echo ">> clone $name @ $ref"
+  if [[ "$ref" == "-" ]]; then
+    git clone --depth 1 --filter=blob:none --sparse "$url" "$dest" >/dev/null
+  elif [[ "$ref" =~ ^[0-9a-f]{40}$ ]]; then
+    git clone --depth 1 --filter=blob:none --sparse --no-checkout "$url" "$dest" >/dev/null
+    git -C "$dest" fetch -q --depth 1 --filter=blob:none origin "$ref"
+  else
+    git clone --depth 1 --filter=blob:none --sparse --branch "$ref" "$url" "$dest" >/dev/null
+  fi
   git -C "$dest" sparse-checkout set "$@"
+  if [[ "$ref" =~ ^[0-9a-f]{40}$ ]]; then
+    git -C "$dest" checkout -q FETCH_HEAD
+  fi
   echo "   $(git -C "$dest" rev-parse HEAD)  $name"
 }
 
@@ -39,37 +55,37 @@ copy_dir() {
 
 # --- clones (public GitHub) ---
 pids=()
-clone_sparse taste-skill https://github.com/leonxlnx/taste-skill.git \
+clone_sparse taste-skill https://github.com/leonxlnx/taste-skill.git f6b76575f949707b4e3c37cd86cb44b0b98643e8 \
   skills/taste-skill & pids+=($!)
-clone_sparse impeccable https://github.com/pbakaus/impeccable.git \
+clone_sparse impeccable https://github.com/pbakaus/impeccable.git skill-v4.10.0 \
   plugin/skills/impeccable & pids+=($!)
-clone_sparse playwright-cli https://github.com/microsoft/playwright-cli.git \
+clone_sparse playwright-cli https://github.com/microsoft/playwright-cli.git b21724888b8100b05ef8dee3a92f2bb03bf4dcde \
   skills/playwright-cli & pids+=($!)
-clone_sparse obscura https://github.com/h4ckf0r0day/obscura.git \
+clone_sparse obscura https://github.com/h4ckf0r0day/obscura.git v0.2.7 \
   skills/obscura & pids+=($!)
-clone_sparse openmontage https://github.com/OpenMontageInc/OpenMontage.git \
+clone_sparse openmontage https://github.com/OpenMontageInc/OpenMontage.git - \
   .agents/skills skills .claude/skills/video_toolkit & pids+=($!)
-clone_sparse ecc https://github.com/affaan-m/ECC.git \
+clone_sparse ecc https://github.com/affaan-m/ECC.git d2ef2680594f9a17526a6e1a2e18b3d242c5d17b \
   skills mcp-configs & pids+=($!)
-clone_sparse karpathy https://github.com/multica-ai/andrej-karpathy-skills.git \
+clone_sparse karpathy https://github.com/multica-ai/andrej-karpathy-skills.git 2c606141936f1eeef17fa3043a72095b4765b9c2 \
   skills/karpathy-guidelines & pids+=($!)
-clone_sparse ponytail https://github.com/dietrichgebert/ponytail.git \
+clone_sparse ponytail https://github.com/dietrichgebert/ponytail.git 96608e078b2d5ea607c5c3b8b5a54d1c1fba6846 \
   skills & pids+=($!)
-clone_sparse agent-skills https://github.com/addyosmani/agent-skills.git \
+clone_sparse agent-skills https://github.com/addyosmani/agent-skills.git 0.6.17 \
   skills & pids+=($!)
-clone_sparse ui-ux-pro-max https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git \
+clone_sparse ui-ux-pro-max https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git 6ae86f61f520d6ca229d2f40e070410638c908c5 \
   .claude/skills & pids+=($!)
-clone_sparse anthropics https://github.com/anthropics/skills.git \
+clone_sparse anthropics https://github.com/anthropics/skills.git - \
   skills spec template & pids+=($!)
-clone_sparse humanizer https://github.com/blader/humanizer.git \
+clone_sparse humanizer https://github.com/blader/humanizer.git b48c832f0f809c1b5658edbb838c2521b72f2413 \
   scripts agents & pids+=($!)
-clone_sparse i-have-adhd https://github.com/ayghri/i-have-adhd.git \
+clone_sparse i-have-adhd https://github.com/ayghri/i-have-adhd.git 1ecea1993b7fce257ffbd686c070948b5e07eda6 \
   skills/i-have-adhd & pids+=($!)
-clone_sparse marketingskills https://github.com/coreyhaines31/marketingskills.git \
+clone_sparse marketingskills https://github.com/coreyhaines31/marketingskills.git 1f837447b20bb6f0e72d87b80ece1c221c362c7d \
   skills & pids+=($!)
-clone_sparse oomol https://github.com/oomol-lab/skills.git \
+clone_sparse oomol https://github.com/oomol-lab/skills.git 136cef67a41ac27ace0af9b20a9bd96accfb50cd \
   app-skills & pids+=($!)
-clone_tag modern-web-guidance https://github.com/GoogleChrome/modern-web-guidance.git v1.0.0 & pids+=($!)
+clone_tag modern-web-guidance https://github.com/GoogleChrome/modern-web-guidance.git v1.0.1 & pids+=($!)
 clone_tag dokploy https://github.com/Dokploy/mcp.git v0.30.7 & pids+=($!)
 
 fail=0
@@ -213,25 +229,25 @@ def local_for(source_id, fallback):
 
 sources = [
     ("taste-skill", "https://github.com/leonxlnx/taste-skill", "v2.5.1", "MIT", "skills/", ["skills/taste-skill"]),
-    ("impeccable", "https://github.com/pbakaus/impeccable", "skill-v4.8.2", "Apache-2.0", "skills/", ["plugin/skills/impeccable"]),
+    ("impeccable", "https://github.com/pbakaus/impeccable", "skill-v4.10.0", "Apache-2.0", "skills/", ["plugin/skills/impeccable"]),
     ("playwright-cli", "https://github.com/microsoft/playwright-cli", "v0.180.0", "Apache-2.0", "skills/", ["skills/playwright-cli"]),
-    ("obscura", "https://github.com/h4ckf0r0day/obscura", "v0.2.6", "Apache-2.0", "skills/", ["skills/obscura"]),
+    ("obscura", "https://github.com/h4ckf0r0day/obscura", "v0.2.7", "Apache-2.0", "skills/", ["skills/obscura"]),
     ("openmontage", "https://github.com/OpenMontageInc/OpenMontage", None, "AGPL-3.0", "skills/", [".agents/skills", "skills", ".claude/skills/video_toolkit"]),
     ("ecc", "https://github.com/affaan-m/ECC", "v2.2.3", "MIT", "skills/", ["skills"]),
     ("karpathy-guidelines", "https://github.com/multica-ai/andrej-karpathy-skills", "1.0.0", "MIT (plugin.json; no LICENSE file)", "skills/", ["skills/karpathy-guidelines"]),
     ("ponytail", "https://github.com/dietrichgebert/ponytail", "v5.3.3", "MIT", "skills/", ["skills"]),
-    ("agent-skills", "https://github.com/addyosmani/agent-skills", "0.6.15", "MIT", "skills/", ["skills"]),
+    ("agent-skills", "https://github.com/addyosmani/agent-skills", "0.6.17", "MIT", "skills/", ["skills"]),
     ("ui-ux-pro-max", "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill", "v2.15.0", "MIT", "skills/", [".claude/skills"]),
     ("anthropics", "https://github.com/anthropics/skills", None, "per-skill (mostly Apache-2.0); see THIRD_PARTY_NOTICES.md", "skills/", ["skills", "template", "spec"]),
     ("humanizer", "https://github.com/blader/humanizer", "v4.0.0", "MIT", "skills/", ["SKILL.md", "scripts", "agents"]),
     ("i-have-adhd", "https://github.com/ayghri/i-have-adhd", "v0.4.1", "MIT", "skills/", ["skills/i-have-adhd"]),
     ("marketingskills", "https://github.com/coreyhaines31/marketingskills", "v2.14.12", "MIT", "skills/", ["skills"]),
     ("oomol", "https://github.com/oomol-lab/skills", None, "MIT", "skills/", ["app-skills"]),
-    ("modern-web-guidance", "https://github.com/GoogleChrome/modern-web-guidance", "v1.0.0", "Apache-2.0", "skills/", ["skills"]),
-    ("dokploy-mcp", "https://github.com/Dokploy/mcp", "v0.30.7", "see mcp/dokploy/LICENSE", "mcp/dokploy", ["."]),
+    ("modern-web-guidance", "https://github.com/GoogleChrome/modern-web-guidance", "v1.0.1", "Apache-2.0", "skills/", ["skills"]),
+    ("dokploy-mcp", "https://github.com/Dokploy/mcp", "v0.30.7", "Apache-2.0", "mcp/dokploy", ["."]),
 ]
 lock = {
-    "fetched_at": "2026-11-12",
+    "fetched_at": "2026-11-22",
     "sources": [
         {
             "id": i,

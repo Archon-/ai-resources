@@ -1,7 +1,7 @@
 # Skills index
 
-Generated from `skills/<group>/<name>/`. A one-skill source is in `skills/other/`. Fetched 2026-11-12.
-2234 skills.
+Generated from `skills/<group>/<name>/`. A one-skill source is in `skills/other/`. Fetched 2026-11-22.
+2238 skills.
 Bundle version and commit: [versions.md](versions.md). Folder origin: [skill-origins.json](skill-origins.json).
 
 ## taste-skill
@@ -12,9 +12,9 @@ Bundle version and commit: [versions.md](versions.md). Folder origin: [skill-ori
 
 ## impeccable
 
-[https://github.com/pbakaus/impeccable](https://github.com/pbakaus/impeccable) · `skill-v4.8.2` · `b4bff1626c34` · 1 skills
+[https://github.com/pbakaus/impeccable](https://github.com/pbakaus/impeccable) · `skill-v4.10.0` · `b49177d32788` · 1 skills
 
-- `impeccable` `4.8.2` — `skills/other/impeccable/SKILL.md`
+- `impeccable` `4.10.0` — `skills/other/impeccable/SKILL.md`
 
 ## playwright-cli
 
@@ -24,13 +24,13 @@ Bundle version and commit: [versions.md](versions.md). Folder origin: [skill-ori
 
 ## obscura
 
-[https://github.com/h4ckf0r0day/obscura](https://github.com/h4ckf0r0day/obscura) · `v0.2.6` · `3bae60909615` · 1 skills
+[https://github.com/h4ckf0r0day/obscura](https://github.com/h4ckf0r0day/obscura) · `v0.2.7` · `0ecc41770da5` · 1 skills
 
 - `obscura` — `skills/other/obscura/SKILL.md`
 
 ## openmontage
 
-[https://github.com/OpenMontageInc/OpenMontage](https://github.com/OpenMontageInc/OpenMontage) · `no release tag` · `fecb9a1e3cc2` · 92 skills
+[https://github.com/OpenMontageInc/OpenMontage](https://github.com/OpenMontageInc/OpenMontage) · `no release tag` · `2e003e65fa99` · 92 skills
 
 - `3d-asset-generation` — `skills/openmontage/3d-asset-generation/SKILL.md`
 - `acestep` — `skills/openmontage/acestep/SKILL.md`
@@ -624,8 +624,9 @@ Playbooks (not skills): 158
 
 ## agent-skills
 
-[https://github.com/addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) · `0.6.15` · `301b02b12bff` · 25 skills
+[https://github.com/addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) · `0.6.17` · `8c99fa36d900` · 26 skills
 
+- `accessibility-engineering` — `skills/agent-skills/accessibility-engineering/SKILL.md`
 - `api-and-interface-design` — `skills/agent-skills/api-and-interface-design/SKILL.md`
 - `browser-testing-with-devtools` — `skills/agent-skills/browser-testing-with-devtools/SKILL.md`
 - `ci-cd-and-automation` — `skills/agent-skills/ci-cd-and-automation/SKILL.md`
@@ -666,7 +667,7 @@ Playbooks (not skills): 158
 
 ## anthropics
 
-[https://github.com/anthropics/skills](https://github.com/anthropics/skills) · `no release tag` · `2c5958ecac7c` · 20 skills
+[https://github.com/anthropics/skills](https://github.com/anthropics/skills) · `no release tag` · `e4bb5d960d87` · 20 skills
 
 - `academy-guide` — `skills/anthropics/academy-guide/SKILL.md`
 - `algorithmic-art` — `skills/anthropics/algorithmic-art/SKILL.md`
@@ -2473,16 +2474,19 @@ Playbooks (not skills): 158
 
 ## modern-web-guidance
 
-[https://github.com/GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) · `v1.0.0` · `4dd968349e54` · 2 skills
+[https://github.com/GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) · `v1.0.1` · `64a6d708f5a4` · 2 skills
 
 - `chrome-extensions` — `skills/other/chrome-extensions/SKILL.md`
 - `modern-web-guidance` — `skills/other/modern-web-guidance/SKILL.md`
 
 ## local
 
-Local skills, not vendored. 1 skills
+Local skills, not vendored. 4 skills
 
+- `draw-better-svg` `1.3.0` — `skills/other/draw-better-svg/SKILL.md`
+- `logo-design` — `skills/other/logo-design/SKILL.md`
 - `openconnector` — `skills/other/openconnector/SKILL.md`
+- `vercel-web-design-guidelines` `1.0.0` — `skills/other/vercel-web-design-guidelines/SKILL.md`
 
 ## Skipped duplicates
 
